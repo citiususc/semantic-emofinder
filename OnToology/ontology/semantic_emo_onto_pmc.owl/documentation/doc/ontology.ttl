@@ -1,0 +1,612 @@
+@prefix : <https://www.usc.gal/pcc/app/emofinder/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://www.usc.gal/pcc/app/emofinder/> .
+
+<https://www.usc.gal/pcc/app/emofinder/> rdf:type owl:Ontology ;
+                                          owl:imports <http://www.w3.org/2004/02/skos/core> ;
+                                          <http://purl.org/dc/elements/1.1/creator> "David Chaves Fraga" ,
+                                                                                    "Patricia Martín Chozas" ,
+                                                                                    "Óscar Hidlago Gerpe" ;
+                                          <http://purl.org/dc/elements/1.1/title> "Ontology for emotional words - Semantic Emofinder" ;
+                                          owl:versionInfo "1.0" ;
+                                          <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> rdf:type owl:AnnotationProperty ;
+                                         <http://www.w3.org/2004/02/skos/core#scopeNote> "A related resource from which the described resource is derived."@en .
+
+
+###  http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> rdf:type owl:ObjectProperty ;
+                                  <http://www.w3.org/2004/02/skos/core#scopeNote> "Used to describe rights related to a bibliographic resource."@en .
+
+
+###  http://www.w3.org/ns/lemon/lime#entry
+<http://www.w3.org/ns/lemon/lime#entry> rdf:type owl:ObjectProperty ;
+                                        rdfs:domain <http://www.w3.org/ns/lemon/lime#Lexicon> ;
+                                        rdfs:range <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> ;
+                                        rdfs:comment "The 'entry' property relates a lexicon to one of the lexical entries contained in it."@en ,
+                                                     "Свойство 'запись' связывает лексикон с одной из содержащихся в нем словарных единиц."@ru ;
+                                        rdfs:isDefinedBy "http://www.w3.org/ns/lemon/lime" ;
+                                        rdfs:label "Eintrag"@de ,
+                                                   "Item"@nl ,
+                                                   "entrada"@es ,
+                                                   "entrada"@pt ,
+                                                   "entrata"@it ,
+                                                   "entry"@en ,
+                                                   "entrée"@fr ,
+                                                   "ingång"@sv ,
+                                                   "inskrywing"@af ,
+                                                   "înregistrare"@ro ,
+                                                   "запись"@ru ;
+                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#canonicalForm
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> rdf:type owl:ObjectProperty .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#lexicalForm
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> rdf:type owl:ObjectProperty .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/affects
+:affects rdf:type owl:ObjectProperty ;
+         rdfs:domain :Annotation ;
+         rdfs:comment "Esta propiedad asigna una Anotación a una Lexical Entry."@en ;
+         rdfs:label "affecta a"@es ,
+                    "affects"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/value
+:value rdf:type owl:ObjectProperty ;
+       rdfs:domain [ rdf:type owl:Restriction ;
+                     owl:onProperty :value ;
+                     owl:allValuesFrom :RecognitionTime
+                   ] ;
+       rdfs:range xsd:Float .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.w3.org/ns/lemon/lime#language
+<http://www.w3.org/ns/lemon/lime#language> rdf:type owl:DatatypeProperty .
+
+
+###  https://w3id.org/riverbench/schema/metadata#mean
+<https://w3id.org/riverbench/schema/metadata#mean> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:subPropertyOf <https://w3id.org/riverbench/schema/metadata#statisticalProperty> ;
+                                                   rdfs:range xsd:double ;
+                                                   rdfs:comment "Arithmetic mean of a distribution"@en ;
+                                                   rdfs:label "Mean"@en .
+
+
+###  https://w3id.org/riverbench/schema/metadata#standardDeviation
+<https://w3id.org/riverbench/schema/metadata#standardDeviation> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:subPropertyOf <https://w3id.org/riverbench/schema/metadata#statisticalProperty> ;
+                                                                rdfs:range xsd:double ;
+                                                                rdfs:comment "Standard deviation of a distribution"@en ;
+                                                                rdfs:label "Standard deviation"@en .
+
+
+###  https://w3id.org/riverbench/schema/metadata#statisticalProperty
+<https://w3id.org/riverbench/schema/metadata#statisticalProperty> rdf:type owl:DatatypeProperty .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/value
+:value rdf:type owl:DatatypeProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://purl.org/ontology/bibo/Article
+<http://purl.org/ontology/bibo/Article> rdf:type owl:Class ;
+                                        rdfs:subClassOf <http://purl.org/ontology/bibo/Document> ;
+                                        rdfs:comment "A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine."@en ;
+                                        rdfs:isDefinedBy "http://purl.org/ontology/bibo/"^^xsd:anyURI ;
+                                        rdfs:label "Article"@en ;
+                                        <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://purl.org/ontology/bibo/Document
+<http://purl.org/ontology/bibo/Document> rdf:type owl:Class .
+
+
+###  http://rdfs.org/ns/void#Dataset
+<http://rdfs.org/ns/void#Dataset> rdf:type owl:Class .
+
+
+###  http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Boolean
+xsd:Boolean rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#Float
+xsd:Float rdf:type owl:Class .
+
+
+###  http://www.w3.org/2001/XMLSchema#String
+xsd:String rdf:type owl:Class .
+
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> rdf:type owl:Class ;
+                                              rdfs:label "Concept" .
+
+
+###  http://www.w3.org/ns/lemon/lime#Lexicon
+<http://www.w3.org/ns/lemon/lime#Lexicon> rdf:type owl:Class ;
+                                          rdfs:subClassOf <http://rdfs.org/ns/void#Dataset> ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://www.w3.org/ns/lemon/lime#entry> ;
+                                                            owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                            owl:onClass <http://www.w3.org/ns/lemon/ontolex#LexicalEntry>
+                                                          ] ,
+                                                          [ rdf:type owl:Restriction ;
+                                                            owl:onProperty <http://www.w3.org/ns/lemon/lime#language> ;
+                                                            owl:cardinality "1"^^xsd:nonNegativeInteger
+                                                          ] ;
+                                          rdfs:comment "A lexicon represents a collection of lexical entries for a particular language or domain."@en ,
+                                                       "Лексикон представляет собой набор словарных единиц для определенного языка или домена."@ru ;
+                                          rdfs:isDefinedBy "http://www.w3.org/ns/lemon/lime" ;
+                                          rdfs:label "Lessico"@it ,
+                                                     "Lexicon"@nl ,
+                                                     "Lexikon"@de ,
+                                                     "Lexique"@fr ,
+                                                     "leksikon"@af ,
+                                                     "lexicon"@en ,
+                                                     "lexicon"@ro ,
+                                                     "lexicón"@es ,
+                                                     "lexikon"@sv ,
+                                                     "лексикон"@ru ;
+                                          <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#Form
+<http://www.w3.org/ns/lemon/ontolex#Form> rdf:type owl:Class .
+
+
+###  http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> ,
+                                                                  owl:Thing ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.w3.org/ns/lemon/ontolex#lexicalForm> ;
+                                                                    owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onClass <http://www.w3.org/ns/lemon/ontolex#Form>
+                                                                  ] ,
+                                                                  [ rdf:type owl:Restriction ;
+                                                                    owl:onProperty <http://www.w3.org/ns/lemon/ontolex#canonicalForm> ;
+                                                                    owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+                                                                    owl:onClass <http://www.w3.org/ns/lemon/ontolex#Form>
+                                                                  ] ;
+                                                  rdfs:comment "'Словарная единица' представляет собой единицу анализа словаря, которая состоит из совокупности грамматически связанных форм и совокупности основных значений, ассоциирующихся со всеми этими формами. 'Словарная единица' - это слово, словосочетание или аффикс одной части речи, морфологической модели, этимологии и набора значений."@ru ,
+                                                               "A lexical entry represents a unit of analysis of the lexicon that consists of a set of forms that are grammatically related and a set of base meanings that are associated with all of these forms. Thus, a lexical entry is a word, multiword expression or affix with a single part-of-speech, morphological pattern, etymology and set of senses."@en ;
+                                                  rdfs:isDefinedBy <http://www.w3.org/ns/lemon/ontolex> ;
+                                                  rdfs:label "Lexikoneintrag"@de ,
+                                                             "entrada léxica"@es ,
+                                                             "entrata lessicale"@it ,
+                                                             "entrée lexicale"@fr ,
+                                                             "leksikale inskrywing"@af ,
+                                                             "lexical entry"@en ,
+                                                             "lexikaal item"@nl ,
+                                                             "lexikoningång"@sv ,
+                                                             "înregistrare lexicală"@ro ,
+                                                             "словарная единица"@ru ;
+                                                  <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/AcquisitionAge
+:AcquisitionAge rdf:type owl:Class ;
+                rdfs:subClassOf :SubjectiveDimension ;
+                rdfs:comment "Esta variable indica la edad aproximada (en años) a la que un individuo cree que aprendió una determinada palabra."@es ,
+                             "This variable indicates the approximate age (in years) at which an individual believes they learned a particular word."@en ;
+                rdfs:label "Acquisition Age"@en ,
+                           "Edad de adquisición"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Action
+:Action rdf:type owl:Class ;
+        rdfs:subClassOf :SubjectiveDimension ;
+        rdfs:comment "It refers to the degree of the word's connection with acting, doing, and influencing."@en ,
+                     "Se refiere al grado de relación de la palabra con actuar, hacer, e influir."@es ;
+        rdfs:label "Action"@en ,
+                   "Actuación"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Amusement
+:Amusement rdf:type owl:Class ;
+           rdfs:subClassOf :DiscreteEmotionalCategory ;
+           rdfs:comment "It refers to the degree of amusement conveyed by a word."@en ,
+                        "Se refiere al grado de diversión que transmite una palabra."@es ;
+           rdfs:label "Amusement"@en ,
+                      "Diversión"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Anger
+:Anger rdf:type owl:Class ;
+       rdfs:subClassOf :DiscreteEmotionalCategory ;
+       rdfs:comment "It refers to the degree of anger conveyed by a word."@en ,
+                    "Se refiere al grado de enfado que transmite una palabra."@es ;
+       rdfs:label "Anger"@en ,
+                  "Enfado"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Annotation
+:Annotation rdf:type owl:Class ;
+            rdfs:label "Annotation"@en ,
+                       "Anotación"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Arousal
+:Arousal rdf:type owl:Class ;
+         rdfs:subClassOf :EmotionalDimension ;
+         rdfs:comment "Arousal refers to the level of calmness or excitement evoked by a word, that is, how relaxing or intense it feels to the person."@en ,
+                      "La activación hace referencia al nivel de calma o excitación que evoca una palabra, es decir, cuán relajante o intensa le resulta a la persona."@es ;
+         rdfs:label "Activación"@es ,
+                    "Arousal"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Awe
+:Awe rdf:type owl:Class ;
+     rdfs:subClassOf :DiscreteEmotionalCategory ;
+     rdfs:comment "It refers to the degree of awe conveyed by a word."@en ,
+                  "Se refiere al grado de admiración que transmite una palabra."@es ;
+     rdfs:label "Admiración"@es ,
+                "Awe"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/BodyExpression
+:BodyExpression rdf:type owl:Class ;
+                rdfs:subClassOf :SubjectiveDimension ;
+                rdfs:comment "It refers to the degree of the word's connection with changes in parts of the body such as the voice, posture, gestures, or facial expression."@en ,
+                             "Se refiere al grado de relación de la palabra con cambios en partes del cuerpo como la voz, la postura, los gestos, o la expresión de la cara"@es ;
+                rdfs:label "Body Expression"@en ,
+                           "Expresión Corporal"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Concreteness
+:Concreteness rdf:type owl:Class ;
+              rdfs:subClassOf :SubjectiveDimension ;
+              rdfs:comment "Concreteness refers to the extent to which a word refers to an entity that can be perceived with the senses."@en ,
+                           "La concreción se refiere a hasta qué punto la palabra se refiere a una entidad que puede percibirse con los sentidos."@es ;
+              rdfs:label "Concreción"@es ,
+                         "Concreteness"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Contentment
+:Contentment rdf:type owl:Class ;
+             rdfs:subClassOf :DiscreteEmotionalCategory ;
+             rdfs:comment "It refers to the degree of contentment conveyed by a word."@en ,
+                          "Se refiere al grado de satisfacción que transmite una palabra."@es ;
+             rdfs:label "Contentment"@en ,
+                        "Satisfacción"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/ContextualAvailability
+:ContextualAvailability rdf:type owl:Class ;
+                        rdfs:subClassOf :SubjectiveDimension ;
+                        rdfs:comment "Contextual availability refers to the ease with which we can think of a context to which the word could be associated."@en ,
+                                     "La disponibilidad contextual se refiere a la facilidad con la que podemos pensar en un contexto al cual se podría asociar la palabra."@es ;
+                        rdfs:label "Contextual Availability"@en ,
+                                   "Disponibilidad contextual"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory
+:DiscreteEmotionalCategory rdf:type owl:Class ;
+                           rdfs:subClassOf :Annotation ;
+                           rdfs:label "Categoría emocional discreta"@es ,
+                                      "Discrete emotional category"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Disgust
+:Disgust rdf:type owl:Class ;
+         rdfs:subClassOf :DiscreteEmotionalCategory ;
+         rdfs:comment "It refers to the degree of disgust conveyed by a word."@en ,
+                      "Se refiere al grado de asco que transmite una palabra."@es ;
+         rdfs:label "Asco"@es ,
+                    "Disgust"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Dominance
+:Dominance rdf:type owl:Class ;
+           rdfs:subClassOf :EmotionalDimension ;
+           rdfs:comment "Dominance refers to the perception of control evoked by a word, that is, the extent to which a person feels weak/submissive or strong/dominant in relation to the concept the word represents."@en ,
+                        "La dominancia hace referencia a la percepción de control que evoca una palabra, es decir, hasta qué punto la persona se siente débil/sumisa o fuerte/dominante ante el concepto que designa la palabra."@es ;
+           rdfs:label "Dominance"@en ,
+                      "Dominancia"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/EmotionalDimension
+:EmotionalDimension rdf:type owl:Class ;
+                    rdfs:subClassOf :Annotation ;
+                    rdfs:label "Dimensión emocional"@es ,
+                               "Emotional Dimension"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Evaluation
+:Evaluation rdf:type owl:Class ;
+            rdfs:subClassOf :EmotionalDimension ;
+            rdfs:comment "It refers to the degree of the word's connection with situations that are important for well-being and/or survival."@en ,
+                         "Se refiere al grado de relación de la palabra con situaciones importantes para el bienestar y/o supervivencia."@es ;
+            rdfs:label "Evaluación"@es ,
+                       "Evaluation"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Excitement
+:Excitement rdf:type owl:Class ;
+            rdfs:subClassOf :DiscreteEmotionalCategory ;
+            rdfs:comment "It refers to the degree of excitement conveyed by a word."@en ,
+                         "Se refiere al grado de entusiasmo que transmite una palabra."@es ;
+            rdfs:label "Entusiasmo"@es ,
+                       "Excitement"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Familiarity
+:Familiarity rdf:type owl:Class ;
+             rdfs:subClassOf :SubjectiveDimension ;
+             rdfs:comment "Familiarity refers to how familiar or known a word feels to a person."@en ,
+                          "La familiaridad hace referencia a cuán familiar o conocida resulta una palabra para la persona."@es ;
+             rdfs:label "Familiaridad"@es ,
+                        "Familiarity"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Fear
+:Fear rdf:type owl:Class ;
+      rdfs:subClassOf :DiscreteEmotionalCategory ;
+      rdfs:comment "It refers to the degree of fear conveyed by a word."@en ,
+                   "Se refiere al grado de miedo que transmite una palabra."@es ;
+      rdfs:label "Fear"@en ,
+                 "Miedo"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Feeling
+:Feeling rdf:type owl:Class ;
+         rdfs:subClassOf :EmotionalDimension ;
+         rdfs:comment "It refers to the degree of the word's connection with feelings."@en ,
+                      "Se refiere al grado de relación de la palabra con sentimientos."@es ;
+         rdfs:label "Feeling"@en ,
+                    "Sentimiento"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Happiness
+:Happiness rdf:type owl:Class ;
+           rdfs:subClassOf :DiscreteEmotionalCategory ;
+           rdfs:comment "It refers to the degree of happiness conveyed by a word."@en ,
+                        "Se refiere al grado de felicidad que transmite una palabra."@es ;
+           rdfs:label "Felicidad"@es ,
+                      "Happiness"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Iconicity
+:Iconicity rdf:type owl:Class ;
+           rdfs:subClassOf :SubjectiveDimension ;
+           rdfs:comment "It refers to the degree of the word’s sound relation to its meaning."@en ,
+                        "Se refiere al grado de relación del sonido de la palabra con su significado."@es ;
+           rdfs:label "Iconicidad"@es ,
+                      "Iconicity"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Imageability
+:Imageability rdf:type owl:Class ;
+              rdfs:subClassOf :SubjectiveDimension ;
+              rdfs:comment "Imaginability refers to the ease with which a mental image of the concept designated by the word can be formed."@en ,
+                           "La imaginabilidad hace referencia a la facilidad para formarse una imagen mental del concepto que designa la palabra."@es ;
+              rdfs:label "Imageability"@en ,
+                         "Imaginabilidad"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Interoception
+:Interoception rdf:type owl:Class ;
+               rdfs:subClassOf :EmotionalDimension ;
+               rdfs:comment "It refers to the degree of the word's connection with internal bodily sensations."@en ,
+                            "Se refiere al grado de relación de la palabra con sensaciones corporales internas."@es ;
+               rdfs:label "Interocepción"@es ,
+                          "Interoception"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Morality
+:Morality rdf:type owl:Class ;
+          rdfs:subClassOf :SubjectiveDimension ;
+          rdfs:comment "It refers to the degree of the word's connection with morality, rules, or any other principle that guides behavior."@en ,
+                       "Se refiere al grado de relación de la palabra con la moralidad, las reglas, o cualquier otro principio que guía la conducta."@es ;
+          rdfs:label "Moralidad"@es ,
+                     "Morality"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge
+:ObjectiveAcquisitionAge rdf:type owl:Class ;
+                         rdfs:subClassOf :ObjectiveEstimation ;
+                         rdfs:comment "It refers to the age at which the word was acquired."@en ,
+                                      "Se refiere a la edad en la que se ha adquirido la palabra."@es ;
+                         rdfs:label "Edad de adquisición objetiva"@es ,
+                                    "Objective Acquisition Age"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation
+:ObjectiveEstimation rdf:type owl:Class ;
+                     rdfs:subClassOf :Annotation ;
+                     rdfs:label "Estimación Objetiva"@es ,
+                                "Objective Estimation"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Pleasure
+:Pleasure rdf:type owl:Class ;
+          rdfs:subClassOf :DiscreteEmotionalCategory ;
+          rdfs:comment "It refers to the degree of pleasure conveyed by a word."@en ,
+                       "Se refiere al grado de placer que transmite una palabra."@es ;
+          rdfs:label "Placer"@es ,
+                     "Pleasure"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Prototipicality
+:Prototipicality rdf:type owl:Class ;
+                 rdfs:subClassOf :EmotionalDimension ;
+                 rdfs:comment "It refers to the degree of the word’s connection with an emotion."@en ,
+                              "Se refiere al grado de relación de la palabra con una emoción."@es ;
+                 rdfs:label "Prototipicalidad"@es ,
+                            "Prototipicality"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage
+:RecognitionErrorPercentage rdf:type owl:Class ;
+                            rdfs:subClassOf :RecognitionTime ;
+                            rdfs:comment "%E"@en ,
+                                         "Percentage of incorrect word identification in a lexical decision task."@en ,
+                                         "Porcentaje de identificación incorrecta de la palabra en una tarea de decisión léxica."@es ;
+                            rdfs:label "Porcentaje de error de reconocimiento (LDT)"@es ,
+                                       "Recognition Error Percentage"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/RecognitionTime
+:RecognitionTime rdf:type owl:Class ;
+                 rdfs:subClassOf :Annotation ;
+                 rdfs:label "Recognition Time"@en ,
+                            "Tiempo de reconocimiento"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Relief
+:Relief rdf:type owl:Class ;
+        rdfs:subClassOf :DiscreteEmotionalCategory ;
+        rdfs:comment "It refers to the degree of relief conveyed by a word."@es ,
+                     "Se refiere al grado de alivio que transmite una palabra."@es ;
+        rdfs:label "Alivio"@es ,
+                   "Relief"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Sadness
+:Sadness rdf:type owl:Class ;
+         rdfs:subClassOf :DiscreteEmotionalCategory ;
+         rdfs:comment "It refers to the degree of sadness conveyed by a word."@en ,
+                      "Se refiere al grado de tristeza que transmite una palabra."@es ;
+         rdfs:label "Sadness"@en ,
+                    "Tristeza"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/SensoryExperience
+:SensoryExperience rdf:type owl:Class ;
+                   rdfs:subClassOf :SubjectiveDimension ;
+                   rdfs:comment "Indica hasta qué punto la palabra evoca una experiencia sensorial/perceptiva (sabor, tacto, vista, sonido y olor)."@es ,
+                                "It indicates the extent to which the word evokes a sensory/perceptual experience (taste, touch, sight, sound, and smell)."@en ;
+                   rdfs:label "Experiencia sensorial"@es ,
+                              "Sensory Experience"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Serenity
+:Serenity rdf:type owl:Class ;
+          rdfs:subClassOf :DiscreteEmotionalCategory ;
+          rdfs:comment "It refers to the degree of serenity conveyed by a word."@en ,
+                       "Se refiere al grado de serenidad que transmite una palabra."@es ;
+          rdfs:label "Serenidad"@es ,
+                     "Serenity"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/SocialInteraction
+:SocialInteraction rdf:type owl:Class ;
+                   rdfs:subClassOf :SubjectiveDimension ;
+                   rdfs:label "Interacción social"@es ,
+                              "Social Interaction"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension
+:SubjectiveDimension rdf:type owl:Class ;
+                     rdfs:subClassOf :Annotation ;
+                     rdfs:label "Dimensión subjetiva"@es ,
+                                "Subjective Dimension"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Thought
+:Thought rdf:type owl:Class ;
+         rdfs:subClassOf :SubjectiveDimension ;
+         rdfs:comment "It refers to the degree of the word's connection with mental activity, ideas, opinions, and judgments."@en ,
+                      "Se refiere al grado de relación de la palabra con la actividad mental, las ideas, las opiniones y los juicios."@es ;
+         rdfs:label "Pensamiento"@es ,
+                    "Thought"@en .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/TimeNaming
+:TimeNaming rdf:type owl:Class ;
+            rdfs:subClassOf :RecognitionTime ;
+            rdfs:comment "Se refiere al tiempo de nombrado de la palabra, esto es, de lectura de la palabra en voz alta."@en ,
+                         "Se refiere al tiempo de nombrado de la palabra, esto es, de lectura de la palabra en voz alta."@es ;
+            rdfs:label "Naming time"@en ,
+                       "Tiempo de nombrado"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/TimeTdl
+:TimeTdl rdf:type owl:Class ;
+         rdfs:subClassOf :RecognitionTime ;
+         rdfs:comment "La variable tiempo de respuesta en tareas de Decisión Léxica se refiere al tiempo que tarda un participante en reconocer si un estímulo presentado es una palabra real, esto es, que existe en el idioma."@es ,
+                      "The variable response time in Lexical Decision tasks refers to the time it takes for a participant to recognize whether a presented stimulus is a real word, that is, one that exists in the language."@en ;
+         rdfs:label "Response time (TDL)"@en ,
+                    "Tiempo de respuesta (LDT)"@es .
+
+
+###  https://www.usc.gal/pcc/app/emofinder/Valence
+:Valence rdf:type owl:Class ;
+         rdfs:subClassOf :EmotionalDimension ;
+         rdfs:comment "La valencia hace referencia al nivel de agrado o desagrado que evoca una palabra, es decir, cuán positiva o negativa le resulta a la persona."@es ,
+                      "Valence refers to the level of pleasantness or unpleasantness evoked by a word, that is, how positive or negative it feels to the person."@en ;
+         rdfs:label "Valence"@en ,
+                    "Valencia"@es .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://www.usc.gal/pcc/app/emofinder/kos/Category
+<https://www.usc.gal/pcc/app/emofinder/kos/Category> rdf:type owl:NamedIndividual .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:value rdfs:label "recognitionTime"@en .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

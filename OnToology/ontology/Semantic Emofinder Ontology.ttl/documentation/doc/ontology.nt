@@ -1,0 +1,296 @@
+<https://www.usc.gal/pcc/app/emofinder/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.usc.gal/pcc/app/emofinder/> <http://purl.org/dc/elements/1.1/creator> "Óscar Hidlago Gerpe" .
+<https://www.usc.gal/pcc/app/emofinder/> <http://purl.org/dc/elements/1.1/title> "Ontology for emotianal words - Semantic Emofinder" .
+<https://www.usc.gal/pcc/app/emofinder/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://www.usc.gal/pcc/app/emofinder/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2004/02/skos/core#inScheme
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/2004/02/skos/core#inScheme> <http://www.w3.org/2000/01/rdf-schema#label> "in scheme" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/affects
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.usc.gal/pcc/app/emofinder/Word> .
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/2000/01/rdf-schema#label> "affects" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/article
+<https://www.usc.gal/pcc/app/emofinder/article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/article> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/articleLink
+<https://www.usc.gal/pcc/app/emofinder/articleLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/articleLink> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/category
+<https://www.usc.gal/pcc/app/emofinder/category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/category> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.usc.gal/pcc/app/emofinder/Word> .
+<https://www.usc.gal/pcc/app/emofinder/category> <http://www.w3.org/2000/01/rdf-schema#range> _:genid1 .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#hasValue> <https://www.usc.gal/pcc/app/emofinder/kos/Category> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/2004/02/skos/core#inScheme> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.w3.org/2004/02/skos/core#Concept> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+<https://www.usc.gal/pcc/app/emofinder/category> <http://www.w3.org/2000/01/rdf-schema#label> "category" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/extractedFrom
+<https://www.usc.gal/pcc/app/emofinder/extractedFrom> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/extractedFrom> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/extractedFrom> <http://www.w3.org/2000/01/rdf-schema#range> <https://www.usc.gal/pcc/app/emofinder/WordDatabase> .
+<https://www.usc.gal/pcc/app/emofinder/extractedFrom> <http://www.w3.org/2000/01/rdf-schema#label> "extracted from" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/isPublic
+<https://www.usc.gal/pcc/app/emofinder/isPublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/isPublic> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Boolean> .
+<http://www.w3.org/2001/XMLSchema#Boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/mean
+<https://www.usc.gal/pcc/app/emofinder/mean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/mean> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Float> .
+<http://www.w3.org/2001/XMLSchema#Float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/name
+<https://www.usc.gal/pcc/app/emofinder/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#String> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/standarDeviation
+<https://www.usc.gal/pcc/app/emofinder/standarDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/standarDeviation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Float> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/value
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Float> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://www.usc.gal/pcc/app/emofinder/article
+<https://www.usc.gal/pcc/app/emofinder/article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/articleLink
+<https://www.usc.gal/pcc/app/emofinder/articleLink> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/isPublic
+<https://www.usc.gal/pcc/app/emofinder/isPublic> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/mean
+<https://www.usc.gal/pcc/app/emofinder/mean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/name
+<https://www.usc.gal/pcc/app/emofinder/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/standarDeviation
+<https://www.usc.gal/pcc/app/emofinder/standarDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/value
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#Boolean
+# 
+# http://www.w3.org/2001/XMLSchema#Float
+# 
+# http://www.w3.org/2001/XMLSchema#String
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/AcquisitionAge
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/OtherProperties> .
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition Age" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Anger
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/2000/01/rdf-schema#label> "Anger" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Annotation
+<https://www.usc.gal/pcc/app/emofinder/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Arousal
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/2000/01/rdf-schema#label> "Arousal" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Concreteness
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/OtherProperties> .
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/2000/01/rdf-schema#label> "Concreteness" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/ContextualAvailability
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/OtherProperties> .
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/2000/01/rdf-schema#label> "Contextual Availability" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Disgust
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/2000/01/rdf-schema#label> "Disgust" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Dominance
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/2000/01/rdf-schema#label> "Dominance" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/EmotionalCategory
+<https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Emotional Category" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/EmotionalDimension
+<https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Emotional Dimension" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Familiarity
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/OtherProperties> .
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/2000/01/rdf-schema#label> "Familiarity" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Fear
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/2000/01/rdf-schema#label> "Fear" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Happiness
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/2000/01/rdf-schema#label> "Happiness" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Imageability
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/OtherProperties> .
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/2000/01/rdf-schema#label> "Imageability" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/OtherProperties
+<https://www.usc.gal/pcc/app/emofinder/OtherProperties> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/OtherProperties> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/OtherProperties> <http://www.w3.org/2000/01/rdf-schema#label> "Other Properties" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/RecognitionTime
+<https://www.usc.gal/pcc/app/emofinder/RecognitionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionTime> <http://www.w3.org/2000/01/rdf-schema#label> "Recognition Time" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Sadness
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/2000/01/rdf-schema#label> "Sadness" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/SensoryExperience
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/OtherProperties> .
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/2000/01/rdf-schema#label> "Sensory Experience" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/TimeNaming
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/RecognitionTime> .
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/2000/01/rdf-schema#label> "Time Naming" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/TimeTdl
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/RecognitionTime> .
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/2000/01/rdf-schema#label> "Time Tdl" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Valence
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/2000/01/rdf-schema#label> "Valence" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Word
+<https://www.usc.gal/pcc/app/emofinder/Word> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Word> <http://www.w3.org/2000/01/rdf-schema#label> "Word" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/WordDatabase
+<https://www.usc.gal/pcc/app/emofinder/WordDatabase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/WordDatabase> <http://www.w3.org/2000/01/rdf-schema#label> "Word Database" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://www.usc.gal/pcc/app/emofinder/kos/Category
+<https://www.usc.gal/pcc/app/emofinder/kos/Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://www.usc.gal/pcc/app/emofinder/article> <http://www.w3.org/2000/01/rdf-schema#label> "article" .
+# 
+<https://www.usc.gal/pcc/app/emofinder/articleLink> <http://www.w3.org/2000/01/rdf-schema#label> "article link" .
+# 
+<https://www.usc.gal/pcc/app/emofinder/isPublic> <http://www.w3.org/2000/01/rdf-schema#label> "is public" .
+# 
+<https://www.usc.gal/pcc/app/emofinder/mean> <http://www.w3.org/2000/01/rdf-schema#label> "mean" .
+# 
+<https://www.usc.gal/pcc/app/emofinder/name> <http://www.w3.org/2000/01/rdf-schema#label> "name" .
+# 
+<https://www.usc.gal/pcc/app/emofinder/standarDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "standar deviation" .
+# 
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/2000/01/rdf-schema#label> "value" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

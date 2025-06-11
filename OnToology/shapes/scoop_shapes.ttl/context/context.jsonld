@@ -1,0 +1,61 @@
+{
+  "@context" : {
+    "targetClass" : {
+      "@id" : "http://www.w3.org/ns/shacl#targetClass"
+    },
+    "class" : {
+      "@id" : "http://www.w3.org/ns/shacl#class"
+    },
+    "maxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#maxCount"
+    },
+    "minCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#minCount"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "path" : {
+      "@id" : "http://www.w3.org/ns/shacl#path"
+    },
+    "nodeKind" : {
+      "@id" : "http://www.w3.org/ns/shacl#nodeKind"
+    },
+    "name" : {
+      "@id" : "http://www.w3.org/ns/shacl#name"
+    },
+    "property" : {
+      "@id" : "http://www.w3.org/ns/shacl#property"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/ns/shacl#pattern"
+    },
+    "NodeShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#NodeShape"
+    },
+    "datatype" : {
+      "@id" : "http://www.w3.org/ns/shacl#datatype"
+    },
+    "qualifiedValueShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#qualifiedValueShape"
+    },
+    "qualifiedMinCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#qualifiedMinCount"
+    },
+    "PropertyShape" : {
+      "@id" : "http://www.w3.org/ns/shacl#PropertyShape"
+    },
+    "qualifiedMaxCount" : {
+      "@id" : "http://www.w3.org/ns/shacl#qualifiedMaxCount"
+    },
+    "description" : {
+      "@id" : "http://www.w3.org/ns/shacl#description"
+    },
+    "node" : {
+      "@id" : "http://www.w3.org/ns/shacl#node"
+    }
+  }
+}

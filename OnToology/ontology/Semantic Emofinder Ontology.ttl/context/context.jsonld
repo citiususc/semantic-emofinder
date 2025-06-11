@@ -1,0 +1,137 @@
+{
+  "@context" : {
+    "Annotation" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+    },
+    "Arousal" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Arousal"
+    },
+    "Disgust" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Disgust"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "articleLink" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/articleLink"
+    },
+    "Anger" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Anger"
+    },
+    "Dominance" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Dominance"
+    },
+    "RecognitionTime" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionTime"
+    },
+    "mean" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/mean"
+    },
+    "AcquisitionAge" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/AcquisitionAge"
+    },
+    "extractedFrom" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/extractedFrom",
+      "@type" : "@id"
+    },
+    "Concreteness" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Concreteness"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "article" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/article"
+    },
+    "EmotionalCategory" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalCategory"
+    },
+    "ContextualAvailability" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/ContextualAvailability"
+    },
+    "TimeTdl" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/TimeTdl"
+    },
+    "EmotionalDimension" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+    },
+    "Familiarity" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Familiarity"
+    },
+    "affects" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/affects",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Valence" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Valence"
+    },
+    "name" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/name"
+    },
+    "value" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/value"
+    },
+    "Happiness" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Happiness"
+    },
+    "OtherProperties" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/OtherProperties"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "Sadness" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Sadness"
+    },
+    "String" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#String"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "TimeNaming" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/TimeNaming"
+    },
+    "WordDatabase" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/WordDatabase"
+    },
+    "SensoryExperience" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/SensoryExperience"
+    },
+    "Word" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Word"
+    },
+    "Fear" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Fear"
+    },
+    "Imageability" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Imageability"
+    },
+    "category" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/category",
+      "@type" : "@id"
+    },
+    "isPublic" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/isPublic"
+    },
+    "Float" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Float"
+    },
+    "inScheme" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#inScheme",
+      "@type" : "@id"
+    },
+    "standarDeviation" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/standarDeviation"
+    },
+    "Boolean" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Boolean"
+    }
+  }
+}
