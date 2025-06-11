@@ -1,0 +1,230 @@
+{
+  "@context" : {
+    "Contentment" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Contentment"
+    },
+    "Annotation" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "entry" : {
+      "@id" : "http://www.w3.org/ns/lemon/lime#entry",
+      "@type" : "@id"
+    },
+    "Arousal" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Arousal"
+    },
+    "Disgust" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Disgust"
+    },
+    "BodyExpression" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/BodyExpression"
+    },
+    "term_status" : {
+      "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "lexicalForm" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#lexicalForm",
+      "@type" : "@id"
+    },
+    "Dataset" : {
+      "@id" : "http://rdfs.org/ns/void#Dataset"
+    },
+    "standardDeviation" : {
+      "@id" : "https://w3id.org/riverbench/schema/metadata#standardDeviation",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "RecognitionErrorPercentage" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "Anger" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Anger"
+    },
+    "Dominance" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Dominance"
+    },
+    "Evaluation" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Evaluation"
+    },
+    "Interoception" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Interoception"
+    },
+    "canonicalForm" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#canonicalForm",
+      "@type" : "@id"
+    },
+    "RecognitionTime" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionTime"
+    },
+    "mean" : {
+      "@id" : "https://w3id.org/riverbench/schema/metadata#mean",
+      "@type" : "http://www.w3.org/2001/XMLSchema#double"
+    },
+    "AcquisitionAge" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/AcquisitionAge"
+    },
+    "Morality" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Morality"
+    },
+    "Concreteness" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Concreteness"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "Concept" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#Concept"
+    },
+    "Lexicon" : {
+      "@id" : "http://www.w3.org/ns/lemon/lime#Lexicon"
+    },
+    "ContextualAvailability" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/ContextualAvailability"
+    },
+    "Expression" : {
+      "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"
+    },
+    "TimeTdl" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/TimeTdl"
+    },
+    "EmotionalDimension" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+    },
+    "Familiarity" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Familiarity"
+    },
+    "Pleasure" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Pleasure"
+    },
+    "affects" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/affects",
+      "@type" : "@id"
+    },
+    "DiscreteEmotionalCategory" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/elements/1.1/creator"
+    },
+    "Valence" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Valence"
+    },
+    "Article" : {
+      "@id" : "http://purl.org/ontology/bibo/Article"
+    },
+    "Awe" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Awe"
+    },
+    "value" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/value"
+    },
+    "Happiness" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Happiness"
+    },
+    "LexicalEntry" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+    },
+    "statisticalProperty" : {
+      "@id" : "https://w3id.org/riverbench/schema/metadata#statisticalProperty"
+    },
+    "Form" : {
+      "@id" : "http://www.w3.org/ns/lemon/ontolex#Form"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights",
+      "@type" : "@id"
+    },
+    "createdWith" : {
+      "@id" : "https://w3id.org/mod#createdWith"
+    },
+    "Amusement" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Amusement"
+    },
+    "Excitement" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Excitement"
+    },
+    "Sadness" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Sadness"
+    },
+    "ObjectiveAcquisitionAge" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "String" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#String"
+    },
+    "Feeling" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Feeling"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/elements/1.1/title"
+    },
+    "TimeNaming" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/TimeNaming"
+    },
+    "Iconicity" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Iconicity"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/elements/1.1/source"
+    },
+    "Thought" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Thought"
+    },
+    "SensoryExperience" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/SensoryExperience"
+    },
+    "Relief" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Relief"
+    },
+    "ObjectiveEstimation" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation"
+    },
+    "Fear" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Fear"
+    },
+    "SubjectiveDimension" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+    },
+    "Imageability" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Imageability"
+    },
+    "Prototipicality" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Prototipicality"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Document" : {
+      "@id" : "http://purl.org/ontology/bibo/Document"
+    },
+    "language" : {
+      "@id" : "http://www.w3.org/ns/lemon/lime#language"
+    },
+    "Action" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Action"
+    },
+    "Float" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Float"
+    },
+    "SocialInteraction" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/SocialInteraction"
+    },
+    "Serenity" : {
+      "@id" : "https://www.usc.gal/pcc/app/emofinder/Serenity"
+    },
+    "Boolean" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#Boolean"
+    }
+  }
+}

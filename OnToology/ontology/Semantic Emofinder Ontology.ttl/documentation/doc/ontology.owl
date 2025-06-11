@@ -1,0 +1,572 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.usc.gal/pcc/app/emofinder/"
+     xml:base="https://www.usc.gal/pcc/app/emofinder/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://www.usc.gal/pcc/app/emofinder/">
+        <dc:creator>Óscar Hidlago Gerpe</dc:creator>
+        <dc:title>Ontology for emotianal words - Semantic Emofinder</dc:title>
+        <owl:versionInfo>1.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme">
+        <rdfs:label>in scheme</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/affects -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/affects">
+        <rdfs:domain rdf:resource="https://www.usc.gal/pcc/app/emofinder/Annotation"/>
+        <rdfs:range rdf:resource="https://www.usc.gal/pcc/app/emofinder/Word"/>
+        <rdfs:label>affects</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/article -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/article">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/articleLink -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/articleLink">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/category -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/category">
+        <rdfs:domain rdf:resource="https://www.usc.gal/pcc/app/emofinder/Word"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.w3.org/2004/02/skos/core#inScheme"/>
+                        <owl:hasValue rdf:resource="https://www.usc.gal/pcc/app/emofinder/kos/Category"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:label>category</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/extractedFrom -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/extractedFrom">
+        <rdfs:domain rdf:resource="https://www.usc.gal/pcc/app/emofinder/Annotation"/>
+        <rdfs:range rdf:resource="https://www.usc.gal/pcc/app/emofinder/WordDatabase"/>
+        <rdfs:label>extracted from</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/isPublic -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/isPublic">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Boolean"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/mean -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/mean">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Float"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/name -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/name">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#String"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/standarDeviation -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/standarDeviation">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Float"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/value -->
+
+
+    <owl:ObjectProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/value">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Float"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/article -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/article"/>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/articleLink -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/articleLink"/>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/isPublic -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/isPublic"/>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/mean -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/mean"/>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/name -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/name"/>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/standarDeviation -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/standarDeviation"/>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/value -->
+
+
+    <owl:DatatypeProperty rdf:about="https://www.usc.gal/pcc/app/emofinder/value"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Boolean -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Boolean"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#Float -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#Float"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#String -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2001/XMLSchema#String"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept">
+        <rdfs:label>Concept</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/AcquisitionAge -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/AcquisitionAge">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/OtherProperties"/>
+        <rdfs:label>Acquisition Age</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Anger -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Anger">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalCategory"/>
+        <rdfs:label>Anger</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Annotation -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Annotation">
+        <rdfs:label>Annotation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Arousal -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Arousal">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"/>
+        <rdfs:label>Arousal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Concreteness -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Concreteness">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/OtherProperties"/>
+        <rdfs:label>Concreteness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/ContextualAvailability -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/ContextualAvailability">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/OtherProperties"/>
+        <rdfs:label>Contextual Availability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Disgust -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Disgust">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalCategory"/>
+        <rdfs:label>Disgust</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Dominance -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Dominance">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"/>
+        <rdfs:label>Dominance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/EmotionalCategory -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/EmotionalCategory">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/Annotation"/>
+        <rdfs:label>Emotional Category</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/EmotionalDimension -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/EmotionalDimension">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/Annotation"/>
+        <rdfs:label>Emotional Dimension</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Familiarity -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Familiarity">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/OtherProperties"/>
+        <rdfs:label>Familiarity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Fear -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Fear">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalCategory"/>
+        <rdfs:label>Fear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Happiness -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Happiness">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalCategory"/>
+        <rdfs:label>Happiness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Imageability -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Imageability">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/OtherProperties"/>
+        <rdfs:label>Imageability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/OtherProperties -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/OtherProperties">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/Annotation"/>
+        <rdfs:label>Other Properties</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/RecognitionTime -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/RecognitionTime">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/Annotation"/>
+        <rdfs:label>Recognition Time</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Sadness -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Sadness">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalCategory"/>
+        <rdfs:label>Sadness</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/SensoryExperience -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/SensoryExperience">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/OtherProperties"/>
+        <rdfs:label>Sensory Experience</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/TimeNaming -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/TimeNaming">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/RecognitionTime"/>
+        <rdfs:label>Time Naming</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/TimeTdl -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/TimeTdl">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/RecognitionTime"/>
+        <rdfs:label>Time Tdl</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Valence -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Valence">
+        <rdfs:subClassOf rdf:resource="https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"/>
+        <rdfs:label>Valence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/Word -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/Word">
+        <rdfs:label>Word</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/WordDatabase -->
+
+
+    <owl:Class rdf:about="https://www.usc.gal/pcc/app/emofinder/WordDatabase">
+        <rdfs:label>Word Database</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://www.usc.gal/pcc/app/emofinder/kos/Category -->
+
+
+    <owl:NamedIndividual rdf:about="https://www.usc.gal/pcc/app/emofinder/kos/Category"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="https://www.usc.gal/pcc/app/emofinder/article">
+        <rdfs:label>article</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.usc.gal/pcc/app/emofinder/articleLink">
+        <rdfs:label>article link</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.usc.gal/pcc/app/emofinder/isPublic">
+        <rdfs:label>is public</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.usc.gal/pcc/app/emofinder/mean">
+        <rdfs:label>mean</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.usc.gal/pcc/app/emofinder/name">
+        <rdfs:label>name</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.usc.gal/pcc/app/emofinder/standarDeviation">
+        <rdfs:label>standar deviation</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.usc.gal/pcc/app/emofinder/value">
+        <rdfs:label>value</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

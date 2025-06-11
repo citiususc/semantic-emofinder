@@ -1,0 +1,1177 @@
+[ {
+  "@id" : "_:genid1",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionTime"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/value"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/lime#entry"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/lime#language"
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#Form"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#lexicalForm"
+  } ]
+}, {
+  "@id" : "_:genid5",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#maxQualifiedCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onClass" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#Form"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#canonicalForm"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/source",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "A related resource from which the described resource is derived."
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/elements/1.1/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/rights",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2004/02/skos/core#scopeNote" : [ {
+    "@language" : "en",
+    "@value" : "Used to describe rights related to a bibliographic resource."
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/Article",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "http://purl.org/ontology/bibo/"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Article"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://purl.org/ontology/bibo/Document"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://purl.org/ontology/bibo/Document",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://rdfs.org/ns/void#Dataset",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#Boolean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#Float",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#String",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#Concept",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Concept"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/lime#Lexicon",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A lexicon represents a collection of lexical entries for a particular language or domain."
+  }, {
+    "@language" : "ru",
+    "@value" : "Лексикон представляет собой набор словарных единиц для определенного языка или домена."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://www.w3.org/ns/lemon/lime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "it",
+    "@value" : "Lessico"
+  }, {
+    "@language" : "nl",
+    "@value" : "Lexicon"
+  }, {
+    "@language" : "de",
+    "@value" : "Lexikon"
+  }, {
+    "@language" : "fr",
+    "@value" : "Lexique"
+  }, {
+    "@language" : "af",
+    "@value" : "leksikon"
+  }, {
+    "@language" : "en",
+    "@value" : "lexicon"
+  }, {
+    "@language" : "ro",
+    "@value" : "lexicon"
+  }, {
+    "@language" : "es",
+    "@value" : "lexicón"
+  }, {
+    "@language" : "sv",
+    "@value" : "lexikon"
+  }, {
+    "@language" : "ru",
+    "@value" : "лексикон"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://rdfs.org/ns/void#Dataset"
+  }, {
+    "@id" : "_:genid2"
+  }, {
+    "@id" : "_:genid3"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/lime#entry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "The 'entry' property relates a lexicon to one of the lexical entries contained in it."
+  }, {
+    "@language" : "ru",
+    "@value" : "Свойство 'запись' связывает лексикон с одной из содержащихся в нем словарных единиц."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/lime#Lexicon"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@value" : "http://www.w3.org/ns/lemon/lime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Eintrag"
+  }, {
+    "@language" : "nl",
+    "@value" : "Item"
+  }, {
+    "@language" : "es",
+    "@value" : "entrada"
+  }, {
+    "@language" : "pt",
+    "@value" : "entrada"
+  }, {
+    "@language" : "it",
+    "@value" : "entrata"
+  }, {
+    "@language" : "en",
+    "@value" : "entry"
+  }, {
+    "@language" : "fr",
+    "@value" : "entrée"
+  }, {
+    "@language" : "sv",
+    "@value" : "ingång"
+  }, {
+    "@language" : "af",
+    "@value" : "inskrywing"
+  }, {
+    "@language" : "ro",
+    "@value" : "înregistrare"
+  }, {
+    "@language" : "ru",
+    "@value" : "запись"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/lime#language",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/ontolex#Form",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/ontolex#LexicalEntry",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "ru",
+    "@value" : "'Словарная единица' представляет собой единицу анализа словаря, которая состоит из совокупности грамматически связанных форм и совокупности основных значений, ассоциирующихся со всеми этими формами. 'Словарная единица' - это слово, словосочетание или аффикс одной части речи, морфологической модели, этимологии и набора значений."
+  }, {
+    "@language" : "en",
+    "@value" : "A lexical entry represents a unit of analysis of the lexicon that consists of a set of forms that are grammatically related and a set of base meanings that are associated with all of these forms. Thus, a lexical entry is a word, multiword expression or affix with a single part-of-speech, morphological pattern, etymology and set of senses."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#isDefinedBy" : [ {
+    "@id" : "http://www.w3.org/ns/lemon/ontolex"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "de",
+    "@value" : "Lexikoneintrag"
+  }, {
+    "@language" : "es",
+    "@value" : "entrada léxica"
+  }, {
+    "@language" : "it",
+    "@value" : "entrata lessicale"
+  }, {
+    "@language" : "fr",
+    "@value" : "entrée lexicale"
+  }, {
+    "@language" : "af",
+    "@value" : "leksikale inskrywing"
+  }, {
+    "@language" : "en",
+    "@value" : "lexical entry"
+  }, {
+    "@language" : "nl",
+    "@value" : "lexikaal item"
+  }, {
+    "@language" : "sv",
+    "@value" : "lexikoningång"
+  }, {
+    "@language" : "ro",
+    "@value" : "înregistrare lexicală"
+  }, {
+    "@language" : "ru",
+    "@value" : "словарная единица"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression"
+  }, {
+    "@id" : "http://www.w3.org/2002/07/owl#Thing"
+  }, {
+    "@id" : "_:genid4"
+  }, {
+    "@id" : "_:genid5"
+  } ],
+  "http://www.w3.org/2003/06/sw-vocab-status/ns#term_status" : [ {
+    "@value" : "stable"
+  } ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/ontolex#canonicalForm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "http://www.w3.org/ns/lemon/ontolex#lexicalForm",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/riverbench/schema/metadata#mean",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Arithmetic mean of a distribution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Mean"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/riverbench/schema/metadata#statisticalProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/riverbench/schema/metadata#standardDeviation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Standard deviation of a distribution"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Standard deviation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#double"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subPropertyOf" : [ {
+    "@id" : "https://w3id.org/riverbench/schema/metadata#statisticalProperty"
+  } ]
+}, {
+  "@id" : "https://w3id.org/riverbench/schema/metadata#statisticalProperty",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/elements/1.1/creator" : [ {
+    "@value" : "David Chaves Fraga"
+  }, {
+    "@value" : "Patricia Martín Chozas"
+  }, {
+    "@value" : "Óscar Hidlago Gerpe"
+  } ],
+  "http://purl.org/dc/elements/1.1/title" : [ {
+    "@value" : "Ontology for emotional words - Semantic Emofinder"
+  } ],
+  "http://www.w3.org/2002/07/owl#imports" : [ {
+    "@id" : "http://www.w3.org/2004/02/skos/core"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/AcquisitionAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Esta variable indica la edad aproximada (en años) a la que un individuo cree que aprendió una determinada palabra."
+  }, {
+    "@language" : "en",
+    "@value" : "This variable indicates the approximate age (in years) at which an individual believes they learned a particular word."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Acquisition Age"
+  }, {
+    "@language" : "es",
+    "@value" : "Edad de adquisición"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Action",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word's connection with acting, doing, and influencing."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con actuar, hacer, e influir."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Action"
+  }, {
+    "@language" : "es",
+    "@value" : "Actuación"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Amusement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of amusement conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de diversión que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Amusement"
+  }, {
+    "@language" : "es",
+    "@value" : "Diversión"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Anger",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of anger conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de enfado que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Anger"
+  }, {
+    "@language" : "es",
+    "@value" : "Enfado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Annotation"
+  }, {
+    "@language" : "es",
+    "@value" : "Anotación"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Arousal",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Arousal refers to the level of calmness or excitement evoked by a word, that is, how relaxing or intense it feels to the person."
+  }, {
+    "@language" : "es",
+    "@value" : "La activación hace referencia al nivel de calma o excitación que evoca una palabra, es decir, cuán relajante o intensa le resulta a la persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Activación"
+  }, {
+    "@language" : "en",
+    "@value" : "Arousal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Awe",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of awe conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de admiración que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Admiración"
+  }, {
+    "@language" : "en",
+    "@value" : "Awe"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/BodyExpression",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word's connection with changes in parts of the body such as the voice, posture, gestures, or facial expression."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con cambios en partes del cuerpo como la voz, la postura, los gestos, o la expresión de la cara"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Body Expression"
+  }, {
+    "@language" : "es",
+    "@value" : "Expresión Corporal"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Concreteness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Concreteness refers to the extent to which a word refers to an entity that can be perceived with the senses."
+  }, {
+    "@language" : "es",
+    "@value" : "La concreción se refiere a hasta qué punto la palabra se refiere a una entidad que puede percibirse con los sentidos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Concreción"
+  }, {
+    "@language" : "en",
+    "@value" : "Concreteness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Contentment",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of contentment conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de satisfacción que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contentment"
+  }, {
+    "@language" : "es",
+    "@value" : "Satisfacción"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/ContextualAvailability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Contextual availability refers to the ease with which we can think of a context to which the word could be associated."
+  }, {
+    "@language" : "es",
+    "@value" : "La disponibilidad contextual se refiere a la facilidad con la que podemos pensar en un contexto al cual se podría asociar la palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Contextual Availability"
+  }, {
+    "@language" : "es",
+    "@value" : "Disponibilidad contextual"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Categoría emocional discreta"
+  }, {
+    "@language" : "en",
+    "@value" : "Discrete emotional category"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Disgust",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of disgust conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de asco que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Asco"
+  }, {
+    "@language" : "en",
+    "@value" : "Disgust"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Dominance",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dominance refers to the perception of control evoked by a word, that is, the extent to which a person feels weak/submissive or strong/dominant in relation to the concept the word represents."
+  }, {
+    "@language" : "es",
+    "@value" : "La dominancia hace referencia a la percepción de control que evoca una palabra, es decir, hasta qué punto la persona se siente débil/sumisa o fuerte/dominante ante el concepto que designa la palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Dominance"
+  }, {
+    "@language" : "es",
+    "@value" : "Dominancia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dimensión emocional"
+  }, {
+    "@language" : "en",
+    "@value" : "Emotional Dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Evaluation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word's connection with situations that are important for well-being and/or survival."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con situaciones importantes para el bienestar y/o supervivencia."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Evaluación"
+  }, {
+    "@language" : "en",
+    "@value" : "Evaluation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Excitement",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of excitement conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de entusiasmo que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Entusiasmo"
+  }, {
+    "@language" : "en",
+    "@value" : "Excitement"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Familiarity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Familiarity refers to how familiar or known a word feels to a person."
+  }, {
+    "@language" : "es",
+    "@value" : "La familiaridad hace referencia a cuán familiar o conocida resulta una palabra para la persona."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Familiaridad"
+  }, {
+    "@language" : "en",
+    "@value" : "Familiarity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Fear",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of fear conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de miedo que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Fear"
+  }, {
+    "@language" : "es",
+    "@value" : "Miedo"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Feeling",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word's connection with feelings."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con sentimientos."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Feeling"
+  }, {
+    "@language" : "es",
+    "@value" : "Sentimiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Happiness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of happiness conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de felicidad que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Felicidad"
+  }, {
+    "@language" : "en",
+    "@value" : "Happiness"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Iconicity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word’s sound relation to its meaning."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación del sonido de la palabra con su significado."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Iconicidad"
+  }, {
+    "@language" : "en",
+    "@value" : "Iconicity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Imageability",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Imaginability refers to the ease with which a mental image of the concept designated by the word can be formed."
+  }, {
+    "@language" : "es",
+    "@value" : "La imaginabilidad hace referencia a la facilidad para formarse una imagen mental del concepto que designa la palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Imageability"
+  }, {
+    "@language" : "es",
+    "@value" : "Imaginabilidad"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Interoception",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word's connection with internal bodily sensations."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con sensaciones corporales internas."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Interocepción"
+  }, {
+    "@language" : "en",
+    "@value" : "Interoception"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Morality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word's connection with morality, rules, or any other principle that guides behavior."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con la moralidad, las reglas, o cualquier otro principio que guía la conducta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Moralidad"
+  }, {
+    "@language" : "en",
+    "@value" : "Morality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the age at which the word was acquired."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere a la edad en la que se ha adquirido la palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Edad de adquisición objetiva"
+  }, {
+    "@language" : "en",
+    "@value" : "Objective Acquisition Age"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Estimación Objetiva"
+  }, {
+    "@language" : "en",
+    "@value" : "Objective Estimation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Pleasure",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of pleasure conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de placer que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Placer"
+  }, {
+    "@language" : "en",
+    "@value" : "Pleasure"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Prototipicality",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word’s connection with an emotion."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con una emoción."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Prototipicalidad"
+  }, {
+    "@language" : "en",
+    "@value" : "Prototipicality"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "%E"
+  }, {
+    "@language" : "en",
+    "@value" : "Percentage of incorrect word identification in a lexical decision task."
+  }, {
+    "@language" : "es",
+    "@value" : "Porcentaje de identificación incorrecta de la palabra en una tarea de decisión léxica."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Porcentaje de error de reconocimiento (LDT)"
+  }, {
+    "@language" : "en",
+    "@value" : "Recognition Error Percentage"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionTime"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionTime",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Recognition Time"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiempo de reconocimiento"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Relief",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "It refers to the degree of relief conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de alivio que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Alivio"
+  }, {
+    "@language" : "en",
+    "@value" : "Relief"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Sadness",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of sadness conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de tristeza que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Sadness"
+  }, {
+    "@language" : "es",
+    "@value" : "Tristeza"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/SensoryExperience",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "Indica hasta qué punto la palabra evoca una experiencia sensorial/perceptiva (sabor, tacto, vista, sonido y olor)."
+  }, {
+    "@language" : "en",
+    "@value" : "It indicates the extent to which the word evokes a sensory/perceptual experience (taste, touch, sight, sound, and smell)."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Experiencia sensorial"
+  }, {
+    "@language" : "en",
+    "@value" : "Sensory Experience"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Serenity",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of serenity conveyed by a word."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de serenidad que transmite una palabra."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Serenidad"
+  }, {
+    "@language" : "en",
+    "@value" : "Serenity"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/SocialInteraction",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Interacción social"
+  }, {
+    "@language" : "en",
+    "@value" : "Social Interaction"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Dimensión subjetiva"
+  }, {
+    "@language" : "en",
+    "@value" : "Subjective Dimension"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Thought",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "It refers to the degree of the word's connection with mental activity, ideas, opinions, and judgments."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al grado de relación de la palabra con la actividad mental, las ideas, las opiniones y los juicios."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "Pensamiento"
+  }, {
+    "@language" : "en",
+    "@value" : "Thought"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/TimeNaming",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Se refiere al tiempo de nombrado de la palabra, esto es, de lectura de la palabra en voz alta."
+  }, {
+    "@language" : "es",
+    "@value" : "Se refiere al tiempo de nombrado de la palabra, esto es, de lectura de la palabra en voz alta."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Naming time"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiempo de nombrado"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionTime"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/TimeTdl",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La variable tiempo de respuesta en tareas de Decisión Léxica se refiere al tiempo que tarda un participante en reconocer si un estímulo presentado es una palabra real, esto es, que existe en el idioma."
+  }, {
+    "@language" : "en",
+    "@value" : "The variable response time in Lexical Decision tasks refers to the time it takes for a participant to recognize whether a presented stimulus is a real word, that is, one that exists in the language."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Response time (TDL)"
+  }, {
+    "@language" : "es",
+    "@value" : "Tiempo de respuesta (LDT)"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/RecognitionTime"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/Valence",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "es",
+    "@value" : "La valencia hace referencia al nivel de agrado o desagrado que evoca una palabra, es decir, cuán positiva o negativa le resulta a la persona."
+  }, {
+    "@language" : "en",
+    "@value" : "Valence refers to the level of pleasantness or unpleasantness evoked by a word, that is, how positive or negative it feels to the person."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "Valence"
+  }, {
+    "@language" : "es",
+    "@value" : "Valencia"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/EmotionalDimension"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/affects",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Esta propiedad asigna una Anotación a una Lexical Entry."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://www.usc.gal/pcc/app/emofinder/Annotation"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "es",
+    "@value" : "affecta a"
+  }, {
+    "@language" : "en",
+    "@value" : "affects"
+  } ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/kos/Category",
+  "@type" : [ "http://www.w3.org/2002/07/owl#NamedIndividual" ]
+}, {
+  "@id" : "https://www.usc.gal/pcc/app/emofinder/value",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty", "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "_:genid1"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@language" : "en",
+    "@value" : "recognitionTime"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#Float"
+  } ]
+} ]

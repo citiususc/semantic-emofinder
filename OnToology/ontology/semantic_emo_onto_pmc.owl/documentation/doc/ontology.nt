@@ -1,0 +1,561 @@
+<https://www.usc.gal/pcc/app/emofinder/> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://www.usc.gal/pcc/app/emofinder/> <http://www.w3.org/2002/07/owl#imports> <http://www.w3.org/2004/02/skos/core> .
+<https://www.usc.gal/pcc/app/emofinder/> <http://purl.org/dc/elements/1.1/creator> "David Chaves Fraga" .
+<https://www.usc.gal/pcc/app/emofinder/> <http://purl.org/dc/elements/1.1/creator> "Patricia Martín Chozas" .
+<https://www.usc.gal/pcc/app/emofinder/> <http://purl.org/dc/elements/1.1/creator> "Óscar Hidlago Gerpe" .
+<https://www.usc.gal/pcc/app/emofinder/> <http://purl.org/dc/elements/1.1/title> "Ontology for emotional words - Semantic Emofinder" .
+<https://www.usc.gal/pcc/app/emofinder/> <http://www.w3.org/2002/07/owl#versionInfo> "1.0" .
+<https://www.usc.gal/pcc/app/emofinder/> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/elements/1.1/creator
+<http://purl.org/dc/elements/1.1/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/elements/1.1/source
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+<http://purl.org/dc/elements/1.1/source> <http://www.w3.org/2004/02/skos/core#scopeNote> "A related resource from which the described resource is derived."@en .
+# 
+# http://purl.org/dc/elements/1.1/title
+<http://purl.org/dc/elements/1.1/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2004/02/skos/core#scopeNote
+<http://www.w3.org/2004/02/skos/core#scopeNote> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/rights
+<http://purl.org/dc/terms/rights> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://purl.org/dc/terms/rights> <http://www.w3.org/2004/02/skos/core#scopeNote> "Used to describe rights related to a bibliographic resource."@en .
+# 
+# http://www.w3.org/ns/lemon/lime#entry
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.w3.org/ns/lemon/lime#Lexicon> .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#comment> "The 'entry' property relates a lexicon to one of the lexical entries contained in it."@en .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#comment> "Свойство 'запись' связывает лексикон с одной из содержащихся в нем словарных единиц."@ru .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/ns/lemon/lime" .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "Eintrag"@de .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "Item"@nl .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "entrada"@es .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "entrada"@pt .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "entrata"@it .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "entry"@en .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "entrée"@fr .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "ingång"@sv .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "inskrywing"@af .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "înregistrare"@ro .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2000/01/rdf-schema#label> "запись"@ru .
+<http://www.w3.org/ns/lemon/lime#entry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#canonicalForm
+<http://www.w3.org/ns/lemon/ontolex#canonicalForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# http://www.w3.org/ns/lemon/ontolex#lexicalForm
+<http://www.w3.org/ns/lemon/ontolex#lexicalForm> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/affects
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/2000/01/rdf-schema#domain> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta propiedad asigna una Anotación a una Lexical Entry."@en .
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/2000/01/rdf-schema#label> "affecta a"@es .
+<https://www.usc.gal/pcc/app/emofinder/affects> <http://www.w3.org/2000/01/rdf-schema#label> "affects"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/value
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#allValuesFrom> <https://www.usc.gal/pcc/app/emofinder/RecognitionTime> .
+_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://www.usc.gal/pcc/app/emofinder/value> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#Float> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/ns/lemon/lime#language
+<http://www.w3.org/ns/lemon/lime#language> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://w3id.org/riverbench/schema/metadata#mean
+<https://w3id.org/riverbench/schema/metadata#mean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/riverbench/schema/metadata#mean> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/riverbench/schema/metadata#statisticalProperty> .
+<https://w3id.org/riverbench/schema/metadata#mean> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/riverbench/schema/metadata#mean> <http://www.w3.org/2000/01/rdf-schema#comment> "Arithmetic mean of a distribution"@en .
+<https://w3id.org/riverbench/schema/metadata#mean> <http://www.w3.org/2000/01/rdf-schema#label> "Mean"@en .
+# 
+# https://w3id.org/riverbench/schema/metadata#standardDeviation
+<https://w3id.org/riverbench/schema/metadata#standardDeviation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/riverbench/schema/metadata#standardDeviation> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <https://w3id.org/riverbench/schema/metadata#statisticalProperty> .
+<https://w3id.org/riverbench/schema/metadata#standardDeviation> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<https://w3id.org/riverbench/schema/metadata#standardDeviation> <http://www.w3.org/2000/01/rdf-schema#comment> "Standard deviation of a distribution"@en .
+<https://w3id.org/riverbench/schema/metadata#standardDeviation> <http://www.w3.org/2000/01/rdf-schema#label> "Standard deviation"@en .
+# 
+# https://w3id.org/riverbench/schema/metadata#statisticalProperty
+<https://w3id.org/riverbench/schema/metadata#statisticalProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# https://www.usc.gal/pcc/app/emofinder/value
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/ontology/bibo/Article
+<http://purl.org/ontology/bibo/Article> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/ontology/bibo/Article> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://purl.org/ontology/bibo/Document> .
+<http://purl.org/ontology/bibo/Article> <http://www.w3.org/2000/01/rdf-schema#comment> "A written composition in prose, usually nonfiction, on a specific topic, forming an independent part of a book or other publication, as a newspaper or magazine."@en .
+<http://purl.org/ontology/bibo/Article> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://purl.org/ontology/bibo/"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<http://purl.org/ontology/bibo/Article> <http://www.w3.org/2000/01/rdf-schema#label> "Article"@en .
+<http://purl.org/ontology/bibo/Article> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://purl.org/ontology/bibo/Document
+<http://purl.org/ontology/bibo/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://rdfs.org/ns/void#Dataset
+<http://rdfs.org/ns/void#Dataset> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression
+<http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#Boolean
+<http://www.w3.org/2001/XMLSchema#Boolean> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#Float
+<http://www.w3.org/2001/XMLSchema#Float> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2001/XMLSchema#String
+<http://www.w3.org/2001/XMLSchema#String> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/2004/02/skos/core#Concept
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/2004/02/skos/core#Concept> <http://www.w3.org/2000/01/rdf-schema#label> "Concept" .
+# 
+# http://www.w3.org/ns/lemon/lime#Lexicon
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://rdfs.org/ns/void#Dataset> .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid2 .
+_:genid2 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/lemon/ontolex#LexicalEntry> .
+_:genid2 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid2 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/lime#entry> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid3 .
+_:genid3 <http://www.w3.org/2002/07/owl#cardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid3 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/lime#language> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#comment> "A lexicon represents a collection of lexical entries for a particular language or domain."@en .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#comment> "Лексикон представляет собой набор словарных единиц для определенного языка или домена."@ru .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> "http://www.w3.org/ns/lemon/lime" .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "Lessico"@it .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "Lexicon"@nl .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "Lexikon"@de .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "Lexique"@fr .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "leksikon"@af .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "lexicon"@en .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "lexicon"@ro .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "lexicón"@es .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "lexikon"@sv .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2000/01/rdf-schema#label> "лексикон"@ru .
+<http://www.w3.org/ns/lemon/lime#Lexicon> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# http://www.w3.org/ns/lemon/ontolex#Form
+<http://www.w3.org/ns/lemon/ontolex#Form> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.w3.org/ns/lemon/ontolex#LexicalEntry
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.ontologydesignpatterns.org/cp/owl/semiotics.owl#Expression> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.w3.org/2002/07/owl#Thing> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/lemon/ontolex#Form> .
+_:genid4 <http://www.w3.org/2002/07/owl#minQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid4 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/ontolex#lexicalForm> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> _:genid5 .
+_:genid5 <http://www.w3.org/2002/07/owl#onClass> <http://www.w3.org/ns/lemon/ontolex#Form> .
+_:genid5 <http://www.w3.org/2002/07/owl#maxQualifiedCardinality> "1"^^<http://www.w3.org/2001/XMLSchema#nonNegativeInteger> .
+_:genid5 <http://www.w3.org/2002/07/owl#onProperty> <http://www.w3.org/ns/lemon/ontolex#canonicalForm> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "'Словарная единица' представляет собой единицу анализа словаря, которая состоит из совокупности грамматически связанных форм и совокупности основных значений, ассоциирующихся со всеми этими формами. 'Словарная единица' - это слово, словосочетание или аффикс одной части речи, морфологической модели, этимологии и набора значений."@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#comment> "A lexical entry represents a unit of analysis of the lexicon that consists of a set of forms that are grammatically related and a set of base meanings that are associated with all of these forms. Thus, a lexical entry is a word, multiword expression or affix with a single part-of-speech, morphological pattern, etymology and set of senses."@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://www.w3.org/ns/lemon/ontolex> .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "Lexikoneintrag"@de .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrada léxica"@es .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrata lessicale"@it .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "entrée lexicale"@fr .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "leksikale inskrywing"@af .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "lexical entry"@en .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "lexikaal item"@nl .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "lexikoningång"@sv .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "înregistrare lexicală"@ro .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2000/01/rdf-schema#label> "словарная единица"@ru .
+<http://www.w3.org/ns/lemon/ontolex#LexicalEntry> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://www.usc.gal/pcc/app/emofinder/AcquisitionAge
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Esta variable indica la edad aproximada (en años) a la que un individuo cree que aprendió una determinada palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#comment> "This variable indicates the approximate age (in years) at which an individual believes they learned a particular word."@en .
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#label> "Acquisition Age"@en .
+<https://www.usc.gal/pcc/app/emofinder/AcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#label> "Edad de adquisición"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Action
+<https://www.usc.gal/pcc/app/emofinder/Action> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Action> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Action> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word's connection with acting, doing, and influencing."@en .
+<https://www.usc.gal/pcc/app/emofinder/Action> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con actuar, hacer, e influir."@es .
+<https://www.usc.gal/pcc/app/emofinder/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Action"@en .
+<https://www.usc.gal/pcc/app/emofinder/Action> <http://www.w3.org/2000/01/rdf-schema#label> "Actuación"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Amusement
+<https://www.usc.gal/pcc/app/emofinder/Amusement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Amusement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Amusement> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of amusement conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Amusement> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de diversión que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Amusement> <http://www.w3.org/2000/01/rdf-schema#label> "Amusement"@en .
+<https://www.usc.gal/pcc/app/emofinder/Amusement> <http://www.w3.org/2000/01/rdf-schema#label> "Diversión"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Anger
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of anger conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de enfado que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/2000/01/rdf-schema#label> "Anger"@en .
+<https://www.usc.gal/pcc/app/emofinder/Anger> <http://www.w3.org/2000/01/rdf-schema#label> "Enfado"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Annotation
+<https://www.usc.gal/pcc/app/emofinder/Annotation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Annotation"@en .
+<https://www.usc.gal/pcc/app/emofinder/Annotation> <http://www.w3.org/2000/01/rdf-schema#label> "Anotación"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Arousal
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/2000/01/rdf-schema#comment> "Arousal refers to the level of calmness or excitement evoked by a word, that is, how relaxing or intense it feels to the person."@en .
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/2000/01/rdf-schema#comment> "La activación hace referencia al nivel de calma o excitación que evoca una palabra, es decir, cuán relajante o intensa le resulta a la persona."@es .
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/2000/01/rdf-schema#label> "Activación"@es .
+<https://www.usc.gal/pcc/app/emofinder/Arousal> <http://www.w3.org/2000/01/rdf-schema#label> "Arousal"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Awe
+<https://www.usc.gal/pcc/app/emofinder/Awe> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Awe> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Awe> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of awe conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Awe> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de admiración que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Awe> <http://www.w3.org/2000/01/rdf-schema#label> "Admiración"@es .
+<https://www.usc.gal/pcc/app/emofinder/Awe> <http://www.w3.org/2000/01/rdf-schema#label> "Awe"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/BodyExpression
+<https://www.usc.gal/pcc/app/emofinder/BodyExpression> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/BodyExpression> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/BodyExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word's connection with changes in parts of the body such as the voice, posture, gestures, or facial expression."@en .
+<https://www.usc.gal/pcc/app/emofinder/BodyExpression> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con cambios en partes del cuerpo como la voz, la postura, los gestos, o la expresión de la cara"@es .
+<https://www.usc.gal/pcc/app/emofinder/BodyExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Body Expression"@en .
+<https://www.usc.gal/pcc/app/emofinder/BodyExpression> <http://www.w3.org/2000/01/rdf-schema#label> "Expresión Corporal"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Concreteness
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/2000/01/rdf-schema#comment> "Concreteness refers to the extent to which a word refers to an entity that can be perceived with the senses."@en .
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/2000/01/rdf-schema#comment> "La concreción se refiere a hasta qué punto la palabra se refiere a una entidad que puede percibirse con los sentidos."@es .
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/2000/01/rdf-schema#label> "Concreción"@es .
+<https://www.usc.gal/pcc/app/emofinder/Concreteness> <http://www.w3.org/2000/01/rdf-schema#label> "Concreteness"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Contentment
+<https://www.usc.gal/pcc/app/emofinder/Contentment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Contentment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Contentment> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of contentment conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Contentment> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de satisfacción que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Contentment> <http://www.w3.org/2000/01/rdf-schema#label> "Contentment"@en .
+<https://www.usc.gal/pcc/app/emofinder/Contentment> <http://www.w3.org/2000/01/rdf-schema#label> "Satisfacción"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/ContextualAvailability
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/2000/01/rdf-schema#comment> "Contextual availability refers to the ease with which we can think of a context to which the word could be associated."@en .
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/2000/01/rdf-schema#comment> "La disponibilidad contextual se refiere a la facilidad con la que podemos pensar en un contexto al cual se podría asociar la palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/2000/01/rdf-schema#label> "Contextual Availability"@en .
+<https://www.usc.gal/pcc/app/emofinder/ContextualAvailability> <http://www.w3.org/2000/01/rdf-schema#label> "Disponibilidad contextual"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory
+<https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Categoría emocional discreta"@es .
+<https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> <http://www.w3.org/2000/01/rdf-schema#label> "Discrete emotional category"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Disgust
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of disgust conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de asco que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/2000/01/rdf-schema#label> "Asco"@es .
+<https://www.usc.gal/pcc/app/emofinder/Disgust> <http://www.w3.org/2000/01/rdf-schema#label> "Disgust"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Dominance
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/2000/01/rdf-schema#comment> "Dominance refers to the perception of control evoked by a word, that is, the extent to which a person feels weak/submissive or strong/dominant in relation to the concept the word represents."@en .
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/2000/01/rdf-schema#comment> "La dominancia hace referencia a la percepción de control que evoca una palabra, es decir, hasta qué punto la persona se siente débil/sumisa o fuerte/dominante ante el concepto que designa la palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/2000/01/rdf-schema#label> "Dominance"@en .
+<https://www.usc.gal/pcc/app/emofinder/Dominance> <http://www.w3.org/2000/01/rdf-schema#label> "Dominancia"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/EmotionalDimension
+<https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimensión emocional"@es .
+<https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Emotional Dimension"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Evaluation
+<https://www.usc.gal/pcc/app/emofinder/Evaluation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Evaluation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Evaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word's connection with situations that are important for well-being and/or survival."@en .
+<https://www.usc.gal/pcc/app/emofinder/Evaluation> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con situaciones importantes para el bienestar y/o supervivencia."@es .
+<https://www.usc.gal/pcc/app/emofinder/Evaluation> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluación"@es .
+<https://www.usc.gal/pcc/app/emofinder/Evaluation> <http://www.w3.org/2000/01/rdf-schema#label> "Evaluation"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Excitement
+<https://www.usc.gal/pcc/app/emofinder/Excitement> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Excitement> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Excitement> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of excitement conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Excitement> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de entusiasmo que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Excitement> <http://www.w3.org/2000/01/rdf-schema#label> "Entusiasmo"@es .
+<https://www.usc.gal/pcc/app/emofinder/Excitement> <http://www.w3.org/2000/01/rdf-schema#label> "Excitement"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Familiarity
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/2000/01/rdf-schema#comment> "Familiarity refers to how familiar or known a word feels to a person."@en .
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/2000/01/rdf-schema#comment> "La familiaridad hace referencia a cuán familiar o conocida resulta una palabra para la persona."@es .
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/2000/01/rdf-schema#label> "Familiaridad"@es .
+<https://www.usc.gal/pcc/app/emofinder/Familiarity> <http://www.w3.org/2000/01/rdf-schema#label> "Familiarity"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Fear
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of fear conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de miedo que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/2000/01/rdf-schema#label> "Fear"@en .
+<https://www.usc.gal/pcc/app/emofinder/Fear> <http://www.w3.org/2000/01/rdf-schema#label> "Miedo"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Feeling
+<https://www.usc.gal/pcc/app/emofinder/Feeling> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Feeling> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Feeling> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word's connection with feelings."@en .
+<https://www.usc.gal/pcc/app/emofinder/Feeling> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con sentimientos."@es .
+<https://www.usc.gal/pcc/app/emofinder/Feeling> <http://www.w3.org/2000/01/rdf-schema#label> "Feeling"@en .
+<https://www.usc.gal/pcc/app/emofinder/Feeling> <http://www.w3.org/2000/01/rdf-schema#label> "Sentimiento"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Happiness
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of happiness conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de felicidad que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/2000/01/rdf-schema#label> "Felicidad"@es .
+<https://www.usc.gal/pcc/app/emofinder/Happiness> <http://www.w3.org/2000/01/rdf-schema#label> "Happiness"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Iconicity
+<https://www.usc.gal/pcc/app/emofinder/Iconicity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Iconicity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Iconicity> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word’s sound relation to its meaning."@en .
+<https://www.usc.gal/pcc/app/emofinder/Iconicity> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación del sonido de la palabra con su significado."@es .
+<https://www.usc.gal/pcc/app/emofinder/Iconicity> <http://www.w3.org/2000/01/rdf-schema#label> "Iconicidad"@es .
+<https://www.usc.gal/pcc/app/emofinder/Iconicity> <http://www.w3.org/2000/01/rdf-schema#label> "Iconicity"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Imageability
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/2000/01/rdf-schema#comment> "Imaginability refers to the ease with which a mental image of the concept designated by the word can be formed."@en .
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/2000/01/rdf-schema#comment> "La imaginabilidad hace referencia a la facilidad para formarse una imagen mental del concepto que designa la palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/2000/01/rdf-schema#label> "Imageability"@en .
+<https://www.usc.gal/pcc/app/emofinder/Imageability> <http://www.w3.org/2000/01/rdf-schema#label> "Imaginabilidad"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Interoception
+<https://www.usc.gal/pcc/app/emofinder/Interoception> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Interoception> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Interoception> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word's connection with internal bodily sensations."@en .
+<https://www.usc.gal/pcc/app/emofinder/Interoception> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con sensaciones corporales internas."@es .
+<https://www.usc.gal/pcc/app/emofinder/Interoception> <http://www.w3.org/2000/01/rdf-schema#label> "Interocepción"@es .
+<https://www.usc.gal/pcc/app/emofinder/Interoception> <http://www.w3.org/2000/01/rdf-schema#label> "Interoception"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Morality
+<https://www.usc.gal/pcc/app/emofinder/Morality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Morality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Morality> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word's connection with morality, rules, or any other principle that guides behavior."@en .
+<https://www.usc.gal/pcc/app/emofinder/Morality> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con la moralidad, las reglas, o cualquier otro principio que guía la conducta."@es .
+<https://www.usc.gal/pcc/app/emofinder/Morality> <http://www.w3.org/2000/01/rdf-schema#label> "Moralidad"@es .
+<https://www.usc.gal/pcc/app/emofinder/Morality> <http://www.w3.org/2000/01/rdf-schema#label> "Morality"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation> .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the age at which the word was acquired."@en .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere a la edad en la que se ha adquirido la palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#label> "Edad de adquisición objetiva"@es .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveAcquisitionAge> <http://www.w3.org/2000/01/rdf-schema#label> "Objective Acquisition Age"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation> <http://www.w3.org/2000/01/rdf-schema#label> "Estimación Objetiva"@es .
+<https://www.usc.gal/pcc/app/emofinder/ObjectiveEstimation> <http://www.w3.org/2000/01/rdf-schema#label> "Objective Estimation"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Pleasure
+<https://www.usc.gal/pcc/app/emofinder/Pleasure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Pleasure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Pleasure> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of pleasure conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Pleasure> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de placer que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Pleasure> <http://www.w3.org/2000/01/rdf-schema#label> "Placer"@es .
+<https://www.usc.gal/pcc/app/emofinder/Pleasure> <http://www.w3.org/2000/01/rdf-schema#label> "Pleasure"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Prototipicality
+<https://www.usc.gal/pcc/app/emofinder/Prototipicality> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Prototipicality> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Prototipicality> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word’s connection with an emotion."@en .
+<https://www.usc.gal/pcc/app/emofinder/Prototipicality> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con una emoción."@es .
+<https://www.usc.gal/pcc/app/emofinder/Prototipicality> <http://www.w3.org/2000/01/rdf-schema#label> "Prototipicalidad"@es .
+<https://www.usc.gal/pcc/app/emofinder/Prototipicality> <http://www.w3.org/2000/01/rdf-schema#label> "Prototipicality"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage
+<https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/RecognitionTime> .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "%E"@en .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "Percentage of incorrect word identification in a lexical decision task."@en .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage> <http://www.w3.org/2000/01/rdf-schema#comment> "Porcentaje de identificación incorrecta de la palabra en una tarea de decisión léxica."@es .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "Porcentaje de error de reconocimiento (LDT)"@es .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionErrorPercentage> <http://www.w3.org/2000/01/rdf-schema#label> "Recognition Error Percentage"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/RecognitionTime
+<https://www.usc.gal/pcc/app/emofinder/RecognitionTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionTime> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionTime> <http://www.w3.org/2000/01/rdf-schema#label> "Recognition Time"@en .
+<https://www.usc.gal/pcc/app/emofinder/RecognitionTime> <http://www.w3.org/2000/01/rdf-schema#label> "Tiempo de reconocimiento"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Relief
+<https://www.usc.gal/pcc/app/emofinder/Relief> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Relief> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Relief> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of relief conveyed by a word."@es .
+<https://www.usc.gal/pcc/app/emofinder/Relief> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de alivio que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Relief> <http://www.w3.org/2000/01/rdf-schema#label> "Alivio"@es .
+<https://www.usc.gal/pcc/app/emofinder/Relief> <http://www.w3.org/2000/01/rdf-schema#label> "Relief"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Sadness
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of sadness conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de tristeza que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/2000/01/rdf-schema#label> "Sadness"@en .
+<https://www.usc.gal/pcc/app/emofinder/Sadness> <http://www.w3.org/2000/01/rdf-schema#label> "Tristeza"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/SensoryExperience
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/2000/01/rdf-schema#comment> "Indica hasta qué punto la palabra evoca una experiencia sensorial/perceptiva (sabor, tacto, vista, sonido y olor)."@es .
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/2000/01/rdf-schema#comment> "It indicates the extent to which the word evokes a sensory/perceptual experience (taste, touch, sight, sound, and smell)."@en .
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/2000/01/rdf-schema#label> "Experiencia sensorial"@es .
+<https://www.usc.gal/pcc/app/emofinder/SensoryExperience> <http://www.w3.org/2000/01/rdf-schema#label> "Sensory Experience"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Serenity
+<https://www.usc.gal/pcc/app/emofinder/Serenity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Serenity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/DiscreteEmotionalCategory> .
+<https://www.usc.gal/pcc/app/emofinder/Serenity> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of serenity conveyed by a word."@en .
+<https://www.usc.gal/pcc/app/emofinder/Serenity> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de serenidad que transmite una palabra."@es .
+<https://www.usc.gal/pcc/app/emofinder/Serenity> <http://www.w3.org/2000/01/rdf-schema#label> "Serenidad"@es .
+<https://www.usc.gal/pcc/app/emofinder/Serenity> <http://www.w3.org/2000/01/rdf-schema#label> "Serenity"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/SocialInteraction
+<https://www.usc.gal/pcc/app/emofinder/SocialInteraction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/SocialInteraction> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/SocialInteraction> <http://www.w3.org/2000/01/rdf-schema#label> "Interacción social"@es .
+<https://www.usc.gal/pcc/app/emofinder/SocialInteraction> <http://www.w3.org/2000/01/rdf-schema#label> "Social Interaction"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension
+<https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/Annotation> .
+<https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Dimensión subjetiva"@es .
+<https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> <http://www.w3.org/2000/01/rdf-schema#label> "Subjective Dimension"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Thought
+<https://www.usc.gal/pcc/app/emofinder/Thought> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Thought> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/SubjectiveDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Thought> <http://www.w3.org/2000/01/rdf-schema#comment> "It refers to the degree of the word's connection with mental activity, ideas, opinions, and judgments."@en .
+<https://www.usc.gal/pcc/app/emofinder/Thought> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al grado de relación de la palabra con la actividad mental, las ideas, las opiniones y los juicios."@es .
+<https://www.usc.gal/pcc/app/emofinder/Thought> <http://www.w3.org/2000/01/rdf-schema#label> "Pensamiento"@es .
+<https://www.usc.gal/pcc/app/emofinder/Thought> <http://www.w3.org/2000/01/rdf-schema#label> "Thought"@en .
+# 
+# https://www.usc.gal/pcc/app/emofinder/TimeNaming
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/RecognitionTime> .
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al tiempo de nombrado de la palabra, esto es, de lectura de la palabra en voz alta."@en .
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/2000/01/rdf-schema#comment> "Se refiere al tiempo de nombrado de la palabra, esto es, de lectura de la palabra en voz alta."@es .
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/2000/01/rdf-schema#label> "Naming time"@en .
+<https://www.usc.gal/pcc/app/emofinder/TimeNaming> <http://www.w3.org/2000/01/rdf-schema#label> "Tiempo de nombrado"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/TimeTdl
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/RecognitionTime> .
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/2000/01/rdf-schema#comment> "La variable tiempo de respuesta en tareas de Decisión Léxica se refiere al tiempo que tarda un participante en reconocer si un estímulo presentado es una palabra real, esto es, que existe en el idioma."@es .
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/2000/01/rdf-schema#comment> "The variable response time in Lexical Decision tasks refers to the time it takes for a participant to recognize whether a presented stimulus is a real word, that is, one that exists in the language."@en .
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/2000/01/rdf-schema#label> "Response time (TDL)"@en .
+<https://www.usc.gal/pcc/app/emofinder/TimeTdl> <http://www.w3.org/2000/01/rdf-schema#label> "Tiempo de respuesta (LDT)"@es .
+# 
+# https://www.usc.gal/pcc/app/emofinder/Valence
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://www.usc.gal/pcc/app/emofinder/EmotionalDimension> .
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/2000/01/rdf-schema#comment> "La valencia hace referencia al nivel de agrado o desagrado que evoca una palabra, es decir, cuán positiva o negativa le resulta a la persona."@es .
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/2000/01/rdf-schema#comment> "Valence refers to the level of pleasantness or unpleasantness evoked by a word, that is, how positive or negative it feels to the person."@en .
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/2000/01/rdf-schema#label> "Valence"@en .
+<https://www.usc.gal/pcc/app/emofinder/Valence> <http://www.w3.org/2000/01/rdf-schema#label> "Valencia"@es .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# https://www.usc.gal/pcc/app/emofinder/kos/Category
+<https://www.usc.gal/pcc/app/emofinder/kos/Category> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<https://www.usc.gal/pcc/app/emofinder/value> <http://www.w3.org/2000/01/rdf-schema#label> "recognitionTime"@en .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
