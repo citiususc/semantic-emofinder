@@ -1,0 +1,60 @@
+prefixes:
+ emo-resource: "https://www.usc.gal/pcc/emofinder/resource/"
+ emofinder: "https://w3id.org/def/emolex#"
+ rdfs: "http://www.w3.org/2000/01/rdf-schema#"
+ skos: "http://www.w3.org/2004/02/skos/core#"
+ ontolex: "http://www.w3.org/ns/lemon/ontolex#"
+ rb: "https://w3id.org/riverbench/schema/metadata#"
+ bibo: "http://purl.org/ontology/bibo/"
+ lexinfo: "http://www.lexinfo.net/ontology/3.0/lexinfo#"
+ lime: "http://www.w3.org/ns/lemon/lime#"
+ idlab-fn: "http://example.com/idlab/function/"
+ grel: "http://users.ugent.be/~bjdmeest/function/grel.ttl#"
+ dcterms: "http://purl.org/dc/terms/"
+ vartrans: "http://www.w3.org/ns/lemon/vartrans#"
+
+mappings:
+  lexicon:
+    sources:
+      - ['db_metadata.csv~csv']
+    s: emo-resource:lexicon/$(name)
+    po:
+      - [a, lime:Lexicon]
+      - [rdfs:label, $(label)]
+      - [dcterms:source, emo-resource:article/$(name)~iri]
+      
+  articles:
+    sources:
+      - ['db_metadata.csv~csv']
+    s: emo-resource:article/$(name)
+    po:
+      - [a, bibo:Article]
+      - [rdfs:label, $(ref)]
+      - [dcterms:source, $(url)~iri]
+      - [dcterms:rights, $(public), xsd:boolean]
+
+  lexicon_entries:
+    sources:
+      - ['words_db.csv~csv']
+    s: emo-resource:lexicon/$(database)
+    po:
+      - [lime:entry, emo-resource:lexical_entry/$(database)/$(word)~iri]
+  
+  lexical_entries:
+    sources:
+      - ['words_db.csv~csv']
+    s: emo-resource:lexical_entry/$(database)/$(word)
+    po:
+      - [a, ontolex:LexicalEntry]
+      - p: ontolex:lexicalForm
+        o:
+        - function: join(form, equal($(word),$(word)))
+
+  form:
+    sources:
+      - [ 'words.csv~csv' ]
+    s: emo-resource:form/$(word)
+    po:
+      - [a, ontolex:Form]
+      - [ ontolex:writenRep, $(word) ]
+

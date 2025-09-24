@@ -1,0 +1,876 @@
+palabra,familiaridad_m,familiaridad_sd,dominancia_m,dominancia_sd,edad_de_adquisicion_m,edad_de_adquisicion_sd,experiencia_sensorial_m,experiencia_sensorial_sd,word,categoria_palabra,palabra_noaccents
+abandono,3.84,1.79,4.31,2.58,6.73,2.07,3.67,1.73,abandonment,1,abandono
+abatir,2.86,1.49,5.31,2.36,10.1,1.47,3.6,1.71,to knock down,1,abatir
+abierto,5.27,1.49,4.13,2.28,3.33,1.83,3.23,2.03,open,3,abierto
+abismo,3.55,1.56,6.43,2.5,9.17,2.17,4.64,1.92,abyss,1,abismo
+abrazar,5.97,1.19,5.31,2.62,3.4,3.25,5.83,1.42,to hug,1,abrazar
+abrazo,6.09,1.06,6.25,2.57,2.73,1.46,5.4,1.57,hug,1,abrazo
+abroncar,2.4,1.58,4.35,2.21,8.74,2.78,3.42,1.84,to get angry,2,abroncar
+abuso,4.53,1.92,6.67,2.55,7.48,2.74,4.25,1.67,abuse,1,abuso
+acariciar,5.2,1.39,5.33,2.62,3.93,1.82,5.4,1.63,to caress,1,acariciar
+acatar,3.87,1.46,5.1,2.7,9.15,2.58,3.41,2.08,to comply with,1,acatar
+aceptación,4.58,1.64,5.77,1.63,7.23,2.9,4.2,1.65,acceptance,1,aceptacion
+acera,5.15,1.18,3.28,1.92,4.93,3.1,2.2,1.61,sidewalk,1,acera
+aclamar,3.91,1.53,5.13,2.34,9.72,1.85,2.83,1.69,to acclaim,2,aclamar
+acné,4.55,1.92,3.4,2.27,9.77,1.95,4.31,1.86,acne,1,acne
+acogedora,4.43,1.24,5.83,1.78,8.62,2.43,4.36,1.81,cozy,1,acogedora
+acosar,4.17,1.44,6.0,2.48,9.8,2.16,5.1,2.41,harass,1,acosar
+actuar,4.89,1.62,4.81,2.24,6.5,2.1,3.4,1.96,to act,2,actuar
+acuarela,3.86,1.54,3.31,1.91,4.77,2.81,4.03,1.77,watercolor,1,acuarela
+acuático,4.31,1.5,3.94,1.79,6.43,2.39,4.27,1.98,aquatic,3,acuatico
+acuchillar,2.9,1.91,6.13,2.53,8.43,1.77,5.3,2.02,to stab,1,acuchillar
+acusar,4.7,1.64,5.97,2.11,6.33,2.04,3.91,1.94,to accuse,1,acusar
+admirar,5.45,1.47,7.03,1.54,6.98,2.63,3.86,1.79,to admire,2,admirar
+adulterado,3.54,1.7,5.28,1.89,9.82,2.1,3.15,1.6,adulterated,2,adulterado
+adulterio,3.53,1.79,6.03,2.46,10.27,1.4,3.39,1.84,adultery,1,adulterio
+advertir,5.33,1.54,6.07,1.84,6.69,2.84,2.93,1.61,to advise,1,advertir
+afamado,3.14,1.75,4.68,2.34,10.11,1.95,2.76,1.68,famous,1,afamado
+afectuoso,4.85,1.25,5.33,2.12,7.4,2.39,4.53,1.63,affectionate,3,afectuoso
+afición,4.9,1.17,5.63,1.69,7.93,2.13,3.5,1.87,hobby,1,aficion
+agencia,4.47,1.6,4.37,2.13,8.09,2.24,2.67,1.63,agency,1,agencia
+aglomeración,4.28,1.63,5.03,2.59,9.07,2.44,4.09,2.05,conglomerate,1,aglomeracion
+agonizar,3.98,2.08,4.97,3.25,9.35,2.2,4.89,2.03,to be dying,1,agonizar
+agradar,5.5,1.34,6.13,2.24,6.87,2.7,3.84,1.68,to please,1,agradar
+agredir,3.81,1.83,5.84,2.5,7.23,2.25,4.27,1.6,to assault,1,agredir
+agua,6.48,0.99,6.27,2.64,2.1,0.31,4.9,2.19,water,1,agua
+aguijón,3.8,1.4,6.37,1.61,6.43,2.11,4.47,1.8,sting,1,aguijon
+ahogar,3.87,1.61,6.67,2.2,5.5,1.83,5.03,1.71,to choke,1,ahogar
+ahorcar,3.55,1.68,7.3,2.0,7.3,2.18,4.83,2.17,to hang,1,ahorcar
+alabar,3.87,1.64,5.0,2.18,8.53,2.5,3.7,1.7,to praise,2,alabar
+alarma,5.88,1.15,5.73,2.45,5.91,2.22,4.28,1.73,alarm,1,alarma
+alarmar,4.54,1.65,5.53,1.98,8.7,2.05,3.57,1.68,to alarm,1,alarmar
+alegrar,5.75,0.99,6.4,1.96,4.47,2.18,5.23,1.83,to cheer up,1,alegrar
+alegría,6.08,1.21,7.9,1.06,3.55,1.48,5.52,1.56,happiness,1,alegria
+alentador,4.16,1.91,5.46,2.12,9.9,2.17,3.38,1.78,encouraging,1,alentador
+alicatar,2.92,1.43,3.5,1.87,10.48,1.21,1.93,1.36,to tile,2,alicatar
+alimentar,5.36,1.28,4.69,2.51,3.87,1.59,4.4,2.01,to feed,1,alimentar
+alterado,4.55,1.42,5.1,2.17,7.63,2.14,4.2,1.4,annoyed,1,alterado
+alto,5.84,1.3,5.85,2.03,3.8,2.57,3.77,1.7,tall,3,alto
+aludir,3.27,1.65,4.03,1.9,10.55,0.69,2.38,1.27,to allude,1,aludir
+amar,5.75,1.24,8.07,1.26,4.93,2.75,5.67,1.86,to love,2,amar
+amargura,3.72,1.34,4.27,2.63,9.69,2.04,5.08,2.11,bitterness,1,amargura
+amenazado,4.53,1.7,6.3,2.58,7.66,2.83,4.19,1.81,threated,1,amenazado
+amenazador,4.38,1.54,7.3,1.68,7.63,2.58,4.43,1.98,threatening,1,amenazador
+amenazar,3.69,1.73,5.56,2.73,7.3,2.34,3.77,1.7,to threaten,2,amenazar
+amistad,6.06,1.03,6.78,2.34,4.37,2.44,4.8,1.73,friendship,1,amistad
+amistoso,5.35,1.09,5.43,2.25,5.3,2.15,4.47,1.66,friendly,1,amistoso
+amordazar,3.45,1.6,6.94,2.22,9.97,1.35,4.2,1.99,to gag,1,amordazar
+amplia,4.62,1.48,4.3,1.73,7.39,1.78,2.82,1.61,broad,1,amplia
+amputación,3.55,1.62,5.37,2.99,9.37,2.27,5.26,1.96,amputatation,1,amputacion
+ancho,5.1,1.56,4.23,1.61,5.21,1.78,3.15,1.64,wide,3,ancho
+anclar,3.18,1.51,4.5,2.49,8.83,2.0,1.67,1.15,to anchor,1,anclar
+animar,5.48,1.4,6.48,1.94,5.8,2.58,4.2,1.54,to encourage,2,animar
+aniquilar,3.72,1.8,7.0,2.68,8.97,2.23,4.57,1.73,to annihilate,1,aniquilar
+anorexia,3.45,2.01,5.23,3.17,10.47,1.04,4.43,2.05,anorexia,1,anorexia
+anotar,4.66,1.55,4.19,2.16,7.23,2.19,1.83,1.09,to write down,1,anotar
+ansiedad,5.65,1.24,6.17,2.64,9.33,2.45,4.94,1.81,anxiety,1,ansiedad
+anticuado,3.65,1.54,3.13,1.83,8.27,2.1,2.93,1.51,outdated,1,anticuado
+antiguo,5.43,1.33,4.13,2.5,5.51,2.01,3.66,1.72,antique,3,antiguo
+antipático,4.47,1.56,4.91,1.89,6.8,2.95,3.27,1.7,unpleasant,1,antipatico
+apaciguado,3.18,1.55,3.27,1.95,9.31,2.47,3.45,1.72,soothed,2,apaciguado
+aparato,4.7,1.59,3.53,2.13,5.17,1.82,2.5,1.66,device,1,aparato
+apasionado,5.07,1.37,6.3,2.56,9.02,2.33,5.27,1.5,passionate,1,apasionado
+apendicitis,3.42,1.6,3.87,2.43,9.28,2.05,4.32,2.0,appendicitis,1,apendicitis
+aperitivo,4.94,1.58,4.09,2.07,7.83,2.34,4.4,1.83,appetizer,1,aperitivo
+apestoso,3.96,1.61,5.3,2.16,6.27,2.9,4.97,1.77,stinky,1,apestoso
+apilar,4.05,1.58,3.55,1.82,8.26,2.51,1.94,1.12,to pile up,1,apilar
+aplastar,4.26,1.64,4.97,2.6,4.7,1.78,3.93,1.74,to smash,2,aplastar
+aplaudir,5.25,1.34,5.06,2.06,3.77,3.19,4.03,1.87,to applaude,1,aplaudir
+aplausos,5.1,1.29,5.77,1.96,3.47,1.28,4.3,1.86,applause,1,aplausos
+apodar,3.59,1.63,4.0,2.15,8.7,2.04,3.07,1.53,to nickname,2,apodar
+aprobar,6.3,0.95,7.87,1.28,5.36,1.76,5.18,1.86,to pass,2,aprobar
+araña,4.65,1.49,5.13,2.49,3.39,1.09,4.58,1.85,spider,1,arana
+armar,4.3,1.62,6.1,2.28,7.3,2.32,3.64,2.0,to assemble,1,armar
+armonía,4.4,1.72,4.81,2.18,9.1,1.71,4.73,1.78,harmony,1,armonia
+aroma,4.65,1.51,4.7,2.17,7.23,2.22,5.23,1.74,scent,1,aroma
+arrasar,4.54,1.46,6.38,2.27,8.87,1.93,3.23,1.68,to devastate / to triumph,1,arrasar
+arriesgado,4.9,1.46,6.23,1.92,7.47,2.32,4.2,1.75,risky,1,arriesgado
+arrimar,4.68,1.15,4.53,1.72,7.5,2.66,2.63,1.54,to bring closer,1,arrimar
+arrollar,4.0,1.11,6.34,2.04,8.69,2.3,3.28,1.98,to carry away,1,arrollar
+arroz,5.7,1.23,3.57,1.96,3.3,1.12,3.67,1.65,rice,1,arroz
+arruinar,4.73,1.76,5.97,2.92,8.17,2.45,3.41,1.9,to ruin,1,arruinar
+artículo,5.25,1.36,4.27,1.57,8.46,2.21,2.05,1.23,article,1,articulo
+artístico,4.64,1.55,5.3,2.2,7.63,2.59,4.33,1.69,artistic,3,artistico
+asaltar,4.1,1.55,6.56,1.92,8.83,2.02,3.3,1.95,to rob,1,asaltar
+asfixiar,3.6,1.98,5.6,3.04,7.12,2.07,4.67,1.96,to strangle,1,asfixiar
+asombrar,4.77,1.57,5.3,2.17,6.89,2.49,3.82,1.73,to astonish,2,asombrar
+astuto,4.62,1.37,5.72,1.91,8.0,1.98,3.43,1.8,clever,1,astuto
+asustar,5.2,1.43,5.87,2.13,3.88,1.56,4.73,1.79,to scare,2,asustar
+atacar,4.47,1.61,5.78,2.47,5.7,1.93,4.13,1.85,to attack,1,atacar
+ataque,5.1,1.61,7.17,1.8,5.28,2.12,4.41,1.54,attack,1,ataque
+atardecer,5.03,1.19,5.37,1.65,6.21,2.63,4.38,1.79,to get dark,1,atardecer
+atasco,5.78,1.57,5.27,2.65,6.7,2.54,3.74,1.97,traffic jam,1,atasco
+ataúd,3.48,1.58,5.09,2.66,7.57,2.14,4.5,2.05,coffin,1,ataud
+atemorizar,3.85,1.14,5.47,2.3,7.74,2.96,4.65,2.01,to frighten,1,atemorizar
+atender,6.03,1.19,4.67,1.99,4.84,2.13,3.63,1.89,to pay attention,1,atender
+aterrar,4.05,1.16,6.2,2.31,7.57,2.76,4.91,2.11,to terrify,2,aterrar
+aterrorizar,3.87,1.65,5.87,2.34,6.53,2.46,4.97,1.79,to terrorise,2,aterrorizar
+atmosférico,3.93,1.58,4.5,1.74,9.0,2.26,2.6,1.65,atmospheric,3,atmosferico
+atontado,4.53,1.38,4.17,1.97,6.37,2.24,3.03,1.71,scatterbrained,1,atontado
+atornillar,3.55,1.55,2.9,2.23,6.82,2.26,2.27,1.32,to screw,2,atornillar
+atracar,4.45,1.7,6.17,2.44,7.61,2.03,3.85,1.6,to mug,1,atracar
+atractivo,5.43,1.38,6.57,1.77,7.87,1.83,4.77,1.65,attractive,1,atractivo
+atravesar,4.4,1.76,5.23,1.57,6.67,1.71,3.18,1.42,to go through,1,atravesar
+aturdido,3.65,1.62,3.57,1.94,9.63,1.63,3.5,2.03,stunned,1,aturdido
+ausencia,4.68,1.47,4.94,2.3,7.83,2.41,3.93,1.74,absence,1,ausencia
+auténtico,5.22,1.58,6.77,1.87,7.68,2.22,3.17,1.62,authentic,3,autentico
+auxiliar,4.28,1.86,5.4,1.9,8.45,2.69,2.83,1.83,to aid,1,auxiliar
+aventurero,4.39,1.52,6.06,1.84,5.93,2.29,4.37,1.67,adventurous,3,aventurero
+aversivo,4.38,1.61,5.17,2.02,9.94,2.16,4.55,1.88,aversive,1,aversivo
+avispado,3.81,1.75,4.97,2.32,9.03,2.08,3.0,1.6,sharp / bright,1,avispado
+azulejo,4.1,1.64,3.17,1.76,7.53,2.91,2.24,1.92,tile,1,azulejo
+átomo,4.23,1.79,4.23,1.96,9.5,2.08,2.57,1.7,atom,1,atomo
+babosa,3.63,1.95,2.27,1.57,5.85,2.23,3.89,1.77,slug,1,babosa
+bailar,5.55,1.31,4.91,1.83,3.73,2.35,4.73,1.86,to dance,1,bailar
+baile,5.04,1.7,4.5,2.49,3.97,1.45,4.47,1.81,dance,1,baile
+balneario,3.96,1.79,4.31,2.56,9.03,1.73,4.07,1.86,spa,1,balneario
+barba,5.48,1.48,4.37,2.59,3.52,1.58,3.58,1.89,beard,1,barba
+bebé,5.3,1.38,4.43,2.61,2.9,1.3,4.97,1.63,baby,1,bebe
+bello,4.98,1.22,5.87,1.46,5.91,2.69,4.15,1.93,beautiful,3,bello
+beneficio,4.98,1.15,6.63,1.52,8.47,2.52,3.46,1.76,profit,1,beneficio
+besar,5.88,1.19,6.63,2.01,3.67,2.12,6.2,1.16,to kiss,1,besar
+bienestar,4.98,1.38,6.5,1.94,8.17,2.77,4.9,1.58,well-being,1,bienestar
+bikini,5.15,1.26,4.27,1.93,5.37,2.24,3.6,1.85,bikini,1,bikini
+binario,3.56,1.97,2.9,1.65,10.17,2.07,2.03,1.5,binary,1,binario
+bochorno,3.86,1.69,4.19,2.43,9.2,2.07,4.27,1.66,embarrassment / sweltering,1,bochorno
+bola,4.98,1.73,3.97,1.81,3.03,1.24,3.27,1.88,ball,1,bola
+bombardear,3.27,1.85,6.67,2.52,8.0,1.74,4.53,1.74,to bomb,1,bombardear
+bondadoso,4.55,1.65,4.73,2.31,8.1,2.66,3.9,1.81,kind,3,bondadoso
+bonito,5.7,1.31,5.7,1.84,3.55,2.47,4.49,1.76,pretty,3,bonito
+borroso,4.57,1.16,4.24,1.84,6.88,2.5,3.82,1.9,blurred,3,borroso
+bosque,5.04,1.34,4.36,2.0,4.03,2.28,4.47,1.78,forest,1,bosque
+botón,4.85,1.59,3.41,1.88,3.4,1.38,2.87,2.11,button,1,boton
+brincar,3.75,1.74,4.1,2.01,5.9,2.55,4.07,1.64,to jump,1,brincar
+broma,5.82,1.29,4.7,2.14,4.77,2.56,3.53,1.62,joke,1,broma
+cachorro,5.43,1.58,2.93,1.91,3.75,1.21,4.9,1.52,puppy,1,cachorro
+caducado,4.73,1.31,3.93,2.0,7.6,2.57,3.57,1.91,expired,2,caducado
+caer,5.0,1.51,4.33,2.43,2.43,0.68,4.97,1.77,to fall,2,caer
+calavera,3.42,1.61,5.1,2.11,6.14,2.34,3.85,1.95,skull,1,calavera
+calentar,5.95,1.19,3.97,2.28,4.38,1.81,4.13,1.74,to heat,1,calentar
+calma,5.6,1.19,4.0,2.68,5.69,2.73,3.98,1.51,calm,1,calma
+calmado,5.25,1.09,3.33,1.94,5.6,2.08,3.77,1.83,calmed,1,calmado
+calmante,4.5,1.59,3.77,2.42,8.46,2.27,3.81,1.61,painkiller,1,calmante
+camping,3.63,1.61,3.93,2.07,6.43,1.76,3.83,1.98,camping,1,camping
+canal,4.5,1.63,3.63,1.45,7.07,2.86,2.12,1.49,channel / canal,1,canal
+canción,6.11,1.15,5.0,2.76,2.93,1.41,5.07,1.62,song,1,cancion
+cansancio,5.6,1.35,4.53,2.74,3.83,1.26,4.33,1.77,tiredness,1,cansancio
+cantar,5.97,1.57,4.97,2.17,3.82,2.59,4.14,1.8,to sing,2,cantar
+capa,4.23,1.87,3.1,1.77,4.94,2.54,2.36,1.67,cape,1,capa
+caprichoso,5.43,1.55,5.93,2.35,5.73,2.88,2.86,1.63,capricious,1,caprichoso
+carcajada,4.98,1.74,7.13,1.41,5.64,2.01,5.24,1.7,guffaw,1,carcajada
+carismático,3.98,1.85,6.33,1.94,9.36,2.01,3.76,1.8,charismatic,1,carismatico
+cartesiano,2.97,1.35,4.0,1.54,10.19,2.14,2.11,1.43,cartesian,1,cartesiano
+castigar,4.73,1.68,7.13,1.85,3.39,1.6,4.48,1.99,to punish,1,castigar
+catástrofe,4.21,1.6,6.63,2.41,8.87,2.15,5.57,1.81,catastrophe,1,catastrofe
+cauto,4.02,1.68,3.65,2.21,10.1,1.23,2.38,1.24,wary,1,cauto
+cazar,3.45,1.7,5.57,2.5,5.93,1.66,3.33,1.65,to hunt,2,cazar
+cefalea,3.74,1.49,4.7,1.84,10.47,2.11,4.93,2.02,headache,1,cefalea
+ceguera,3.87,1.58,5.2,2.52,6.67,2.19,4.4,1.81,blidness,1,ceguera
+celda,4.15,1.75,6.43,1.92,7.13,2.29,3.47,1.81,cell,1,celda
+celebración,5.07,1.33,6.27,1.98,4.7,1.6,4.63,1.54,celebration,1,celebracion
+celebrar,5.35,1.51,6.8,1.42,4.09,1.65,4.82,1.61,to celebrate,1,celebrar
+celulitis,4.5,1.59,4.7,2.07,10.47,1.38,3.57,1.89,cellulite,1,celulitis
+chaquetero,4.02,1.53,4.1,2.06,8.66,2.3,3.31,1.44,turncoat,3,chaquetero
+charca,3.53,1.27,3.2,1.4,5.57,2.74,3.52,1.83,pond,1,charca
+charlar,5.5,1.4,5.0,2.37,5.67,1.86,3.77,2.03,to chat,2,charlar
+chimenea,4.05,1.82,4.23,1.94,4.42,1.41,3.55,1.91,fireplace,1,chimenea
+chistoso,4.65,1.45,3.87,2.26,6.57,2.51,4.17,1.58,humoruous,1,chistoso
+chivato,3.96,1.68,3.78,2.18,5.4,1.83,3.53,1.89,snitch,1,chivato
+chuchería,4.73,1.8,3.78,2.57,3.07,1.36,4.4,1.87,candy,1,chucheria
+chulo,4.94,1.61,5.16,2.17,5.73,1.8,3.43,1.79,pimp,1,chulo
+cifrado,3.11,1.52,4.31,2.16,10.03,1.7,1.48,1.09,coded,1,cifrado
+cine,5.63,1.25,5.17,2.28,4.13,1.46,4.6,1.89,cinema,1,cine
+cirugía,4.83,1.67,6.7,2.15,8.39,2.21,4.31,2.05,surgery,1,cirugia
+cita,5.29,1.19,4.81,1.86,8.63,2.25,3.33,1.94,date,1,cita
+claridad,4.75,1.43,4.83,2.02,6.97,1.98,3.82,1.61,clarity,1,claridad
+clase,6.0,1.36,4.57,1.81,3.64,2.16,3.01,1.95,class,1,clase
+clavel,3.75,1.57,2.5,1.93,5.93,2.11,4.18,1.59,carnation,1,clavel
+coaccionar,4.12,1.77,6.88,2.03,10.01,1.97,3.1,1.73,to coerce,2,coaccionar
+coacción,3.36,1.44,5.72,2.67,10.22,2.15,4.98,2.16,coercion,1,coaccion
+cobrar,5.28,1.04,6.6,1.4,7.7,2.71,3.66,1.97,to cash,1,cobrar
+cocer,4.9,1.59,3.83,1.97,6.93,2.12,3.63,1.94,to boil,1,cocer
+codicioso,3.8,1.55,5.1,2.38,9.64,2.01,3.39,1.69,greedy,1,codicioso
+colorado,4.08,1.58,4.27,2.02,5.59,2.68,3.4,1.83,red-colored,1,colorado
+comentario,5.85,1.13,4.97,1.71,6.52,2.28,3.09,1.81,comment,1,comentario
+comenzar,5.3,1.15,5.57,1.89,5.11,2.69,2.95,1.7,to begin,1,comenzar
+compadecer,3.96,1.43,4.21,2.23,9.23,2.46,3.47,1.81,to pity,2,compadecer
+compañía,5.19,1.57,5.69,2.48,5.6,1.89,4.03,1.79,company,1,compania
+compartir,5.65,1.4,6.73,1.48,4.06,1.54,4.36,1.8,to share,1,compartir
+compasivo,4.7,1.22,4.17,1.98,8.3,2.2,3.77,1.68,compassionate,1,compasivo
+competente,4.59,1.76,6.22,2.15,9.63,2.03,2.97,1.92,competent,1,competente
+competitivo,4.82,1.55,5.91,1.77,8.33,2.4,3.9,1.92,competitive,3,competitivo
+complacer,5.04,1.26,3.69,2.33,8.53,2.18,3.3,1.68,to please,1,complacer
+complacido,4.08,1.41,5.52,1.88,9.93,1.36,3.43,1.74,pleased,1,complacido
+comprensión,5.07,0.98,5.3,1.73,7.0,2.05,3.5,1.87,understanding,1,comprension
+comunicación,4.98,1.49,6.03,2.51,6.1,1.49,3.73,1.87,communication,1,comunicacion
+comunicativo,4.68,1.46,5.03,1.73,8.77,2.11,3.9,1.79,communicative,3,comunicativo
+condena,4.55,1.62,6.7,1.9,8.68,2.04,4.15,1.88,condemnation,1,condena
+confidente,3.75,1.69,5.67,1.99,8.82,2.13,3.76,1.73,informer,1,confidente
+conflicto,4.73,1.7,6.88,1.32,8.0,2.51,4.43,1.85,conflict,1,conflicto
+confundido,5.13,1.19,4.53,2.43,6.07,1.89,3.4,1.79,confused,1,confundido
+congelado,5.04,1.5,4.85,2.0,5.1,2.56,4.53,1.8,frozen,1,congelado
+conocer,5.67,0.94,5.63,2.36,3.87,1.33,3.6,1.81,to know,2,conocer
+consciente,5.28,1.32,6.43,1.65,8.47,2.11,3.57,1.83,aware,1,consciente
+conseguir,5.48,1.37,6.9,1.77,5.24,1.77,4.39,1.95,to obtain,2,conseguir
+conservar,5.25,1.53,4.7,2.35,7.34,2.64,2.49,1.4,to keep,2,conservar
+contentar,4.85,1.4,3.66,2.13,7.0,3.21,3.73,1.68,to satisfy,2,contentar
+contento,5.73,1.1,6.13,2.49,3.13,1.28,4.6,1.73,happy,1,contento
+contrario,4.8,1.56,4.2,2.11,5.73,1.98,2.83,1.76,opposite,1,contrario
+cooperar,5.22,1.52,5.87,1.81,8.14,2.67,3.06,1.54,cooperate,1,cooperar
+coordinación,4.35,1.91,5.27,1.68,8.27,1.77,3.52,1.79,coordination,1,coordinacion
+coquetear,4.44,1.61,4.84,2.26,9.3,2.04,3.83,1.7,to flirt,2,coquetear
+correr,5.97,0.93,5.31,1.82,4.17,3.44,3.9,1.83,to run,1,correr
+corromper,3.69,1.85,5.48,2.14,10.03,1.43,3.67,2.07,to corrupt,1,corromper
+cosa,6.33,1.4,2.6,1.57,2.79,1.09,2.08,1.6,thing,1,cosa
+cómico,4.87,1.48,4.66,1.81,7.9,2.54,4.2,2.02,comedian,1,comico
+cómodo,5.43,1.19,4.5,2.44,5.33,2.11,4.23,1.87,comfortable,3,comodo
+creativo,5.15,1.16,5.7,2.02,7.53,2.5,4.1,1.77,creative,3,creativo
+crecer,5.58,1.24,5.07,2.29,4.06,1.68,4.03,1.71,grow,2,crecer
+creído,4.83,1.67,5.33,2.06,7.48,2.03,3.67,1.96,vain,1,creido
+crédulo,3.09,1.48,4.25,2.14,9.47,1.74,3.22,1.72,gullible,1,credulo
+crisis,6.4,0.89,6.47,2.58,8.85,2.14,4.36,2.09,crisis,1,crisis
+cuadrada,3.66,1.69,3.62,2.08,4.17,1.77,2.48,1.81,square,1,cuadrada
+cucaracha,4.38,1.64,5.23,2.54,3.67,1.49,4.3,2.09,cockroach,1,cucaracha
+cuento,4.92,1.63,3.5,1.98,3.37,3.18,4.37,1.73,story,1,cuento
+cuidar,5.48,1.14,6.3,1.6,4.51,2.61,4.29,1.81,to take care,2,cuidar
+culto,5.08,1.58,6.28,2.39,9.07,1.91,2.83,1.58,cult,3,culto
+danza,4.68,1.76,4.03,2.26,4.98,2.28,4.14,1.92,dance,1,danza
+dañar,4.59,1.59,6.91,1.67,5.73,2.82,4.93,1.6,to damage,1,danar
+dañino,4.14,1.47,4.84,2.2,8.13,2.43,4.03,1.85,harmful,1,danino
+dar,6.27,0.83,5.9,2.02,3.96,2.68,3.44,1.7,to give,2,dar
+decapitar,3.0,1.55,7.21,2.06,8.73,1.89,4.73,2.0,decapitate,2,decapitar
+decidir,5.7,0.96,6.97,1.22,6.81,2.69,3.6,2.08,to decide,2,decidir
+decoro,3.2,1.67,3.93,2.42,9.88,2.26,2.64,1.48,propriety,1,decoro
+defender,5.15,1.22,7.0,1.31,5.83,2.44,4.43,1.7,to defend,1,defender
+degollar,3.35,2.1,6.63,2.72,9.07,2.18,4.84,2.17,to cut sb throat,1,degollar
+delfín,4.31,1.63,3.69,1.67,4.7,2.93,3.77,2.03,dolphin,1,delfin
+delgado,5.25,1.22,4.63,2.17,5.51,2.54,3.22,2.13,thin,3,delgado
+delicadeza,4.77,1.4,3.3,2.38,7.73,2.27,4.13,1.5,fineness,1,delicadeza
+delicioso,5.03,1.24,6.3,1.7,5.95,2.74,5.42,1.67,delicious,1,delicioso
+delincuencia,4.96,1.46,5.97,2.42,8.8,2.2,3.77,1.96,crime,1,delincuencia
+demencia,4.17,1.39,4.97,2.61,10.25,1.99,4.55,2.23,dementia,1,demencia
+democracia,5.63,1.24,4.97,2.06,9.77,2.03,3.48,2.07,democracy,1,democracia
+denigrar,4.08,1.67,6.13,2.98,10.57,1.07,4.61,2.31,to denigrate,2,denigrar
+denominar,3.8,1.46,3.93,2.13,8.63,1.83,2.07,1.46,to refer to,2,denominar
+derruir,3.76,1.92,5.69,2.48,8.86,2.43,3.03,1.7,to pull down,2,derruir
+derrumbar,4.47,1.45,6.16,1.85,7.77,2.7,3.73,1.82,to demolish,2,derrumbar
+desafiar,4.44,1.43,6.88,1.98,8.7,2.39,2.93,1.7,to defy,1,desafiar
+desagradable,5.07,1.19,5.8,1.94,6.43,2.19,4.67,1.35,disagreeable,1,desagradable
+desahuciado,5.31,1.35,4.72,2.95,10.2,1.88,4.77,2.19,evicted,1,desahuciado
+desahuciar,5.25,1.45,5.47,2.99,10.1,2.06,4.8,2.01,to evict,2,desahuciar
+desahucio,5.32,1.52,6.33,2.67,10.2,1.81,4.63,2.01,eviction,1,desahucio
+desamor,3.63,1.73,3.25,2.18,9.77,2.05,4.8,1.86,dislike,1,desamor
+desangrar,4.15,2.01,5.47,2.86,7.3,3.04,5.25,1.82,to bleed out,1,desangrar
+descansar,5.9,0.94,3.73,2.26,4.8,2.35,4.27,1.51,to rest,1,descansar
+desconsiderado,4.27,1.67,5.03,1.96,9.5,1.8,3.47,1.68,inconsiderate,1,desconsiderado
+desear,5.52,1.22,6.4,2.25,5.63,2.2,5.03,1.61,to desire,1,desear
+desenroscar,3.75,1.82,3.31,1.94,7.17,2.04,2.43,1.65,to unscrew,2,desenroscar
+desenterrar,3.09,1.71,3.91,2.41,6.37,2.2,3.67,1.84,to dig up,1,desenterrar
+desfavorable,4.17,1.51,4.73,2.08,8.41,2.41,3.61,1.93,unfavorable,1,desfavorable
+desierto,3.42,1.91,2.94,1.7,5.73,1.82,3.4,1.83,desert,3,desierto
+desmayo,3.98,1.21,3.67,2.31,8.26,2.26,4.11,1.51,faint,1,desmayo
+desobedecer,5.37,1.43,6.3,2.42,4.6,2.63,3.74,1.45,to disobey,1,desobedecer
+desollar,2.55,1.9,4.54,2.79,9.96,1.79,3.69,2.12,to skin,1,desollar
+desorden,5.25,1.33,4.9,1.9,4.79,2.37,3.76,1.8,mess,1,desorden
+despachar,3.75,1.7,4.83,1.95,9.15,1.92,2.79,1.76,to serve,1,despachar
+despacho,5.06,1.4,5.38,2.62,8.17,2.57,2.37,1.77,office,1,despacho
+despejado,4.98,1.34,4.0,2.13,7.3,2.58,2.33,1.35,clear,1,despejado
+despierto,5.37,1.28,4.7,1.73,3.23,1.41,3.73,1.64,awake,1,despierto
+despistado,5.45,1.18,3.97,2.11,6.07,1.68,2.7,1.32,absentminded,1,despistado
+desprecio,4.08,1.14,5.1,2.32,8.76,2.35,4.79,2.11,disdain,1,desprecio
+destacar,5.58,1.19,6.97,1.71,7.22,2.82,3.36,1.86,to stand out,1,destacar
+desterrar,3.45,1.68,6.27,2.13,9.04,2.23,3.91,1.79,to exile,1,desterrar
+destrozar,5.15,1.45,6.73,2.16,4.6,1.63,3.78,1.57,to destroy,1,destrozar
+devastar,3.48,1.43,6.43,2.51,9.91,2.11,4.62,1.91,to devastate,1,devastar
+década,4.17,1.6,3.47,1.85,7.83,2.42,2.36,1.5,decade,1,decada
+diabetes,4.08,1.55,5.27,2.26,9.8,1.73,3.0,1.78,diabetes,1,diabetes
+dichoso,3.69,1.16,5.1,1.9,8.99,2.41,4.35,1.9,fortunate,1,dichoso
+dictadura,3.5,1.7,6.93,2.74,10.1,1.06,3.37,2.01,dictatorship,1,dictadura
+difamar,3.76,1.81,5.56,1.92,9.92,2.05,2.71,1.88,to defame,1,difamar
+dificultad,5.3,1.23,5.97,2.27,5.73,1.78,3.53,1.83,difficulty,1,dificultad
+diminuto,3.68,1.75,2.97,1.77,5.82,2.13,3.58,1.84,tiny,1,diminuto
+dinámico,4.15,1.46,5.6,1.92,9.97,1.47,2.93,1.64,dynamic,3,dinamico
+discreto,4.43,1.58,4.47,1.87,7.79,2.2,3.61,1.71,discreet,3,discreto
+disfrutar,6.0,0.99,5.9,2.73,5.82,2.08,5.05,1.48,to enjoy,1,disfrutar
+disparar,4.9,1.89,6.87,2.16,6.05,2.59,3.97,2.01,to fire,1,disparar
+dispuesto,4.68,1.55,5.93,1.87,7.85,2.12,3.45,1.75,ready,1,dispuesto
+disputa,3.98,1.09,5.47,1.66,8.77,2.77,4.55,1.72,argument,1,disputa
+distancia,5.77,1.09,5.33,2.26,6.43,2.9,3.5,1.68,distance,1,distancia
+distraído,5.43,1.19,4.1,2.12,5.91,1.83,3.82,1.88,distracted,1,distraido
+divertido,5.97,1.09,6.6,2.06,3.5,1.68,4.7,1.62,funny,3,divertido
+divertir,5.88,1.26,7.4,1.59,4.06,2.11,4.97,1.76,to entertain,2,divertir
+doméstico,4.98,1.37,3.41,1.86,7.07,2.85,2.37,1.56,domestic,1,domestico
+donar,4.52,1.69,5.25,2.66,8.03,2.27,3.53,1.74,to donate,2,donar
+dormilón,5.58,1.2,4.87,2.49,3.97,1.49,4.3,1.85,sleepyhead,1,dormilon
+drogadicto,4.32,1.84,5.5,3.0,9.24,1.85,4.85,1.95,drug addict,1,drogadicto
+ducha,5.88,1.37,4.4,2.43,3.99,2.34,3.96,1.78,shower,1,ducha
+duplicar,4.52,1.52,4.41,2.08,8.23,2.5,1.97,1.27,to double,2,duplicar
+edición,4.32,1.62,2.57,1.74,8.69,2.06,2.4,1.61,edition,1,edicion
+ejecutar,4.6,1.71,6.57,2.11,8.84,2.37,3.29,1.83,to execute,1,ejecutar
+electrocutar,3.87,1.76,6.87,1.85,7.33,2.09,4.27,1.93,to electrocute,2,electrocutar
+elegir,5.64,1.23,6.19,2.15,4.7,2.98,2.8,1.63,to choose,2,elegir
+elemento,4.88,1.39,3.5,2.32,7.72,2.42,2.19,1.36,element,1,elemento
+elevado,4.68,1.53,5.57,1.63,6.88,2.06,3.61,1.6,high,1,elevado
+elíptico,3.15,1.44,3.41,1.92,9.63,1.9,2.3,1.51,elliptical,3,eliptico
+embalar,3.57,1.52,4.09,1.84,9.57,2.05,2.6,1.65,to box up,2,embalar
+embargo,4.5,1.67,5.27,2.72,10.41,1.86,4.68,2.43,seizure,1,embargo
+embestir,3.18,1.46,6.67,1.99,9.3,1.84,4.03,1.9,to charge at,1,embestir
+embolia,2.82,1.73,3.97,2.4,10.45,1.35,3.76,1.81,embolism,1,embolia
+empaquetar,3.87,1.53,4.1,1.83,7.39,2.38,2.97,1.72,to pack,1,empaquetar
+empatar,4.73,1.65,4.63,1.59,5.24,1.87,3.36,1.64,to (end in a) tie,1,empatar
+emplear,4.31,1.67,3.97,2.09,7.73,1.95,2.4,1.71,to use,2,emplear
+enaltecer,2.54,1.73,5.48,2.32,10.88,0.44,3.0,2.0,to uplift,1,enaltecer
+enamorar,5.58,1.22,6.67,2.5,6.88,2.72,5.87,1.47,to win sb love,2,enamorar
+enano,4.02,1.85,3.5,1.78,4.18,1.49,3.82,1.99,dwarf / short,3,enano
+encadenado,3.6,1.7,5.43,2.6,6.85,1.77,4.03,1.74,chained,1,encadenado
+encantador,4.98,1.28,5.93,1.86,6.68,2.65,4.33,1.74,charming,1,encantador
+encantar,5.82,1.03,6.79,1.9,5.43,2.13,4.7,1.9,to love sth,2,encantar
+encontrar,5.67,1.16,4.66,1.68,4.53,3.09,2.63,1.85,to find,2,encontrar
+endurecer,4.55,1.52,4.83,2.35,7.8,2.44,3.91,1.68,to harden,1,endurecer
+energía,5.38,1.46,6.19,2.42,6.7,2.31,3.87,1.78,energy,1,energia
+enfadar,5.6,1.28,6.3,2.65,3.36,1.5,5.12,1.62,to make angry,2,enfadar
+enfermar,5.25,1.72,5.07,2.9,3.91,1.38,4.76,1.75,to make ill,1,enfermar
+enfriamiento,4.15,1.33,4.07,1.87,6.8,2.61,3.87,1.57,cooling,1,enfriamiento
+enfurecer,4.05,1.61,6.56,2.11,7.43,2.85,4.87,1.48,to infuriate,2,enfurecer
+engañado,4.55,1.56,5.13,2.76,5.33,2.37,4.17,2.1,deceived,1,enganado
+engañar,4.85,1.61,6.13,2.52,4.77,1.87,4.23,1.92,to deceive,2,enganar
+engatusar,3.79,1.79,6.17,2.17,9.32,2.3,2.78,1.39,to cajole,1,engatusar
+engordar,5.33,1.11,4.27,2.13,7.99,2.55,4.15,2.05,to gain weight,1,engordar
+engrosar,2.9,1.47,3.33,1.84,9.41,2.05,3.76,1.97,to increase,2,engrosar
+enojo,4.7,1.74,5.37,2.24,8.47,3.0,3.72,2.12,annoyance,1,enojo
+enriquecedor,4.23,1.58,6.0,2.08,9.03,2.06,3.43,1.63,enriching,1,enriquecedor
+enriquecer,4.55,1.1,6.53,1.48,9.43,2.26,4.01,1.89,enrich,1,enriquecer
+enroscar,3.89,1.63,4.06,1.77,7.33,2.41,3.3,1.88,to screw,2,enroscar
+ensueño,3.25,1.61,4.14,2.18,9.97,1.63,4.03,1.56,daydream,1,ensueno
+entender,5.94,1.16,5.56,1.83,5.17,3.29,2.47,1.68,to understand,1,entender
+entero,5.46,1.39,5.56,2.18,5.07,3.12,1.8,1.19,whole,3,entero
+enterrar,3.51,1.83,3.5,2.27,6.03,2.06,3.77,1.79,to bury,1,enterrar
+entusiasmado,5.1,1.04,6.4,1.83,8.13,2.55,4.95,2.07,enthusiastic,1,entusiasmado
+entusiasmar,4.95,1.5,5.63,2.24,7.64,2.63,4.89,1.7,to excite,2,entusiasmar
+envenenar,3.83,1.68,7.37,1.61,6.7,2.05,3.97,1.81,to poison,1,envenenar
+enviar,5.93,1.42,3.37,2.37,5.53,1.77,2.76,1.55,to send,2,enviar
+envidioso,5.45,1.28,5.3,2.67,5.62,2.57,3.36,1.82,envious,3,envidioso
+eructo,4.66,1.5,4.25,2.11,5.67,3.04,4.1,1.77,burp,1,eructo
+esbozar,3.22,1.52,3.86,2.19,10.47,0.9,3.13,1.94,to sketch,1,esbozar
+escalera,5.79,1.06,3.52,1.87,3.83,2.25,3.13,1.94,stairs,1,escalera
+esclavizar,4.17,1.74,6.22,3.36,8.87,1.98,4.6,1.99,to enslave,1,esclavizar
+escupir,4.75,1.35,4.97,2.02,4.47,2.46,4.1,1.86,to spit,1,escupir
+escurridizo,3.63,1.5,3.4,1.38,8.17,2.42,3.13,1.61,slippery,1,escurridizo
+espacial,3.83,1.71,4.63,2.37,6.4,2.04,3.1,1.58,spatial,1,espacial
+espantar,3.93,1.59,4.63,1.79,6.9,1.95,2.83,1.62,to scare away,1,espantar
+espeso,4.0,1.75,3.31,1.84,7.23,2.62,3.37,1.96,dense,3,espeso
+espléndido,4.23,1.38,6.2,1.97,9.4,1.45,4.03,1.65,magnificent,1,esplendido
+espontáneo,4.83,1.46,4.67,2.45,8.7,2.42,3.66,1.72,spontaneous,3,espontaneo
+esquematizar,4.14,1.61,4.31,2.25,9.63,1.67,2.53,1.46,to outline,2,esquematizar
+esquilar,3.49,1.62,3.46,1.73,7.8,2.48,2.77,1.65,to shear,2,esquilar
+estabilidad,5.15,1.51,6.17,2.07,8.58,2.28,3.88,1.96,stability,1,estabilidad
+estable,4.92,1.36,5.83,1.86,8.39,2.0,3.73,1.88,stable,1,estable
+estacionar,4.55,1.64,4.21,1.73,8.83,2.13,2.5,1.33,to park,1,estacionar
+estación,5.4,1.77,3.3,1.97,5.24,2.45,3.1,1.78,station,1,estacion
+estafa,4.66,1.61,6.18,2.38,8.93,1.84,3.33,1.9,scam,1,estafa
+estallar,4.25,1.24,7.1,1.99,7.43,2.56,4.13,1.94,to burst,1,estallar
+esterilidad,3.87,1.97,4.83,2.57,10.38,1.81,3.63,1.94,infertility,1,esterilidad
+estrangular,3.25,1.9,5.09,2.84,8.03,1.92,4.13,2.11,to strangle,1,estrangular
+estrecho,4.53,1.31,4.17,1.62,6.06,2.51,2.86,1.81,narrow,3,estrecho
+estricto,4.73,1.34,6.8,1.75,7.55,2.4,4.42,1.75,strict,1,estricto
+estudiar,6.59,0.56,6.79,1.96,5.6,2.43,4.37,1.71,to study,2,estudiar
+estudioso,5.38,1.25,5.84,2.29,6.07,1.8,3.6,1.9,studious,1,estudioso
+euforia,4.7,1.25,7.1,1.67,9.46,2.19,4.93,2.13,euphoria,1,euforia
+exagerar,5.52,1.44,6.3,1.84,7.06,1.77,3.85,1.77,exaggerate,1,exagerar
+excitar,5.05,1.33,6.53,2.4,9.16,2.41,4.62,1.68,to excite,2,excitar
+excursión,4.3,1.76,4.53,2.3,3.83,0.99,4.67,1.63,trip,1,excursion
+exitoso,5.0,1.41,7.47,1.14,7.61,1.75,4.7,1.9,successful,3,exitoso
+explicar,5.37,1.34,5.17,2.26,4.3,1.26,3.27,1.6,to explain,2,explicar
+explosión,4.8,1.61,7.52,1.72,6.57,2.33,4.97,1.85,explosion,1,explosion
+explosivo,4.38,1.42,7.33,1.3,7.84,2.52,4.84,1.66,explosive,1,explosivo
+expresar,5.63,1.32,6.2,1.69,6.64,2.09,3.7,1.86,to express,1,expresar
+extenso,4.13,1.46,4.87,2.46,8.2,1.86,2.53,1.5,wide,3,extenso
+exterminar,3.65,1.8,7.62,2.14,9.22,2.12,4.31,1.95,to exterminate,1,exterminar
+externalizar,2.61,1.51,4.31,1.79,10.28,1.46,3.03,1.96,to outsource,0,externalizar
+fallecer,5.03,1.6,6.7,2.55,7.33,2.3,5.55,1.9,to pass away,1,fallecer
+falsear,4.38,1.45,4.8,2.34,8.88,2.48,3.66,1.77,to falsify,1,falsear
+fantasma,4.05,1.76,4.61,2.12,4.83,2.34,4.4,1.92,ghost,1,fantasma
+fantástico,5.0,1.46,6.0,1.78,5.87,2.21,4.5,1.72,fantastic,3,fantastico
+farsa,4.38,1.68,5.33,2.11,9.12,2.09,3.42,1.58,sham,1,farsa
+favorito,5.48,1.43,5.38,2.46,5.17,3.17,3.9,1.9,favorite,3,favorito
+fe,3.78,2.01,4.87,3.15,6.03,2.59,3.93,2.1,faith,1,fe
+fecha,5.52,1.46,4.0,1.68,4.77,1.41,2.97,1.94,date,1,fecha
+fecundo,2.83,1.55,4.22,2.14,10.03,1.45,3.41,1.84,fertile,3,fecundo
+felicidad,6.4,0.87,8.33,1.32,4.21,2.23,5.79,1.43,happiness,1,felicidad
+felicitar,5.27,1.45,5.03,2.42,4.2,1.92,3.93,1.95,to congratulate,1,felicitar
+ferrocarril,3.38,1.35,4.2,2.11,6.13,2.26,2.71,1.72,railway,1,ferrocarril
+festejar,4.44,1.66,5.9,1.57,7.73,2.6,4.58,1.84,to celebrate,1,festejar
+fiel,5.38,1.43,6.34,2.09,8.4,2.57,3.87,1.76,faithful,1,fiel
+fiesta,6.09,1.17,6.18,2.14,4.77,2.34,4.9,1.94,party,1,fiesta
+figura,4.77,1.57,3.66,1.62,5.43,3.01,2.57,1.61,figure,1,figura
+figurar,3.3,1.15,4.07,1.44,9.9,2.08,2.66,1.8,to figure,1,figurar
+filosofía,4.4,1.64,5.67,2.25,10.3,1.21,3.03,2.06,philosophy,1,filosofia
+fino,5.1,1.45,3.7,1.78,5.61,2.05,3.61,1.87,fine,3,fino
+firme,4.47,1.43,6.2,2.02,7.13,2.15,3.4,1.61,firm,1,firme
+flirtear,3.81,1.81,4.45,1.79,10.57,0.9,3.8,1.83,to flirt,1,flirtear
+forma,5.0,1.51,3.77,1.63,4.64,1.95,3.12,1.8,shape,1,forma
+formal,4.98,1.65,4.17,2.61,7.81,2.45,2.91,1.32,formal,1,formal
+fortaleza,4.6,1.78,6.57,2.21,7.18,2.47,4.53,1.92,fortress,1,fortaleza
+fortuna,4.5,1.66,6.22,1.95,7.93,2.52,3.27,1.66,fortune,1,fortuna
+fotografía,5.73,1.04,4.53,1.66,4.61,2.45,4.19,1.82,photography,1,fotografia
+fracasado,4.8,1.62,5.0,3.33,8.35,2.44,3.72,1.99,loser,1,fracasado
+frase,4.94,1.55,3.81,1.84,5.23,1.81,2.63,1.94,sentence,1,frase
+fraternidad,3.04,1.71,5.52,1.9,9.97,1.75,4.1,2.19,fraternity,1,fraternidad
+fresco,4.73,1.3,3.91,2.28,5.47,1.98,4.5,1.76,fresh,3,fresco
+frondoso,3.15,1.75,3.9,2.31,9.17,1.86,3.83,1.86,lush,3,frondoso
+funeraria,4.45,1.82,5.8,2.77,8.54,2.28,4.63,1.82,funeral parlor,1,funeraria
+furia,3.88,1.54,5.81,2.19,7.73,2.32,4.43,1.92,fury,1,furia
+fusilar,3.79,2.18,6.59,3.12,8.87,2.28,4.51,1.98,to shoot,1,fusilar
+ganador,5.55,1.38,7.5,1.38,4.21,1.65,5.0,1.6,winner,1,ganador
+garganta,4.95,1.56,3.87,1.36,4.76,2.69,3.11,1.95,throat,1,garganta
+gasto,5.33,1.06,5.57,1.85,7.43,2.21,3.4,1.83,expense,1,gasto
+generador,2.73,1.59,3.6,2.04,9.87,1.55,2.2,1.58,generator,1,generador
+genuino,3.3,1.46,4.4,2.33,9.98,2.07,3.52,1.64,genuine,1,genuino
+giratorio,3.3,1.61,3.4,1.75,6.93,2.45,2.97,1.68,revolving,1,giratorio
+giro,4.65,1.4,4.17,1.34,5.67,2.97,2.3,1.45,turn,3,giro
+golpear,4.83,1.37,7.03,1.56,4.37,1.94,4.67,1.73,to hit,1,golpear
+gordura,4.8,1.45,4.8,2.27,5.82,2.28,3.83,1.61,fatness,1,gordura
+gozoso,3.48,1.83,5.0,2.36,9.23,2.18,3.57,1.94,joyful,1,gozoso
+gracia,5.4,1.19,5.47,1.8,5.73,2.33,4.03,1.45,flair,1,gracia
+grandioso,4.38,1.49,7.63,1.22,8.45,2.52,4.17,2.03,grandiose,1,grandioso
+grasa,5.22,1.63,4.6,1.77,6.76,2.36,3.94,1.64,grease,1,grasa
+gratis,5.7,1.42,6.06,2.46,5.97,2.36,3.97,1.92,free,1,gratis
+gráfico,5.6,1.16,4.47,2.17,9.0,1.97,2.1,1.37,graphic,3,grafico
+grueso,4.65,1.42,3.93,2.42,6.11,2.1,3.27,1.86,thick,3,grueso
+gustar,5.88,0.98,6.93,1.66,2.77,0.82,5.1,1.47,to like,2,gustar
+hacienda,4.45,1.79,5.1,2.62,10.36,1.32,3.12,2.07,tax office,1,hacienda
+hacinamiento,3.12,1.61,3.78,2.28,10.11,2.17,4.04,2.19,overcrowding,1,hacinamiento
+halagador,4.5,1.78,5.43,2.33,9.49,2.42,2.89,1.66,flattering,1,halagador
+hallar,4.47,1.62,4.93,2.26,8.17,1.8,2.7,1.64,to discover,1,hallar
+hambre,5.98,1.2,6.61,2.45,3.1,2.6,5.77,1.55,hunger,1,hambre
+hecho,6.23,1.11,4.57,2.57,4.94,2.43,2.76,1.88,fact,3,hecho
+helado,5.52,1.3,4.17,2.34,3.16,1.68,5.58,1.45,ice cream,3,helado
+herir,4.7,1.66,6.47,2.4,5.93,2.5,4.25,1.61,to wound,2,herir
+hidromasaje,3.42,1.56,4.07,1.96,9.97,2.15,4.55,2.01,jacuzzi,1,hidromasaje
+hinchado,4.55,1.43,4.73,1.64,6.03,1.81,3.1,1.45,swelled,3,hinchado
+holgado,3.93,1.51,3.23,1.7,9.55,1.86,2.79,1.7,loose,1,holgado
+hondo,4.65,1.77,4.0,2.02,4.85,2.46,3.01,1.55,deep,3,hondo
+honrado,5.05,1.58,6.37,1.99,7.87,2.51,3.26,1.59,honest,1,honrado
+horroroso,4.82,1.16,5.38,1.77,6.57,2.67,4.2,1.86,dreadful,1,horroroso
+hueco,4.3,1.22,3.5,1.33,5.55,2.38,2.63,1.55,gap,3,hueco
+huérfano,4.0,2.04,4.77,2.93,7.05,2.64,3.77,2.18,orphan,3,huerfano
+humanitario,4.66,1.43,5.53,2.2,8.5,1.78,4.33,1.94,humanitarian,3,humanitario
+humedecer,3.53,1.51,4.03,2.22,7.67,2.52,3.73,2.0,moisten,2,humedecer
+humildad,5.5,1.31,5.73,2.55,7.56,2.88,3.66,1.71,humbleness,1,humildad
+humillación,4.28,1.9,5.9,2.77,8.51,2.33,4.92,1.95,humiliation,1,humillacion
+huracán,4.28,1.91,7.48,1.68,6.8,2.02,4.52,1.91,hurricane,1,huracan
+húmedo,4.77,1.45,4.03,1.79,6.17,2.97,4.13,1.85,moist,1,humedo
+ideal,5.05,1.13,5.93,2.05,7.3,2.0,3.93,1.72,ideal,1,ideal
+igual,5.94,1.32,3.4,2.22,4.19,1.68,2.81,1.53,equal,1,igual
+igualar,4.92,1.37,4.8,1.4,6.42,2.3,2.69,1.55,equalise,1,igualar
+ilusionado,5.28,1.1,6.63,1.61,7.14,2.44,5.02,2.0,thilled,1,ilusionado
+ilusionar,5.28,1.43,6.37,2.25,5.73,1.89,4.47,1.63,to excite,2,ilusionar
+ilusión,5.48,1.1,6.67,1.9,5.96,2.8,5.23,1.78,hope,1,ilusion
+imaginación,5.82,1.11,6.8,1.69,5.27,1.92,4.94,1.69,imagination,1,imaginacion
+impaciencia,5.45,0.95,5.5,1.81,7.43,2.21,3.93,1.7,impatience,1,impaciencia
+implantar,4.02,1.88,5.03,1.87,9.58,2.0,2.93,1.67,to implant,1,implantar
+imponer,4.47,1.82,6.34,1.98,8.63,2.51,3.5,1.85,to impose,1,imponer
+imposibilidad,4.23,1.5,5.47,2.24,8.37,2.39,4.23,1.85,impossibility,1,imposibilidad
+imprimir,5.31,1.75,3.59,1.98,8.1,2.01,2.3,1.66,to print,2,imprimir
+imprudente,4.23,1.43,4.83,2.38,8.47,2.24,3.23,1.7,imrpudent,1,imprudente
+impuesto,5.33,1.55,5.3,2.44,9.52,1.95,3.73,2.08,tax,1,impuesto
+incapaz,4.35,1.7,5.0,2.27,7.36,2.35,3.64,1.81,incapable,1,incapaz
+incendiar,4.27,1.37,6.48,2.27,6.33,2.72,4.67,1.99,to set fire,1,incendiar
+inconsciente,5.07,1.16,5.03,2.22,9.04,2.29,4.06,1.92,unconscious,1,inconsciente
+increpar,3.27,1.58,4.77,2.24,9.82,2.05,3.85,2.0,to tell off,2,increpar
+inculto,4.68,1.42,3.03,2.15,9.03,1.97,2.6,1.69,uneducated,3,inculto
+incurable,3.69,1.73,5.97,2.72,8.43,2.01,4.63,1.94,incurable,1,incurable
+infancia,5.55,1.35,4.45,2.54,6.8,2.81,4.33,2.12,childhood,1,infancia
+infarto,4.59,1.55,6.45,2.41,8.47,2.06,4.73,1.96,heart attack,1,infarto
+infectar,4.4,1.73,5.07,2.32,6.73,2.2,4.55,1.64,to infect,1,infectar
+infidelidad,4.08,1.57,4.97,2.75,9.77,1.63,4.43,2.27,infidelity,1,infidelidad
+injuria,2.74,1.69,5.18,2.34,10.59,0.95,3.17,1.81,insult,1,injuria
+injuriar,2.73,1.6,6.44,1.53,10.46,1.37,3.79,2.1,to insult,1,injuriar
+injusticia,5.52,1.22,6.23,2.31,7.5,2.01,4.77,1.72,injustice,1,injusticia
+inquietar,5.18,1.39,5.67,1.63,7.97,2.4,3.36,1.63,to worry,1,inquietar
+inscribir,4.43,1.66,4.57,1.25,8.94,1.98,3.03,1.99,to record,1,inscribir
+insensato,3.65,1.54,3.78,2.0,9.53,1.89,2.83,1.58,foolish,1,insensato
+inspeccionar,3.93,1.64,4.69,2.43,9.23,1.83,2.6,1.5,to examine,1,inspeccionar
+instaurar,3.04,1.79,4.28,2.49,9.87,1.98,2.07,1.31,to establish,1,instaurar
+insuficiente,4.1,1.76,3.31,2.04,7.47,2.16,3.5,1.87,unsatisfactory,1,insuficiente
+insultado,4.8,1.15,4.4,2.27,5.43,2.39,4.41,2.15,insulted / offended,1,insultado
+inteligente,5.82,1.0,7.7,1.15,6.22,2.69,4.3,1.92,intelligent,1,inteligente
+interferir,4.47,1.55,4.97,1.75,9.56,2.2,2.41,1.46,to interfere,1,interferir
+intimidar,4.48,1.34,6.94,1.87,9.4,1.71,4.43,1.85,to intimidate,1,intimidar
+inventar,5.09,1.42,5.58,2.05,5.13,2.52,3.87,1.89,to invent,1,inventar
+invicto,3.81,1.81,6.61,2.67,10.73,1.19,2.74,1.81,undefeated,1,invicto
+ira,4.68,1.53,7.1,1.75,7.46,2.81,5.12,1.66,rage,1,ira
+irrespetuoso,3.93,1.77,4.41,2.35,8.37,2.01,3.2,1.92,disrespectful,3,irrespetuoso
+íntegro,3.98,1.37,4.73,2.07,9.84,2.14,3.55,1.8,upright,3,integro
+jabón,6.1,1.25,2.87,1.91,4.01,2.58,3.7,1.85,soap,1,jabon
+jeringuilla,4.13,1.5,5.7,1.8,5.63,2.16,4.37,1.87,syringe,1,jeringuilla
+jugar,5.73,0.93,4.9,1.95,2.2,1.03,5.1,1.45,to play,2,jugar
+justo,5.23,1.03,5.85,2.06,6.63,2.74,3.83,1.91,fair,3,justo
+labrador,3.8,1.55,4.17,1.74,7.17,2.53,3.0,1.74,farmer,1,labrador
+lamentar,3.93,1.44,3.75,2.11,8.2,2.47,3.5,1.61,to regret,2,lamentar
+lanzar,5.06,1.51,4.03,1.87,5.03,2.16,3.15,1.5,to throw,2,lanzar
+lapidar,2.73,1.63,5.43,2.92,10.09,1.72,3.94,2.0,to stone,1,lapidar
+lastimar,4.02,1.7,5.4,2.67,6.63,2.44,4.33,1.81,to harm,1,lastimar
+lápiz,6.12,1.2,3.83,2.12,2.79,0.86,3.76,2.28,pencil,1,lapiz
+lealtad,4.75,1.22,7.37,1.13,9.11,2.72,4.76,2.23,loyalty,1,lealtad
+lectura,5.88,1.21,4.0,2.35,4.25,1.12,4.42,2.0,reading,1,lectura
+leer,6.23,1.01,6.2,1.61,3.55,1.46,4.09,1.93,to read,2,leer
+legítimo,4.25,1.46,5.8,2.12,10.07,1.44,2.73,1.72,legitimate,3,legitimo
+lerdo,3.82,1.58,4.52,2.45,7.7,2.63,3.97,1.75,dumb,1,lerdo
+lesionar,4.65,1.5,5.77,2.36,7.03,1.85,4.37,1.63,to injure,1,lesionar
+ligar,5.58,1.25,5.27,2.5,8.03,2.61,4.53,1.57,to make out with,1,ligar
+ligue,5.14,1.57,4.79,1.9,8.79,2.02,4.39,1.57,fling,1,ligue
+limpio,5.73,1.17,5.77,1.98,3.9,2.28,4.46,1.57,clean,3,limpio
+linchar,3.25,1.5,6.66,1.86,9.18,2.16,3.89,1.87,to lynch,1,linchar
+lindo,4.96,1.52,4.75,2.66,5.3,2.22,3.67,1.77,cute,3,lindo
+linea,5.48,1.31,4.03,1.49,4.57,2.39,3.0,1.6,line,1,linea
+listo,5.73,1.04,6.57,2.13,3.57,1.1,3.67,2.07,smart / ready,3,listo
+liviano,3.59,1.62,2.69,1.54,10.5,1.48,2.73,1.31,light,3,liviano
+llamar,5.73,1.3,4.37,1.85,3.63,1.43,4.13,1.57,to call,2,llamar
+llanto,4.28,1.97,4.87,2.84,3.9,1.86,4.87,1.68,cry,1,llanto
+locuaz,2.4,1.58,4.87,1.8,10.41,1.4,3.1,1.47,talkative,1,locuaz
+locura,4.5,1.37,4.41,1.92,7.07,2.33,3.63,1.73,madness,1,locura
+lograr,5.18,1.42,7.1,1.84,6.52,1.89,4.55,1.86,to achieve,1,lograr
+luminosidad,4.47,1.51,4.25,2.46,7.77,2.33,3.6,1.9,brightness,1,luminosidad
+luminoso,4.62,1.29,5.17,2.2,6.55,2.69,4.49,2.01,bright,3,luminoso
+luna,5.63,1.31,4.33,2.11,3.13,1.25,4.3,1.68,moon,1,luna
+luz,6.35,1.16,4.3,2.64,2.99,1.69,4.92,1.63,light,1,luz
+maceta,4.84,1.4,2.94,1.84,5.2,2.34,3.13,1.53,flowerpot,1,maceta
+madre,6.7,0.67,6.27,2.26,1.53,0.68,6.1,1.63,mother,1,madre
+madrugón,5.45,1.35,5.77,2.46,6.83,2.7,4.5,1.63,getting up early,1,madrugon
+malestar,5.5,1.4,5.03,2.77,6.84,3.11,4.65,1.72,uneasiness / disconfort,1,malestar
+malévolo,3.23,1.53,6.73,1.59,8.93,2.13,4.0,1.74,wicked,1,malevolo
+malgastar,4.98,1.22,5.25,2.13,7.73,2.36,2.93,1.57,to waste,2,malgastar
+malo,5.93,1.11,4.93,2.42,2.73,1.11,4.24,1.72,bad,3,malo
+maloliente,3.23,1.7,3.34,2.15,7.77,2.3,4.43,1.79,stinking,3,maloliente
+maltratador,5.08,1.52,7.38,2.67,8.7,2.42,5.53,1.91,bully,1,maltratador
+maltratar,4.82,1.59,6.97,2.38,8.23,2.54,6.0,1.39,to mistreat,1,maltratar
+malversar,3.46,1.73,5.59,2.06,10.54,1.23,3.18,1.98,to embezzle,1,malversar
+manantial,3.87,1.64,3.37,1.43,7.83,2.18,4.1,1.4,natural spring,1,manantial
+mar,4.92,1.68,6.03,2.19,2.73,0.91,5.47,1.76,sea,1,mar
+maravilloso,5.28,1.13,7.0,1.26,6.35,2.65,5.04,1.98,wonderful,3,maravilloso
+marcar,5.13,1.14,5.28,2.05,6.73,2.99,2.17,1.53,to mark,2,marcar
+marginación,3.75,1.76,4.09,2.63,9.0,1.84,3.87,2.03,marginalizartion,1,marginacion
+martirio,2.83,1.65,4.06,2.38,9.7,1.86,3.73,2.03,martyrdom,1,martirio
+masaje,5.13,1.72,4.33,2.32,6.74,2.49,4.81,1.65,massage,1,masaje
+mascullar,2.82,1.74,3.22,2.02,10.17,1.4,2.16,1.28,to mumble,2,mascullar
+matar,5.3,1.98,7.53,2.29,5.41,2.32,5.44,1.72,to kill,2,matar
+mecánico,4.4,1.58,3.75,1.52,6.27,2.55,2.2,1.37,mechanic,3,mecanico
+medalla,4.05,1.22,5.93,2.32,5.53,2.32,3.38,1.83,medal,1,medalla
+medio,4.5,1.55,3.8,1.97,4.83,1.91,2.27,1.36,middle,3,medio
+meditación,4.33,1.46,4.47,2.42,9.57,1.89,4.1,1.83,meditation,1,meditacion
+mentir,5.5,1.44,6.36,2.32,4.27,2.35,4.27,1.86,to lie,1,mentir
+mentiroso,5.07,0.96,5.4,2.46,4.55,2.63,4.64,2.08,liar,3,mentiroso
+merienda,5.8,1.11,4.97,1.94,3.27,1.18,4.79,1.8,snack,1,merienda
+metástasis,2.9,2.13,4.0,2.92,10.83,0.46,4.27,2.05,metastasis,1,metastasis
+meticuloso,3.83,1.52,4.43,2.37,10.0,1.87,3.19,1.81,meticulous,1,meticuloso
+metralleta,3.18,2.01,5.34,2.89,7.9,2.4,3.7,2.02,submachine gun,1,metralleta
+metro,6.39,0.86,4.19,2.19,7.43,2.74,2.23,1.33,subway / meter,1,metro
+mimado,5.45,1.45,3.77,2.01,5.25,2.82,3.49,1.64,spoiled,1,mimado
+mitad,5.58,1.27,4.0,2.02,4.52,2.57,2.16,1.63,half,1,mitad
+modular,2.69,1.61,3.93,2.05,10.53,1.04,2.03,1.19,to modulate,1,modular
+mojado,4.87,1.54,3.13,1.62,3.3,1.47,4.43,2.06,wet,3,mojado
+monstruo,4.4,1.59,6.63,1.88,4.1,3.18,4.4,1.75,monster,1,monstruo
+monstruoso,3.8,1.73,6.0,2.12,5.03,1.94,4.43,1.76,mostruoso,1,monstruoso
+moqueta,3.44,1.85,2.84,1.57,7.7,2.85,2.27,1.55,carpet,1,moqueta
+morder,5.05,1.49,6.33,1.88,2.8,1.0,4.33,2.02,to bite,1,morder
+mortal,4.77,1.47,7.3,1.95,6.53,2.32,4.47,2.08,mortal,1,mortal
+mover,5.48,1.52,4.0,2.29,3.3,1.18,2.67,1.81,to move,1,mover
+muestrario,3.3,1.59,3.72,1.71,9.33,1.86,2.67,1.32,sampling,1,muestrario
+munición,3.23,1.85,6.06,1.89,8.47,2.05,3.73,1.91,ammunition,1,municion
+muñeco,4.8,1.34,3.2,1.69,2.17,1.15,4.2,1.77,doll,1,muneco
+muñón,3.23,1.58,4.1,2.29,9.66,2.2,4.3,2.17,stump,1,munon
+murmurar,4.71,1.4,3.25,1.37,8.1,2.31,3.13,1.57,to murmur,2,murmurar
+muro,4.02,1.75,4.47,2.53,4.53,1.25,2.5,1.85,wall,1,muro
+mutilado,3.57,1.58,6.73,2.64,8.77,2.3,4.8,1.75,amputee,1,mutilado
+nacional,4.14,1.72,4.75,2.03,8.07,2.38,2.53,1.59,national,1,nacional
+nariz,4.95,1.54,3.43,2.01,2.27,0.52,3.73,2.49,nose,1,nariz
+navegar,4.38,1.84,3.44,1.98,6.1,2.02,3.4,1.57,to navigate,1,navegar
+nazi,4.38,1.79,7.53,2.45,10.1,1.21,5.07,2.18,nazi,1,nazi
+náusea,4.23,1.38,3.91,2.22,7.77,2.88,5.47,1.61,nausea,1,nausea
+necio,3.38,1.64,4.67,2.45,9.69,1.77,2.97,1.59,fool,1,necio
+negativo,5.55,1.34,5.13,2.81,6.34,2.9,3.59,1.62,negative,1,negativo
+negociar,5.1,1.5,5.87,1.63,8.24,2.72,2.64,1.55,to negotiate,2,negociar
+nivel,5.13,1.4,5.0,1.44,6.36,2.29,3.12,1.85,level,1,nivel
+noche,6.3,0.86,4.73,2.1,2.67,1.45,4.53,1.76,night,1,noche
+novedoso,4.83,1.31,4.9,2.17,7.58,2.43,3.27,1.76,new,1,novedoso
+número,6.15,1.06,4.4,1.98,3.06,1.12,3.55,2.09,number,1,numero
+oasis,3.93,1.88,3.73,2.27,8.43,2.25,3.82,1.95,oasis,1,oasis
+objeto,5.63,1.4,3.37,1.94,4.81,2.45,2.19,1.57,object,1,objeto
+odioso,4.92,1.51,6.03,2.11,6.3,2.08,4.48,1.97,hateful,3,odioso
+ofensa,4.85,1.06,5.66,2.06,8.27,2.55,3.63,1.73,offense,1,ofensa
+oloroso,4.25,1.76,4.63,2.04,5.58,2.25,4.88,1.85,fragrant,1,oloroso
+olvidar,6.0,0.99,5.73,2.36,5.06,2.56,3.26,1.73,to forget,1,olvidar
+olvido,4.59,1.36,3.38,1.79,5.73,2.42,3.57,1.74,forget,1,olvido
+oncología,3.97,2.22,6.28,2.54,10.31,1.87,4.79,2.17,oncology,1,oncologia
+ondulado,4.39,1.74,3.88,1.49,7.13,2.26,3.6,1.71,wavy,1,ondulado
+opaco,3.3,2.01,4.3,1.78,8.24,1.95,3.15,1.91,opaque,1,opaco
+operación,4.17,2.08,4.25,2.57,6.73,2.16,4.3,1.91,operation,1,operacion
+oprimir,4.29,1.5,6.66,2.43,9.93,1.57,4.0,2.05,oppress,2,oprimir
+orar,3.77,1.96,3.24,2.17,6.56,2.1,3.11,1.61,to pray,1,orar
+original,5.48,1.47,6.13,2.01,7.63,2.67,2.63,1.69,original,1,original
+orquídea,3.12,1.49,3.4,1.87,9.38,2.17,3.54,1.94,orchid,1,orquidea
+oruga,3.25,1.83,3.6,2.08,5.45,1.97,3.67,1.98,caterpillar,1,oruga
+oscilar,3.45,1.56,3.17,1.53,9.6,1.77,2.53,1.46,to oscillate,1,oscilar
+otear,2.41,1.16,4.0,2.2,9.88,2.52,3.16,2.03,to watch over,2,otear
+otitis,4.0,1.98,4.77,2.13,8.51,2.74,4.37,1.96,otitis,1,otitis
+otorgar,3.33,1.58,5.7,2.26,10.27,1.01,2.83,1.56,to grant,1,otorgar
+ovacionar,3.22,1.67,5.68,2.23,9.92,1.57,3.46,1.88,to cheer,2,ovacionar
+padecer,3.93,1.13,4.72,2.27,8.62,2.81,4.16,1.89,to suffer,1,padecer
+paella,5.43,1.41,4.27,2.18,4.4,1.5,4.63,2.03,paella,1,paella
+paisaje,5.15,1.42,4.7,2.22,5.18,2.43,4.68,1.7,landscape,1,paisaje
+paranormal,3.52,1.69,5.36,2.1,9.63,1.75,4.27,1.96,paranormal,1,paranormal
+parásito,4.32,1.79,5.5,2.6,8.36,2.48,3.46,1.62,parasite,1,parasito
+parcial,5.33,1.46,5.1,2.04,8.76,2.02,3.12,1.95,partial,1,parcial
+parecido,5.84,1.2,4.42,1.92,5.7,2.63,3.43,1.76,similarity,1,parecido
+pasear,5.94,1.06,4.12,1.8,4.27,2.77,4.07,1.57,to walk,1,pasear
+paseo,5.97,1.28,3.8,2.46,4.06,2.52,3.46,1.72,stroll,1,paseo
+pavor,3.37,1.79,5.75,2.24,9.9,1.65,4.17,1.95,dread,1,pavor
+pedo,5.15,1.45,4.5,2.16,3.57,2.39,4.94,1.88,fart,1,pedo
+pegar,4.95,1.52,7.27,1.8,3.27,1.23,4.7,1.93,to hit / to glue,1,pegar
+peinar,5.6,1.39,3.3,1.82,2.87,1.01,4.0,2.2,to comb,2,peinar
+pelear,4.9,1.16,5.87,1.87,4.4,2.51,4.66,2.14,to fight,1,pelear
+peligrar,3.45,1.52,5.8,2.27,5.67,1.88,4.43,1.77,to be in danger,1,peligrar
+peligroso,5.55,1.2,6.93,2.32,4.87,3.0,4.3,1.87,dangerous,3,peligroso
+pelirrojo,4.15,1.58,3.97,1.75,5.23,1.74,3.03,1.85,redhead,1,pelirrojo
+pensión,3.95,1.5,4.27,1.86,9.7,1.58,2.5,1.5,hostel / alimony,1,pension
+pequeño,5.75,1.09,3.2,1.61,2.6,0.77,3.07,1.64,small,3,pequeno
+perder,5.5,1.19,5.09,2.69,4.2,2.59,4.33,1.75,to loose,1,perder
+perdonar,5.33,1.22,6.57,2.46,3.33,1.24,4.7,1.78,to forgive,2,perdonar
+perfil,4.85,1.75,3.27,1.95,8.43,2.33,2.26,1.44,profile,1,perfil
+perfumado,4.75,1.52,3.97,2.35,6.73,2.69,5.0,1.66,perfumed,1,perfumado
+perjudicar,4.3,1.3,5.1,2.78,8.37,1.81,4.07,1.66,to damage,1,perjudicar
+perseverar,4.11,1.87,5.67,2.37,9.49,2.37,3.17,1.66,to persevere,1,perseverar
+pesadilla,4.68,1.25,6.47,1.8,4.23,1.61,5.2,1.79,nightmare,1,pesadilla
+pesado,5.3,1.01,4.6,1.83,5.09,2.6,3.89,1.82,heavy / tiresome,3,pesado
+pérdida,4.96,1.38,4.47,2.44,6.57,3.09,4.37,2.03,loss,1,perdida
+pie,5.78,1.44,4.03,1.96,2.85,1.44,3.88,2.22,foot,1,pie
+piropear,4.31,1.55,5.16,1.89,8.73,2.18,3.87,1.61,to make flattering comments,2,piropear
+piropo,4.8,1.64,6.13,1.74,7.64,1.98,4.0,1.58,flirtatious remark,1,piropo
+piscina,5.35,1.3,4.23,2.13,3.5,1.36,4.47,1.43,swimming pool,1,piscina
+plenitud,4.02,1.49,6.7,1.82,10.21,1.98,4.23,2.17,fullness,1,plenitud
+poema,4.47,1.67,3.83,2.02,6.53,2.13,3.83,1.56,poem,1,poema
+político,6.35,1.1,5.83,2.63,8.21,2.22,3.76,1.89,politician,3,politico
+posible,5.8,1.22,6.43,2.18,6.15,2.71,2.94,1.71,possible,1,posible
+positivo,5.88,0.96,6.03,2.48,6.06,2.38,4.51,1.9,positive,3,positivo
+pólvora,3.37,1.7,5.97,2.44,8.5,2.15,3.83,1.97,gunpowder,1,polvora
+precintar,3.68,1.67,3.37,2.31,9.36,2.01,2.8,1.48,to close off,2,precintar
+prejuicio,4.35,1.39,5.7,2.35,9.92,2.12,4.9,2.16,prejudice,1,prejuicio
+premiar,4.8,1.52,6.47,1.83,5.07,2.1,4.07,1.87,to award,1,premiar
+premio,5.15,1.36,7.1,1.56,3.2,1.3,4.63,1.54,award,1,premio
+preocupar,5.33,1.26,5.83,2.02,5.94,1.98,4.76,1.82,to worry,2,preocupar
+preparado,5.52,1.05,6.37,1.85,6.17,2.77,3.02,1.95,qualified,1,preparado
+preparar,5.61,1.26,4.91,2.2,5.4,2.43,3.17,1.68,to prepare,2,preparar
+presumido,4.7,1.45,4.5,2.03,5.99,2.25,3.77,1.66,boastfull,1,presumido
+pretencioso,3.48,1.89,4.36,2.53,10.07,1.9,2.58,1.63,conceited,3,pretencioso
+probar,5.68,1.03,5.0,1.66,4.63,2.62,4.43,1.63,to try,1,probar
+producto,5.52,1.13,3.91,1.63,7.6,2.53,3.0,1.7,product,1,producto
+programar,4.29,1.61,5.09,2.22,9.8,1.54,1.8,1.3,to program,1,programar
+prosperar,4.73,1.47,5.3,2.17,9.24,2.09,3.76,2.05,to thrive,1,prosperar
+prostituir,4.45,1.79,5.53,2.4,9.66,1.81,4.09,2.08,to prostitute,1,prostituir
+proteger,4.92,1.79,5.72,2.32,6.07,2.35,4.4,1.75,to protect,1,proteger
+provincia,5.3,1.5,3.73,2.07,7.11,1.9,2.11,1.33,province,1,provincia
+psicosis,3.83,1.54,6.5,2.4,10.47,1.82,4.46,2.13,psychosis,1,psicosis
+psicópata,3.6,1.73,4.72,2.61,10.07,1.62,3.77,1.85,psychopath,1,psicopata
+puñalada,3.85,1.98,6.8,2.66,7.71,2.56,4.59,1.72,stab,1,punalada
+puro,4.36,1.77,5.3,2.23,7.87,2.42,4.07,1.91,pure / cigar,3,puro
+purulento,2.37,1.55,3.91,2.19,10.22,1.68,3.92,1.93,purulent,3,purulento
+pústula,2.47,1.69,2.48,1.73,10.78,0.94,3.47,1.95,pustule,1,pustula
+quejumbroso,1.93,1.51,2.84,1.91,10.04,2.28,3.16,1.97,cranky,3,quejumbroso
+quemar,4.89,1.73,7.3,1.79,4.87,2.43,5.2,1.65,to burn,2,quemar
+quieto,5.1,1.77,3.53,2.51,3.8,3.2,3.03,1.63,still,1,quieto
+quimioterapia,4.43,2.03,6.37,2.86,10.08,2.0,4.67,2.07,chemotherapy,1,quimioterapia
+racial,3.56,2.0,4.58,2.09,9.73,1.96,3.03,1.92,racial,1,racial
+reanimar,3.81,1.6,5.94,2.18,9.43,1.77,4.07,2.08,revive,1,reanimar
+recalcar,4.0,1.37,5.44,2.23,9.1,2.09,2.24,1.33,to emphasize,1,recalcar
+recibir,5.13,1.26,4.93,2.03,5.6,1.81,3.5,1.63,to receive,2,recibir
+reciclar,5.37,1.19,5.73,1.68,6.94,2.03,3.76,1.66,to recycle,2,reciclar
+recolectar,3.53,1.56,4.37,1.77,7.45,1.82,2.85,1.48,to gather,1,recolectar
+recompensar,5.15,0.94,5.6,2.57,6.4,2.2,4.35,1.68,to reward,1,recompensar
+recriminar,3.8,1.53,6.15,1.64,9.93,1.53,3.97,1.79,to reproach,2,recriminar
+recrudecer,2.09,1.31,4.57,2.58,10.73,0.67,2.46,1.45,to worsen,2,recrudecer
+redicho,3.06,1.33,4.37,1.69,8.99,2.5,2.54,2.02,pretentious,3,redicho
+reemplazar,4.68,1.35,5.59,2.37,9.3,1.93,2.37,1.52,to replace,1,reemplazar
+referir,4.98,1.63,4.17,1.46,8.84,2.19,2.07,1.25,to refer,1,referir
+reformar,3.96,1.65,4.19,1.8,8.5,1.91,2.27,1.44,to remodel,1,reformar
+reforzar,4.75,1.22,5.7,1.73,8.47,2.13,3.8,1.92,to reinforce,1,reforzar
+refrescante,4.88,1.22,4.97,1.73,7.0,2.08,4.3,1.62,refreshing,1,refrescante
+regalar,5.3,1.38,4.83,1.76,3.73,1.26,4.2,1.73,to give (a gift),1,regalar
+regañar,4.88,1.63,6.03,2.14,3.7,1.7,4.0,1.8,to scold,2,reganar
+reinar,4.23,1.49,6.84,2.64,6.37,3.26,2.43,1.41,to reign,2,reinar
+reír,6.13,0.98,6.13,2.71,2.87,1.61,5.3,1.7,to laugh,1,reir
+relación,6.1,0.99,6.57,1.52,7.15,2.31,4.67,1.8,relation / relationship,1,relacion
+relajación,5.8,1.19,5.13,2.56,6.5,2.82,4.47,1.71,relaxation,1,relajacion
+relax,5.43,1.37,5.06,2.92,8.33,2.09,4.57,1.65,relax,1,relax
+religioso,4.45,1.58,4.1,2.5,5.96,2.31,2.84,1.68,religious,3,religioso
+remover,4.71,1.44,4.27,2.02,6.37,2.74,3.43,1.45,to remove,1,remover
+renacer,3.45,1.82,5.9,2.31,8.6,1.67,3.3,1.8,to be reborn,1,renacer
+renovar,4.5,1.44,4.93,1.48,8.0,1.77,2.85,1.66,to renew,1,renovar
+reprender,3.4,1.73,5.97,2.11,9.0,2.87,2.82,1.61,to reprimand,1,reprender
+repugnancia,3.67,1.79,4.78,2.43,8.83,2.25,4.57,1.94,revulsion,1,repugnancia
+repugnar,3.46,1.63,4.41,2.43,8.83,2.07,4.57,1.92,to disgust,2,repugnar
+repulsivo,4.44,1.81,5.34,2.57,8.88,2.32,4.82,1.41,repulsive,1,repulsivo
+rescatar,4.28,1.39,5.93,1.98,7.01,2.57,4.15,1.88,to rescue,1,rescatar
+respetar,5.43,1.17,6.23,1.45,5.63,2.16,4.63,1.79,to respect,1,respetar
+respiración,5.73,1.25,5.85,2.28,4.8,2.41,4.73,1.82,breathing,1,respiracion
+respirar,6.3,1.1,7.2,2.27,4.62,2.53,4.1,1.92,to breathe,1,respirar
+resumir,5.03,1.4,4.8,1.95,7.13,1.55,2.73,1.53,to sum up,2,resumir
+reventar,4.82,1.3,6.38,1.88,7.9,2.62,3.57,1.76,to burst,1,reventar
+revoltoso,4.23,1.31,4.93,1.77,4.46,2.49,4.19,1.97,naughty,1,revoltoso
+revolver,3.69,1.56,4.53,2.12,6.43,2.01,3.03,1.79,to stir,1,revolver
+rezar,4.68,1.59,4.47,2.43,4.73,2.18,3.03,1.47,to pray,1,rezar
+rico,5.73,1.15,6.17,2.12,4.4,2.58,4.1,1.83,rich,3,rico
+ridiculizar,4.4,1.77,5.3,2.45,7.91,2.3,4.52,1.89,to ridicule,1,ridiculizar
+ridículo,4.98,1.43,5.03,2.55,6.68,2.15,4.53,1.87,ridiculous,1,ridiculo
+risueño,4.6,1.57,5.33,1.83,7.85,2.89,4.22,1.96,smiley,1,risueno
+rival,4.68,1.62,6.27,2.07,6.84,2.03,3.89,1.81,rival,1,rival
+rizado,5.48,1.49,4.13,2.34,4.6,2.63,2.79,1.83,curly,1,rizado
+robo,4.88,1.92,6.2,2.23,5.97,2.47,3.5,1.77,theft,1,robo
+robusto,3.78,1.69,6.03,2.28,8.9,2.04,3.13,1.76,robust,1,robusto
+rogar,3.86,1.55,2.41,2.0,8.67,2.34,3.27,1.62,to beg,1,rogar
+romper,5.9,1.16,6.23,2.1,3.81,2.55,3.94,1.83,to break,2,romper
+rosa,4.82,1.6,3.84,2.42,3.57,1.38,3.57,2.19,rose,1,rosa
+rotular,3.25,1.34,3.97,1.88,8.41,2.6,2.93,1.77,to label,3,rotular
+rudo,3.83,1.82,4.97,2.24,9.24,2.29,3.31,1.8,rough,1,rudo
+rueda,4.44,1.85,3.0,1.81,3.33,1.18,2.67,1.92,wheel,1,rueda
+ruin,3.4,1.71,5.23,2.64,9.06,2.41,3.72,1.92,despicable,1,ruin
+rural,4.26,1.74,3.34,2.24,7.6,2.25,3.1,2.09,rural,1,rural
+sabiduría,4.73,1.59,6.41,2.34,8.43,2.33,3.4,1.81,wisdom,1,sabiduria
+sacrificar,3.93,1.7,6.42,2.41,8.37,2.39,4.77,1.74,to sacrifice,1,sacrificar
+salario,4.92,1.43,6.4,2.06,9.37,1.43,3.27,1.78,salary,1,salario
+salir,6.33,0.77,5.63,1.52,3.66,2.51,2.98,1.78,to leave,2,salir
+saltear,3.69,1.84,3.47,1.93,10.0,1.7,2.73,1.68,to stir fry,1,saltear
+salvaje,4.68,1.2,6.7,1.68,6.14,2.57,3.78,1.76,wild,1,salvaje
+salvar,5.07,1.49,6.76,2.18,5.17,2.49,4.17,1.88,to save,2,salvar
+sancionar,4.5,1.72,6.63,2.08,8.73,2.64,3.04,1.82,to penalize,1,sancionar
+sangrar,4.6,1.3,5.23,2.3,4.39,2.87,5.45,1.58,to bleed,2,sangrar
+sangre,5.6,1.22,5.67,2.43,3.25,1.43,4.82,2.04,blood,1,sangre
+sano,5.55,1.04,7.37,1.69,4.57,1.48,3.77,1.79,healthy,3,sano
+satisfacción,5.37,1.45,7.0,1.82,7.82,2.97,4.07,1.91,satisfaction,1,satisfaccion
+sauna,3.56,1.57,3.38,1.93,9.27,2.16,4.4,1.92,sauna,1,sauna
+seco,5.3,1.7,3.67,1.83,4.63,2.59,3.47,1.87,dry,3,seco
+secuestrar,4.35,1.96,7.13,2.19,7.99,2.51,4.79,1.93,to kidnap,1,secuestrar
+sed,5.93,1.14,6.27,2.5,2.43,0.63,5.27,1.93,thirst,1,sed
+seducción,4.73,1.4,6.03,1.97,9.81,2.01,4.73,1.72,seduction,1,seduccion
+seducir,4.96,1.38,6.19,1.91,9.87,1.74,4.5,1.68,to seduce,1,seducir
+seductor,4.56,1.68,5.13,2.24,10.03,1.52,3.93,1.82,seductive,1,seductor
+sellar,3.98,1.96,3.87,2.34,7.66,2.51,2.49,1.44,to seal,1,sellar
+selva,3.98,1.58,4.38,1.98,5.6,2.72,3.83,1.8,jungle,1,selva
+sencillo,5.73,1.24,3.33,2.34,5.74,2.28,2.68,1.54,simple,1,sencillo
+senderismo,3.9,1.55,4.07,2.2,8.66,2.21,3.59,1.97,hiking,1,senderismo
+sensato,4.66,1.47,5.58,1.92,9.13,1.98,3.4,1.79,sensible,1,sensato
+sensibilidad,5.31,1.24,3.56,2.08,8.21,2.23,4.43,1.87,sensitivity,1,sensibilidad
+sentir,5.67,1.07,7.2,1.81,4.47,1.8,5.63,1.56,to feel,2,sentir
+separación,4.92,1.43,5.23,2.6,6.38,2.65,4.51,1.79,separation,1,separacion
+septentrional,2.21,1.58,3.04,2.16,10.63,0.79,2.07,1.62,northern,1,septentrional
+serenidad,4.19,1.43,3.81,2.18,9.6,1.81,3.97,2.11,serenity,1,serenidad
+servidumbre,2.7,1.78,2.71,2.21,9.83,1.95,2.47,1.74,servants,1,servidumbre
+sexualidad,4.73,1.64,5.81,2.1,9.37,1.83,4.93,1.87,sexuality,1,sexualidad
+siesta,5.5,1.38,4.33,2.37,3.94,2.7,4.07,2.08,nap,1,siesta
+silencioso,4.92,1.44,3.37,1.81,5.11,2.24,4.14,1.81,silent,1,silencioso
+similar,4.53,1.19,4.27,1.57,8.14,2.41,2.21,1.71,similar,1,similar
+sincero,5.93,1.22,6.93,2.27,6.3,2.84,4.1,1.98,sincere,1,sincero
+sintáctico,3.57,1.81,3.43,1.91,9.5,2.0,2.36,1.75,syntactic,3,sintactico
+sistemático,4.23,1.46,4.48,1.82,10.03,1.71,2.27,1.34,systematic,3,sistematico
+sífilis,2.6,1.51,5.75,2.53,10.59,1.09,3.86,2.2,syphilis,1,sifilis
+sobornar,4.05,1.85,5.28,2.62,10.1,1.49,3.03,1.79,to bribe,1,sobornar
+soborno,4.85,1.78,6.43,2.19,9.24,1.82,3.67,1.81,bribery,1,soborno
+sobresaliente,4.9,1.52,7.53,1.2,6.47,1.81,4.73,1.8,outstanding,1,sobresaliente
+sobresalir,4.64,1.34,6.36,2.01,7.97,2.33,3.67,1.58,to stand out,2,sobresalir
+sobrevivir,4.92,1.52,5.91,2.76,7.6,2.51,4.17,1.93,to survive,1,sobrevivir
+socorrer,3.72,1.75,5.93,1.95,7.88,2.34,4.3,1.76,to help,1,socorrer
+solidaridad,5.07,1.25,5.58,2.09,7.63,2.2,4.37,1.81,solidarity,1,solidaridad
+sollozar,3.1,1.69,3.27,1.98,8.38,2.85,4.16,1.97,to sob,2,sollozar
+sonido,5.55,1.26,4.7,2.14,3.97,1.77,4.63,1.54,sound,1,sonido
+sonreír,6.21,1.04,6.0,2.41,3.93,3.45,5.5,1.7,to smile,1,sonreir
+sonrisa,6.12,0.77,5.9,2.38,3.0,1.14,5.3,1.51,smile,1,sonrisa
+sorprender,5.1,1.13,6.0,1.36,5.56,2.36,4.63,1.76,to surprise,1,sorprender
+sorpresa,5.45,1.08,6.7,1.51,3.3,1.21,5.33,1.71,surprise,1,sorpresa
+sosiego,3.83,1.85,3.65,1.72,9.73,2.25,3.31,1.75,calm,1,sosiego
+sospecha,4.0,1.63,4.28,1.63,8.23,2.24,3.1,1.56,suspicion,1,sospecha
+sueldo,5.4,1.18,6.07,1.55,9.23,2.47,3.42,1.92,wage,1,sueldo
+suelo,4.65,1.55,3.53,1.91,2.87,1.36,2.43,1.91,floor,1,suelo
+suerte,5.58,1.07,6.43,2.14,4.87,1.59,3.83,2.04,luck,1,suerte
+sufrimiento,4.53,1.49,4.73,3.08,7.92,2.73,5.5,1.92,suffering,1,sufrimiento
+superación,5.58,1.43,8.1,1.16,7.67,2.76,4.28,2.05,improvement,1,superacion
+suscribir,4.55,1.88,3.67,1.83,9.34,2.31,2.22,1.48,to subscribe to,1,suscribir
+suspenso,5.07,1.58,4.87,3.09,6.13,1.66,4.4,1.96,fail,1,suspenso
+sustancia,5.13,1.06,4.03,1.69,7.97,2.43,2.83,1.53,substance,1,sustancia
+susto,5.75,1.27,6.13,1.74,4.02,2.57,4.58,1.66,scare,1,susto
+susurrar,4.55,1.47,4.03,2.04,6.3,2.2,4.17,1.68,to whisper,2,susurrar
+susurro,4.65,1.61,3.6,2.09,6.47,2.39,4.22,1.76,whispering,1,susurro
+tacaño,4.27,1.5,5.33,1.88,7.77,2.47,3.67,1.99,stingy,1,tacano
+tacto,4.75,1.57,4.94,1.95,5.93,2.74,5.13,1.78,touch,1,tacto
+tarea,5.15,1.26,5.13,1.89,5.03,2.13,3.37,1.9,task,1,tarea
+teatro,5.45,1.55,6.0,2.24,5.06,1.82,3.73,1.61,theatre,1,teatro
+techo,5.17,1.36,4.34,2.19,4.6,2.95,2.07,1.6,ceiling,1,techo
+tecla,5.4,1.31,2.77,1.87,5.5,2.73,2.54,1.89,key,1,tecla
+tema,5.7,1.22,4.43,1.61,6.2,1.83,3.17,2.18,theme,1,tema
+temer,4.8,1.42,6.1,2.41,6.27,2.56,4.8,1.72,to fear,2,temer
+temerario,4.12,1.61,5.84,2.08,9.63,1.79,3.4,1.87,reckless,1,temerario
+templado,5.1,1.6,4.17,1.78,5.25,2.63,3.78,1.81,lukewarm,1,templado
+templanza,3.3,1.93,4.3,2.32,10.07,1.46,2.97,1.69,temperance,1,templanza
+temporal,5.07,1.47,4.17,2.26,7.26,2.26,3.24,1.7,storm / temporary,1,temporal
+tenebroso,3.78,1.69,5.7,2.39,7.85,2.59,4.74,1.55,sinister,1,tenebroso
+tentar,4.4,1.74,5.63,2.14,9.16,2.07,3.69,1.68,to tempt,1,tentar
+ternura,5.05,1.49,4.43,2.76,6.52,2.51,5.47,1.61,tenderness,1,ternura
+terremoto,4.53,1.63,7.07,1.71,6.4,1.99,4.92,1.81,earthquake,1,terremoto
+terrorismo,5.4,1.58,7.07,2.45,8.67,2.22,5.12,1.71,terrorism,1,terrorismo
+texto,5.96,1.42,4.58,2.03,5.9,2.23,3.33,1.71,text,1,texto
+tétrico,3.18,1.17,5.63,2.36,9.24,2.23,4.02,1.75,gloomy,1,tetrico
+timado,3.93,1.41,4.4,2.85,9.2,1.88,3.5,1.91,tricked,1,timado
+timbre,4.32,1.58,4.23,2.14,4.13,1.53,4.0,1.76,bell,1,timbre
+tiranía,3.52,1.45,7.06,1.82,9.6,1.73,3.63,1.99,tyranny,1,tirania
+torcer,4.7,1.74,4.57,1.83,5.18,1.83,3.67,1.67,to twist,1,torcer
+torcido,4.6,1.43,4.07,1.57,5.77,2.01,2.97,1.59,twisted,1,torcido
+torear,4.1,1.89,4.8,2.47,6.92,2.61,3.58,2.02,to bull fight,1,torear
+tormento,3.91,1.37,5.81,2.29,9.2,2.12,3.33,1.75,torment,1,tormento
+torturado,3.9,1.78,5.77,3.05,8.21,2.23,4.64,1.92,tortured,1,torturado
+torturar,3.8,1.77,7.43,1.92,8.53,2.13,4.87,1.83,to torture,2,torturar
+tosco,2.94,1.61,4.48,2.1,10.03,1.59,3.28,1.46,coarse,3,tosco
+trabajador,5.75,1.01,6.37,1.97,5.68,2.47,3.31,1.72,worker,1,trabajador
+trabajar,5.85,1.06,5.94,2.05,4.73,2.1,3.57,2.08,to work,2,trabajar
+traición,3.96,1.79,5.28,2.81,8.67,1.86,3.9,1.77,treason,1,traicion
+tramposo,4.88,1.72,5.37,2.22,4.48,1.35,3.91,1.94,cheater,1,tramposo
+tranquilidad,5.68,1.31,4.42,2.29,5.93,2.84,4.47,1.81,tranquility,1,tranquilidad
+transferible,3.6,1.58,4.3,1.53,9.61,1.71,2.67,1.71,transferable,1,transferible
+translúcido,3.1,1.52,3.53,2.27,10.03,1.38,3.27,2.07,translucent,1,translucido
+trastorno,5.4,1.51,6.2,2.23,9.76,1.98,3.98,1.91,disorder,1,trastorno
+tránsfuga,2.54,1.49,3.75,2.57,10.1,2.24,2.98,1.59,fugitive,1,transfuga
+tristeza,5.6,0.95,3.25,1.98,4.7,3.41,5.33,1.69,sadness,1,tristeza
+triturar,3.77,1.68,4.69,1.91,7.03,2.09,2.93,1.72,to grind,1,triturar
+triunfador,4.77,1.79,7.77,1.79,7.67,2.71,3.96,2.04,winner,1,triunfador
+triunfar,4.86,1.57,7.52,1.72,7.33,2.71,4.13,1.74,to triumph,1,triunfar
+tubería,4.08,1.76,3.3,1.78,6.59,2.61,2.3,1.96,pipeline,1,tuberia
+tumbona,4.23,1.67,3.52,1.92,5.87,2.26,3.53,1.55,deck chair,1,tumbona
+turbulento,3.41,1.84,5.68,2.31,9.47,2.14,3.31,1.95,turbulent,1,turbulento
+unión,4.98,1.41,6.37,1.99,6.6,2.32,3.78,1.91,union,1,union
+universal,4.47,1.64,6.57,2.3,8.17,1.8,3.17,1.84,universal,1,universal
+vacío,4.54,1.5,3.53,2.05,4.47,2.11,3.17,1.98,empty,1,vacio
+vago,5.63,1.31,3.77,1.96,5.8,1.95,3.13,1.74,lazy,3,vago
+valor,5.19,1.28,6.82,2.1,6.97,2.19,3.83,1.95,courage,1,valor
+vapor,4.32,1.52,3.23,1.55,7.11,2.58,2.98,1.55,steam,1,vapor
+vaso,6.15,1.47,3.17,1.91,2.7,0.98,3.06,1.92,glass,1,vaso
+vegetación,4.2,1.47,4.37,2.14,6.77,1.55,4.0,1.86,vegetation,1,vegetacion
+vejatorio,3.07,2.35,5.14,3.12,9.86,2.23,3.32,2.01,hurtful,1,vejatorio
+velas,4.59,1.73,3.38,2.11,4.5,1.46,3.43,1.79,candles,1,velas
+vencer,4.88,1.08,8.0,0.91,6.37,2.29,4.14,2.04,to beat,2,vencer
+verano,5.9,1.21,7.53,1.72,3.48,1.37,5.33,1.59,summer,1,verano
+verbalizar,3.68,1.61,4.17,2.05,8.6,2.37,3.03,1.87,to verbalize,0,verbalizar
+vergüenza,5.69,1.19,4.09,2.82,5.37,3.18,4.77,1.83,shame / embarrassment,1,verguenza
+versionar,3.2,1.37,2.8,1.47,10.18,1.86,3.12,1.89,to adapt,0,versionar
+viajar,5.64,1.15,5.85,2.22,4.6,2.51,4.73,1.93,to travel,1,viajar
+viajero,5.52,1.57,4.87,2.37,6.26,2.62,3.33,1.95,traveler,1,viajero
+victorioso,4.35,1.42,7.2,1.63,7.77,2.53,4.53,1.72,victorious,1,victorioso
+viejo,5.13,1.61,3.93,2.12,3.67,1.35,3.7,1.66,old,3,viejo
+violador,4.02,1.86,8.0,1.58,9.33,1.97,4.83,2.0,rapist,1,violador
+violar,4.28,2.27,6.8,3.18,9.44,1.96,5.31,1.71,to rape,1,violar
+visualizar,4.62,1.79,4.7,1.93,8.1,2.34,4.27,1.84,to visualize,1,visualizar
+viudo,3.68,1.69,3.73,2.2,9.04,2.54,3.98,2.2,widow,1,viudo
+vocalizar,4.57,1.56,4.24,2.12,6.8,2.55,3.77,1.57,to enunciate,2,vocalizar
+volar,5.4,1.29,5.07,3.04,3.52,1.55,4.61,1.41,to fly,1,volar
+voltear,3.38,1.52,3.93,1.68,8.97,2.3,2.61,1.34,to turn (over),1,voltear
+voluptuoso,3.25,1.16,5.08,1.81,10.38,2.15,3.88,2.26,voluptuous,1,voluptuoso
+votar,5.15,1.56,5.87,1.94,7.83,2.85,3.4,1.83,to vote,1,votar
+yoga,4.07,1.52,3.42,2.02,9.6,2.18,3.6,1.89,yoga,1,yoga
+zopenco,3.3,1.94,4.38,2.26,8.19,2.28,3.13,1.74,stupid,1,zopenco

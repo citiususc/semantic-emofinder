@@ -1,0 +1,80 @@
+prefixes:
+  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emolex: 'https://w3id.org/def/emolex#'
+  rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
+  skos: 'http://www.w3.org/2004/02/skos/core#'
+  ontolex: 'http://www.w3.org/ns/lemon/ontolex#'
+  rb: 'https://w3id.org/riverbench/schema/metadata#'
+  bibo: 'http://purl.org/ontology/bibo/'
+  lexinfo: 'http://www.lexinfo.net/ontology/3.0/lexinfo#'
+  lime: 'http://www.w3.org/ns/lemon/lime#'
+  dcterms: 'http://purl.org/dc/terms/'
+  vartrans: 'http://www.w3.org/ns/lemon/vartrans#'
+
+mappings:
+  arousal:
+    sources:
+    - [guasch_2016.csv~csv]
+    s: emo-resource:annotation/emotionalDimension/arousal/guasch_2016/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Arousal']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/guasch_2016']
+    - ['emolex:affects', 'emo-resource:lexical_entry/guasch_2016/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(activacion_m), 'xsd:float']
+    - ['rb:standardDeviation', $(activacion_sd), 'xsd:float']
+  concreteness:
+    sources:
+    - [guasch_2016.csv~csv]
+    s: emo-resource:annotation/subjectiveDimension/concreteness/guasch_2016/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Concreteness']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/guasch_2016']
+    - ['emolex:affects', 'emo-resource:lexical_entry/guasch_2016/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(concrecion_m), 'xsd:float']
+    - ['rb:standardDeviation', $(concrecion_sd), 'xsd:float']
+  contextualAvailability:
+    sources:
+    - [guasch_2016.csv~csv]
+    s: emo-resource:annotation/subjectiveDimension/contextualAvailability/guasch_2016/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:ContextualAvailability']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/guasch_2016']
+    - ['emolex:affects', 'emo-resource:lexical_entry/guasch_2016/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(disponibilidad_contextual_m), 'xsd:float']
+    - ['rb:standardDeviation', $(disponibilidad_contextual_sd), 'xsd:float']
+  familiarity:
+    sources:
+    - [guasch_2016.csv~csv]
+    s: emo-resource:annotation/subjectiveDimension/familiarity/guasch_2016/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Familiarity']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/guasch_2016']
+    - ['emolex:affects', 'emo-resource:lexical_entry/guasch_2016/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(familiaridad_m), 'xsd:float']
+    - ['rb:standardDeviation', $(familiaridad_sd), 'xsd:float']
+  imageability:
+    sources:
+    - [guasch_2016.csv~csv]
+    s: emo-resource:annotation/subjectiveDimension/imageability/guasch_2016/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Imageability']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/guasch_2016']
+    - ['emolex:affects', 'emo-resource:lexical_entry/guasch_2016/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(imaginabilidad_m), 'xsd:float']
+    - ['rb:standardDeviation', $(imaginabilidad_sd), 'xsd:float']
+  valence:
+    sources:
+    - [guasch_2016.csv~csv]
+    s: emo-resource:annotation/emotionalDimension/valence/guasch_2016/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Valence']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/guasch_2016']
+    - ['emolex:affects', 'emo-resource:lexical_entry/guasch_2016/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(valencia_m), 'xsd:float']
+    - ['rb:standardDeviation', $(valencia_sd), 'xsd:float']

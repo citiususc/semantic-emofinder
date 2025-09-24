@@ -1,0 +1,36 @@
+prefixes:
+  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emolex: 'https://w3id.org/def/emolex#'
+  rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
+  skos: 'http://www.w3.org/2004/02/skos/core#'
+  ontolex: 'http://www.w3.org/ns/lemon/ontolex#'
+  rb: 'https://w3id.org/riverbench/schema/metadata#'
+  bibo: 'http://purl.org/ontology/bibo/'
+  lexinfo: 'http://www.lexinfo.net/ontology/3.0/lexinfo#'
+  lime: 'http://www.w3.org/ns/lemon/lime#'
+  dcterms: 'http://purl.org/dc/terms/'
+  vartrans: 'http://www.w3.org/ns/lemon/vartrans#'
+
+mappings:
+  arousal:
+    sources:
+    - [stadthagen_gonzalez_2017.csv~csv]
+    s: emo-resource:annotation/emotionalDimension/arousal/stadthagen_gonzalez_2017/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Arousal']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/stadthagen_gonzalez_2017']
+    - ['emolex:affects', 'emo-resource:lexical_entry/stadthagen_gonzalez_2017/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(activacion_m), 'xsd:float']
+    - ['rb:standardDeviation', $(activacion_sd), 'xsd:float']
+  valence:
+    sources:
+    - [stadthagen_gonzalez_2017.csv~csv]
+    s: emo-resource:annotation/emotionalDimension/valence/stadthagen_gonzalez_2017/$(palabra_noaccents)
+    po:
+    - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Valence']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/stadthagen_gonzalez_2017']
+    - ['emolex:affects', 'emo-resource:lexical_entry/stadthagen_gonzalez_2017/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(valencia_m), 'xsd:float']
+    - ['rb:standardDeviation', $(valencia_sd), 'xsd:float']

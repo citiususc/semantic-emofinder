@@ -1,0 +1,25 @@
+prefixes:
+  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emolex: 'https://w3id.org/def/emolex#'
+  rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
+  skos: 'http://www.w3.org/2004/02/skos/core#'
+  ontolex: 'http://www.w3.org/ns/lemon/ontolex#'
+  rb: 'https://w3id.org/riverbench/schema/metadata#'
+  bibo: 'http://purl.org/ontology/bibo/'
+  lexinfo: 'http://www.lexinfo.net/ontology/3.0/lexinfo#'
+  lime: 'http://www.w3.org/ns/lemon/lime#'
+  dcterms: 'http://purl.org/dc/terms/'
+  vartrans: 'http://www.w3.org/ns/lemon/vartrans#'
+
+mappings:
+  acquisitionAge:
+    sources:
+    - [alonso_2015.csv~csv]
+    s: emo-resource:annotation/subjectiveDimension/acquisitionAge/alonso_2015/$(palabra_noaccents)
+    po:
+    - [a , ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:AcquisitionAge']]
+    - ['rdfs:label', $(palabra)]
+    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/alonso_2015']
+    - ['emolex:affects', 'emo-resource:lexical_entry/alonso_2015/$(palabra_noaccents)~iri']
+    - ['rb:mean', $(edad_de_adquisicion_m), 'xsd:float']
+    - ['rb:standardDeviation', $(edad_de_adquisicion_sd), 'xsd:float']
