@@ -1,0 +1,511 @@
+/* src/App.css */
+
+/* Contenedor principal */
+.app-container {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+
+/* Tarjeta genérica (blanca con sombra) */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Tarjeta de filtros */
+.filter-card {
+    width: 60%;
+}
+
+/* Tarjeta de bases */
+.base-card {
+    width: 35%;
+    align-self: flex-start;
+    border: 1px solid #ddd;
+}
+
+/* Título de sección (h2) */
+.section-title {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+/* Estilo para todos los labels de formulario */
+.label {
+    margin-bottom: 4px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+/* Inputs y selects */
+.input {
+    width: 100%;
+    height: 40px;
+    padding: 0 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+/* Botón principal “Buscar” */
+.button-primary {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Botón circular “+” para añadir filtros o constraints */
+.circle-button {
+    margin: 16px auto 24px;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #3498db;
+    color: #fff;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botón rojo “-” para eliminar */
+.remove-constraint-button {
+    align-self: flex-end;
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 20px;
+    margin-left: 12px;
+}
+
+/* Contenedor de cada fila de constraint */
+.constraint-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+    width: 100%;
+}
+
+/* Título de filtro oculto */
+.hidden-filter {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Card de filtro expandido */
+.expanded-filter {
+    background-color: #fafafa;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+/* Botones “Eliminar filtro” y “Ocultar” */
+.filter-buttons {
+    display: flex;
+    gap: 8px;
+}
+.filter-buttons button {
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+.filter-buttons .remove-filter {
+    background-color: #e74c3c;
+    color: #fff;
+}
+.filter-buttons .hide-filter {
+    background-color: #f39c12;
+    color: #fff;
+}
+/* Contenedor del formulario */
+.form-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Grid para columnas de filtros y bases */
+.card.filter-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.card.base-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Borde y padding internos dentro de la tarjeta */
+.card {
+  margin-bottom: 20px;
+}
+
+/* Ajustes de fila de búsqueda */
+.search-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-row-inner {
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  max-width: 550px;
+  align-items: flex-start;
+}
+
+/* Field groups */
+.field-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.type-group {
+  flex: 1;
+}
+
+.text-group {
+  flex: 1;
+}
+
+/* Agrupación de característica */
+.characteristic-group {
+  margin-top: 8px;
+}
+
+/* Constraint fields alineación específica */
+.constraint-field {
+  flex: 1;
+
+}
+
+/* Ajuste para campo de valor */
+.value-field {
+  flex: 2;
+}
+
+/* Lista de bases ajustada */
+.bases-list {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background-color: #fafafa;
+}
+
+/* Elemento individual de cada base */
+.base-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 0;
+}
+
+/* Style para etiqueta de base */
+.base-label {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+/* Checkbox de base */
+.base-checkbox {
+  margin-right: 8px;
+}
+
+/* Botón de información de base */
+.info-button {
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Modal overlay centrar contenido */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Contenido del modal */
+.modal-content {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 500px;
+  width: 80%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+/* Título del modal */
+.modal-title {
+  margin-top: 0;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+/* Texto del modal */
+.modal-text {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+
+/* Disabled select styling */
+.disabled-select {
+  background-color: #eee;
+  cursor: not-allowed;
+}
+
+/* Encabezado de filtro con botones */
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+/* Selector de característica con ancho fijo */
+.characteristic-select {
+    display: inline-block;       /* inline alignment next to label */
+    width: auto;                 /* width based on content */
+    min-width: 200px;            /* ensure a minimum width */
+    margin: 0 0 0 12px;          /* left margin to space from label */
+    padding: 8px;                /* consistent padding */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    vertical-align: middle;      /* align with label text */
+    background-color: #fff;
+}
+
+/* Contenedor principal para Bases de palabras */
+.base-card-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 35%;
+    align-self: flex-start;
+    margin-bottom: 20px;
+}
+
+/* Encabezado con título y botón “Seleccionar todas” alineados */
+.base-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}
+
+/* Botón “Seleccionar todas” */
+.select-all-button {
+    font-size: 14px;
+    padding: 4px 8px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Contenedor de la lista de bases */
+.base-list-container {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 12px;
+    background-color: #fafafa;
+}
+
+/* Elemento individual de cada base */
+.base-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4px 0;
+}
+
+/* Estilo de etiqueta de base */
+.base-label {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+}
+
+/* Checkbox de base */
+.base-checkbox {
+    margin-right: 8px;
+}
+
+/* Contenedor del filtro oculto */
+.hidden-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fafafa; /* Fondo suave amarillo para indicar “estado oculto” */
+    border: 1px solid #ddd;
+    padding: 10px 12px;
+    border-radius: 6px;
+    margin-bottom: 16px;
+}
+
+/* Botón “Mostrar” dentro del filtro oculto */
+.filter-buttons.hide-filter {
+    background-color: #28a745; /* Verde */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+}
+
+/* Efecto hover para el botón */
+.filter-buttons.hide-filter:hover {
+    background-color: #218838;
+}
+
+.toast {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: #e74c3c;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 4px;
+    z-index: 1000;
+    font-size: 0.9em;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.characteristic-group {
+    display: flex;
+    align-items: center;
+}
+
+/* Eliminar margen inferior de la etiqueta para que no rompa línea */
+.characteristic-group .label {
+    margin-bottom: 0;
+}
+
+/* Ajustar el select para que ocupe el espacio restante */
+.characteristic-select {
+
+    width: 20%;
+    margin-left: 8px;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+.results-table-container {
+    margin-top: 24px;
+}
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px;
+}
+.results-table th,
+.results-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+.results-table th {
+    background-color: #f0f0f0;
+}
+
+/* Contenedor de cabecera de resultados: título y botón alineados */
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* Estilo del botón Descargar CSV */
+.download-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.download-button:hover {
+    background-color: #2980b9;
+}
+.download-button:active {
+    background-color: #1c5980;
+}
+
+.results-table a {
+  color: #0073e6;         /* azul típico de enlace */
+  text-decoration: underline;  /* subrayado */
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.results-table a:hover {
+  color: #004a99;          /* tono más oscuro al pasar el ratón */
+  text-decoration: none;
+}

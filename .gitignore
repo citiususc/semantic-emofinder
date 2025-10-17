@@ -3,4 +3,5 @@
 kg/emow-kg.nt
 tmp
 .idea
-backend
+backend/.env
+frontend/node_modules

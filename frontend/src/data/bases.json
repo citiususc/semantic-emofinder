@@ -1,0 +1,1280 @@
+[
+  {
+    "id": "alonso_2015",
+    "label": "Alonso 2015",
+    "ref": "Alonso, M. A., Fernandez, A., & Díez, E. (2015). Subjective age-of-acquisition norms for 7,039 Spanish words. Behavior Research Methods, 47, 268–274.",
+    "url": "http://dx.doi.org/10.3758/s13428-014-0454-2",
+    "words": 7035,
+    "variables": [
+      {
+        "variable_class": "emolex:AcquisitionAge",
+        "variable_label": "Acquisition Age",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 11
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "diez-alamo_2018",
+    "label": "Díez-Álamo 2018",
+    "ref": "Díez-Álamo, A. M., Díez, E., Wojcik, D. Z., Alonso, M. A., & Fernandez, A. (2019). Sensory experience ratings for 5,500 Spanish words. Behavior research methods, 51, 1205-1215.",
+    "url": "https://doi.org/10.3758/s13428-018-1057-0",
+    "words": 5500,
+    "variables": [
+      {
+        "variable_class": "emolex:SensoryExperience",
+        "variable_label": "Sensory Experience",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ferre_2012",
+    "label": "Ferré 2012",
+    "ref": "Ferré, P., Guasch, M., Moldovan, C., & Sánchez-Casas, R. (2012). Affective norms for 380 Spanish words belonging to three different semantic categories. Behavior Research Methods, 44, 395–403.",
+    "url": "https://doi.org/10.3758/s13428-011-0165-x",
+    "words": 380,
+    "variables": [
+      {
+        "variable_class": "emolex:Arousal",
+        "variable_label": "Arousal",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Concreteness",
+        "variable_label": "Concreteness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Familiarity",
+        "variable_label": "Familiarity",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Valence",
+        "variable_label": "Valence",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ferre_2017",
+    "label": "Ferré 2017",
+    "ref": "Ferré, P., Guasch, M., Martínez-García, N., Fraga, I., & Hinojosa, J. A. (2017). Moved by words: Affective ratings for a set of 2,266 Spanish words in five discrete emotion categories. Behavior Research Methods, 49, 1082-1094.",
+    "url": "http://dx.doi.org/10.3758/s13428-016-0768-3",
+    "words": 2266,
+    "variables": [
+      {
+        "variable_class": "emolex:Anger",
+        "variable_label": "Anger",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Disgust",
+        "variable_label": "Disgust",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Fear",
+        "variable_label": "Fear",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Happiness",
+        "variable_label": "Happiness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Sadness",
+        "variable_label": "Sadness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ferre_2024",
+    "label": "Ferré 2024",
+    "ref": "Ferré, P., Guasch, M., Stadthagen-González, H., Hinojosa, J. A., Fraga, I., Marín, J., & Pérez-Sánchez, M. Á. (2024). What makes a word a good representative of the category of “emotion”? The role of feelings and interoception. Emotion, 24(3), 745–758.",
+    "url": "https://dx.doi.org/10.1037/emo0001300",
+    "words": 1286,
+    "variables": [
+      {
+        "variable_class": "emolex:Action",
+        "variable_label": "Action",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:BodyExpression",
+        "variable_label": "Body Expression",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Evaluation",
+        "variable_label": "Evaluation",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Feeling",
+        "variable_label": "Feeling",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Interoception",
+        "variable_label": "Interoception",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Morality",
+        "variable_label": "Morality",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:SensoryExperience",
+        "variable_label": "Sensory Experience",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:SocialInteraction",
+        "variable_label": "Social Interaction",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Thought",
+        "variable_label": "Thought",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "gonzalez_nosti_2014",
+    "label": "González-Nosti 2014",
+    "ref": "González-Nosti, M., Barbón, A., Rodríguez-Ferreiro, J., & Cuetos, F. (2014). Effects of the psycholinguistic variables on the lexical decision task in Spanish: A study with 2,765 words. Behavior Research Methods, 46, 517–525.",
+    "url": "https://doi.org/10.3758/s13428-013-0383-5",
+    "words": 2765,
+    "variables": [
+      {
+        "variable_class": "emolex:AcquisitionAge",
+        "variable_label": "Acquisition Age",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:TimeNaming",
+        "variable_label": "Time Naming",
+        "metrics": [
+          {
+            "metric": "emolex:recognitionTime",
+            "metric_label": "Recognition Time"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:TimeTDL",
+        "variable_label": "Time TDL",
+        "metrics": [
+          {
+            "metric": "emolex:recognitionTime",
+            "metric_label": "Recognition Time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "guasch_2016",
+    "label": "Guasch 2016",
+    "ref": "Guasch, M., Ferré, P., & Fraga, I. (2016). Spanish norms for affective and lexico-semantic variables for 1,400 words. Behavior Research Methods, 48, 1358–1369.",
+    "url": "https://doi.org/10.3758/s13428-015-0684-y",
+    "words": 1400,
+    "variables": [
+      {
+        "variable_class": "emolex:Arousal",
+        "variable_label": "Arousal",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Concreteness",
+        "variable_label": "Concreteness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:ContextualAvailability",
+        "variable_label": "Contextual Availability",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Familiarity",
+        "variable_label": "Familiarity",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Imageability",
+        "variable_label": "Imageability",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Valence",
+        "variable_label": "Valence",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "haro_2024",
+    "label": "Haro 2024",
+    "ref": "Haro, J., Hinojosa, J. A., & Ferré, P. (2024). The role of individual differences in emotional word recognition: Insights from a large-scale lexical decision study. Behavior Research Methods, 56(8), 8501-8520.",
+    "url": "https://doi.org/10.3758/s13428-024-02488-z",
+    "words": 7492,
+    "variables": [
+      {
+        "variable_class": "emolex:AcquisitionAge",
+        "variable_label": "Acquisition Age",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 11
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Concreteness",
+        "variable_label": "Concreteness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Familiarity",
+        "variable_label": "Familiarity",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:RecognitionTimePercentage",
+        "variable_label": "Recognition Time Percentage",
+        "metrics": [
+          {
+            "metric": "emolex:recognitionTime",
+            "metric_label": "Recognition Time"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:TimeTDL",
+        "variable_label": "Time TDL",
+        "metrics": [
+          {
+            "metric": "emolex:recognitionTime",
+            "metric_label": "Recognition Time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hinojosa_2016a",
+    "label": "Hinojosa 2016a",
+    "ref": "Hinojosa, J. A., Martínez-García, N., Villalba-García, C., Fernández-Folgueiras, U., Sánchez-Carmona, A., Pozo, M. A., & Montoro, P. R. (2016). Affective norms of 875 Spanish words for five discrete emotional categories and two emotional dimensions. Behavior Research Methods, 48, 272–284.",
+    "url": "http://doi.org/10.3758/s13428-015-0572-5",
+    "words": 875,
+    "variables": [
+      {
+        "variable_class": "emolex:Anger",
+        "variable_label": "Anger",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Arousal",
+        "variable_label": "Arousal",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Concreteness",
+        "variable_label": "Concreteness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Disgust",
+        "variable_label": "Disgust",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Fear",
+        "variable_label": "Fear",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Happiness",
+        "variable_label": "Happiness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Sadness",
+        "variable_label": "Sadness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Valence",
+        "variable_label": "Valence",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hinojosa_2016b",
+    "label": "Hinojosa 2016b",
+    "ref": "Hinojosa, J. A., Rincón-Pérez, I., Romero-Ferreiro, M. V., Martínez-García, N., Villalba-García, C., Montoro, P. R., & Pozo, M. A. (2016). The Madrid Affective Database for Spanish (MADS): Ratings of Dominance, Familiarity, Subjective Age of Acquisition and Sensory Experience. PLoS ONE, 11(5): e0155866.",
+    "url": "https://doi.org/10.1371/journal.pone.0155866",
+    "words": 875,
+    "variables": [
+      {
+        "variable_class": "emolex:AcquisitionAge",
+        "variable_label": "Acquisition Age",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 11
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Dominance",
+        "variable_label": "Dominance",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Familiarity",
+        "variable_label": "Familiarity",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:SensoryExperience",
+        "variable_label": "Sensory Experience",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hinojosa_2020",
+    "label": "Hinojosa 2020",
+    "ref": "Hinojosa, J. A., Haro, J., Magallares, S., Duñabeitia, J. A., & Ferré, P. (2021). Iconicity ratings for 10,995 Spanish words and their relationship with psycholinguistic variables. Behavior Research Methods, 53, 1262-1275.",
+    "url": "https://doi.org/10.3758/s13428-020-01496-z",
+    "words": 10995,
+    "variables": [
+      {
+        "variable_class": "emolex:Iconicity",
+        "variable_label": "Iconicity",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "hinojosa_2024",
+    "label": "Hinojosa 2024",
+    "ref": "Hinojosa, J. A., Guasch, M., Montoro, P. R., Albert, J., Fraga, I., & Ferré, P. (2024). The bright side of words: Norms for 9000 Spanish words in seven discrete positive emotions. Behavior Research Methods, 56(5), 4909-4929.",
+    "url": "https://doi.org/10.3758/s13428-023-02229-8",
+    "words": 4095,
+    "variables": [
+      {
+        "variable_class": "emolex:Amusement",
+        "variable_label": "Amusement",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Awe",
+        "variable_label": "Awe",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Contentment",
+        "variable_label": "Contentment",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Excitement",
+        "variable_label": "Excitement",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Pleasure",
+        "variable_label": "Pleasure",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Relief",
+        "variable_label": "Relief",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Serenity",
+        "variable_label": "Serenity",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "miguel-abella_2021",
+    "label": "Miguel-Abella 2021",
+    "ref": "Miguel-Abella, R. S., Pérez-Sánchez, M. Á., Cuetos, F., Marín, J., & González-Nosti, M. (2022). SpaVerb-WN—A megastudy of naming times for 4562 Spanish verbs: Effects of psycholinguistic and motor content variables. Behavior Research Methods, 54(6), 2640-2664.",
+    "url": "https://doi.org/10.3758/s13428-021-01734-y",
+    "words": 4562,
+    "variables": [
+      {
+        "variable_class": "emolex:NamingTime",
+        "variable_label": "Naming Time",
+        "metrics": [
+          {
+            "metric": "emolex:recognitionTime",
+            "metric_label": "Recognition Time"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "perez-sanchez_2021",
+    "label": "Pérez-Sánchez 2021",
+    "ref": "Pérez-Sánchez, M. Á., Stadthagen-Gonzalez, H., Guasch, M., Hinojosa, J. A., Fraga, I., Marín, J., & Ferré, P. (2021). EmoPro–Emotional prototypicality for 1286 Spanish words: Relationships with affective and psycholinguistic variables. Behavior Research Methods, 53, 1857-1875.",
+    "url": "https://doi.org/10.3758/s13428-020-01519-9",
+    "words": 1286,
+    "variables": [
+      {
+        "variable_class": "emolex:AcquisitionAge",
+        "variable_label": "Acquisition Age",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 11
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Anger",
+        "variable_label": "Anger",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Arousal",
+        "variable_label": "Arousal",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Concreteness",
+        "variable_label": "Concreteness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 7
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Disgust",
+        "variable_label": "Disgust",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Fear",
+        "variable_label": "Fear",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Happiness",
+        "variable_label": "Happiness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Prototypicality",
+        "variable_label": "Prototypicality",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Sadness",
+        "variable_label": "Sadness",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 5
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Valence",
+        "variable_label": "Valence",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redondo_2005",
+    "label": "Redondo 2005",
+    "ref": "Redondo, J., Fraga, I., Comesaña, M., & Perea, M. (2005). Estudio normativo del valor afectivo de 478 palabras españolas. Psicológica, 26, 317–326.",
+    "url": "http://www.redalyc.org/articulo.oa?id=16926207",
+    "words": 478,
+    "variables": [
+      {
+        "variable_class": "emolex:Arousal",
+        "variable_label": "Arousal",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Valence",
+        "variable_label": "Valence",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "redondo_2007",
+    "label": "Redondo 2007",
+    "ref": "Redondo, J., Fraga, I., Padrón, I., & Comesaña, M. (2007). The Spanish adaptation of ANEW (Affective Norms for English Words). Behavior Research Methods, 39, 600–605.",
+    "url": "https://doi.org/10.3758/BF03193031",
+    "words": 1034,
+    "variables": [
+      {
+        "variable_class": "emolex:Arousal",
+        "variable_label": "Arousal",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Dominance",
+        "variable_label": "Dominance",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Valence",
+        "variable_label": "Valence",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sabater_2022",
+    "label": "Sabater 2022",
+    "ref": "Sabater, L., Ponari, M., Haro, J., Fernández-Folgueiras, U., Moreno, E. M., Pozo, M. A., ... & Hinojosa, J. A. (2023). The acquisition of emotion-laden words from childhood to adolescence. Current Psychology, 42(33), 29280-29290.",
+    "url": "https://doi.org/10.1007/s12144-022-03989-w",
+    "words": 202,
+    "variables": [
+      {
+        "variable_class": "emolex:ObjectiveAcquisitionAge",
+        "variable_label": "Objective Acquisition Age",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "stadthagen_gonzalez_2017",
+    "label": "Stadthagen-Gonzalez 2017",
+    "ref": "Stadthagen-Gonzalez, H., Imbault, C., Pérez Sánchez, M. A., & Brysbaert, M. (2017). Norms of valence and arousal for 14,031 Spanish words. Emotion Research Methods, 49, 111-123.",
+    "url": "https://doi.org/10.3758/s13428-015-0700-2",
+    "words": 14031,
+    "variables": [
+      {
+        "variable_class": "emolex:Arousal",
+        "variable_label": "Arousal",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      },
+      {
+        "variable_class": "emolex:Valence",
+        "variable_label": "Valence",
+        "metrics": [
+          {
+            "metric": "rb:mean",
+            "metric_label": "Mean",
+            "min": 1,
+            "max": 9
+          },
+          {
+            "metric": "rb:standardDeviation",
+            "metric_label": "Standard Deviation"
+          }
+        ]
+      }
+    ]
+  }
+]
