@@ -2,7 +2,7 @@ import React from 'react';
 import './NavBar.css';
 
 // Si el logo está en public/, puedes referenciarlo así:
-const logoSrc = '/logo.png';
+const logoSrc = '/emofinder/logo.png';
 
 interface NavBarProps {
     view: 'finder' | 'databases' | 'sparql';

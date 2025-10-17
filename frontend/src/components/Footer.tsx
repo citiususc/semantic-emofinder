@@ -6,7 +6,7 @@ const Footer: React.FC = () => (
     <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
       {/* Left logo */}
       <div>
-        <img src="/usc.svg" alt="USC" className="h-20" />
+        <img src="/emofinder/usc.svg" alt="USC" className="h-20" />
       </div>
 
       {/* Center text */}
@@ -17,7 +17,7 @@ const Footer: React.FC = () => (
 
       {/* Right logo */}
       <div>
-        <img src="/citius.png" alt="CiTIUS" className="h-20" />
+        <img src="/emofinder/citius.png" alt="CiTIUS" className="h-20" />
       </div>
     </div>
   </footer>
