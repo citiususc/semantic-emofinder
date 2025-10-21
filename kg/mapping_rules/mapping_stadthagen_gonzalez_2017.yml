@@ -1,5 +1,5 @@
 prefixes:
-  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emo-resource: 'https://w3id.org/citius-kg/emofinder/resource/'
   emolex: 'https://w3id.org/def/emolex#'
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
   skos: 'http://www.w3.org/2004/02/skos/core#'
@@ -19,7 +19,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Arousal']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/stadthagen_gonzalez_2017']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/stadthagen_gonzalez_2017']
     - ['emolex:affects', 'emo-resource:lexical_entry/stadthagen_gonzalez_2017/$(palabra_noaccents)~iri']
     - ['rb:mean', $(activacion_m), 'xsd:float']
     - ['rb:standardDeviation', $(activacion_sd), 'xsd:float']
@@ -30,7 +30,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Valence']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/stadthagen_gonzalez_2017']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/stadthagen_gonzalez_2017']
     - ['emolex:affects', 'emo-resource:lexical_entry/stadthagen_gonzalez_2017/$(palabra_noaccents)~iri']
     - ['rb:mean', $(valencia_m), 'xsd:float']
     - ['rb:standardDeviation', $(valencia_sd), 'xsd:float']

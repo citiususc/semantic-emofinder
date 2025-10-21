@@ -1,5 +1,5 @@
 prefixes:
-  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emo-resource: 'https://w3id.org/citius-kg/emofinder/resource/'
   emolex: 'https://w3id.org/def/emolex#'
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
   skos: 'http://www.w3.org/2004/02/skos/core#'
@@ -19,7 +19,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:AcquisitionAge']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/haro_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/haro_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/haro_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(aoa), 'xsd:float']
   concreteness:
@@ -29,7 +29,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Concreteness']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/haro_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/haro_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/haro_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(concreteness), 'xsd:float']
   familiarity:
@@ -39,7 +39,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Familiarity']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/haro_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/haro_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/haro_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(familiarity), 'xsd:float']
   recognitionTimePercentage:
@@ -49,7 +49,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:RecognitionTime', 'emolex:RecognitionTimePercentage']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/haro_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/haro_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/haro_2024/$(palabra_noaccents)~iri']
     - ['emolex:recognitionTime', $(mean_error), 'xsd:float']
   timeTdl:
@@ -59,6 +59,6 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:RecognitionTime', 'emolex:TimeTDL']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/haro_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/haro_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/haro_2024/$(palabra_noaccents)~iri']
     - ['emolex:recognitionTime', $(mean_rt), 'xsd:float']

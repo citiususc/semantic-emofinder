@@ -1,5 +1,5 @@
 prefixes:
-  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emo-resource: 'https://w3id.org/citius-kg/emofinder/resource/'
   emolex: 'https://w3id.org/def/emolex#'
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
   skos: 'http://www.w3.org/2004/02/skos/core#'
@@ -19,7 +19,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:AcquisitionAge']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(AoA_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(AoA_SD), 'xsd:float']
@@ -30,7 +30,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Anger']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Anger_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Anger_SD), 'xsd:float']
@@ -41,7 +41,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Arousal']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Arousal_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Arousal_SD), 'xsd:float']
@@ -52,7 +52,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Concreteness']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Concreteness_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Concreteness_SD), 'xsd:float']
@@ -63,7 +63,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Disgust']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Disgust_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Disgust_SD), 'xsd:float']
@@ -74,7 +74,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Fear']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Fear_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Fear_SD), 'xsd:float']
@@ -85,7 +85,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Happiness']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Happiness_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Happiness_SD), 'xsd:float']
@@ -96,7 +96,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Prototypicality']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Prototypicality_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Prototypicality_SD), 'xsd:float']
@@ -107,7 +107,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Sadness']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Sadness_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Sadness_SD), 'xsd:float']
@@ -118,7 +118,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Valence']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/perez-sanchez_2021']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/perez-sanchez_2021']
     - ['emolex:affects', 'emo-resource:lexical_entry/perez-sanchez_2021/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Valence_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Valence_SD), 'xsd:float']

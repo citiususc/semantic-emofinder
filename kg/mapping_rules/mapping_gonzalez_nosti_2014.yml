@@ -1,5 +1,5 @@
 prefixes:
-  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emo-resource: 'https://w3id.org/citius-kg/emofinder/resource/'
   emolex: 'https://w3id.org/def/emolex#'
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
   skos: 'http://www.w3.org/2004/02/skos/core#'
@@ -19,7 +19,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:AcquisitionAge']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/gonzalez_nosti_2014']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/gonzalez_nosti_2014']
     - ['emolex:affects', 'emo-resource:lexical_entry/gonzalez_nosti_2014/$(palabra_noaccents)~iri']
     - ['rb:mean', $(edad_de_adquisicion_m), 'xsd:float']
   timeNaming:
@@ -29,7 +29,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:RecognitionTime', 'emolex:TimeNaming']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/gonzalez_nosti_2014']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/gonzalez_nosti_2014']
     - ['emolex:affects', 'emo-resource:lexical_entry/gonzalez_nosti_2014/$(palabra_noaccents)~iri']
     - ['emolex:recognitionTime', $(tiempo_naming), 'xsd:float']
   timeTdl:
@@ -39,6 +39,6 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:RecognitionTime', 'emolex:TimeTDL']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/gonzalez_nosti_2014']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/gonzalez_nosti_2014']
     - ['emolex:affects', 'emo-resource:lexical_entry/gonzalez_nosti_2014/$(palabra_noaccents)~iri']
     - ['emolex:recognitionTime', $(tiempo_tdl), 'xsd:float']

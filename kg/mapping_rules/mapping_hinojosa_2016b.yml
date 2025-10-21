@@ -1,5 +1,5 @@
 prefixes:
-  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emo-resource: 'https://w3id.org/citius-kg/emofinder/resource/'
   emolex: 'https://w3id.org/def/emolex#'
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
   skos: 'http://www.w3.org/2004/02/skos/core#'
@@ -20,7 +20,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:AcquisitionAge']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/hinojosa_2016b']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/hinojosa_2016b']
     - ['emolex:affects', 'emo-resource:lexical_entry/hinojosa_2016b/$(palabra_noaccents)~iri']
     - ['rb:mean', $(edad_de_adquisicion_m), 'xsd:float']
     - ['rb:standardDeviation', $(edad_de_adquisicion_sd), 'xsd:float']
@@ -31,7 +31,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Dominance']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/hinojosa_2016b']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/hinojosa_2016b']
     - ['emolex:affects', 'emo-resource:lexical_entry/hinojosa_2016b/$(palabra_noaccents)~iri']
     - ['rb:mean', $(dominancia_m), 'xsd:float']
     - ['rb:standardDeviation', $(dominancia_sd), 'xsd:float']
@@ -42,7 +42,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Familiarity']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/hinojosa_2016b']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/hinojosa_2016b']
     - ['emolex:affects', 'emo-resource:lexical_entry/hinojosa_2016b/$(palabra_noaccents)~iri']
     - ['rb:mean', $(familiaridad_m), 'xsd:float']
     - ['rb:standardDeviation', $(familiaridad_sd), 'xsd:float']
@@ -53,7 +53,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:SensoryExperience']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/hinojosa_2016b']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/hinojosa_2016b']
     - ['emolex:affects', 'emo-resource:lexical_entry/hinojosa_2016b/$(palabra_noaccents)~iri']
     - ['rb:mean', $(experiencia_sensorial_m), 'xsd:float']
     - ['rb:standardDeviation', $(experiencia_sensorial_sd), 'xsd:float']

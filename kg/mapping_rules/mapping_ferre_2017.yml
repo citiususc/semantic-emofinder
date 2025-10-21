@@ -1,5 +1,5 @@
 prefixes:
-  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emo-resource: 'https://w3id.org/citius-kg/emofinder/resource/'
   emolex: 'https://w3id.org/def/emolex#'
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
   skos: 'http://www.w3.org/2004/02/skos/core#'
@@ -19,7 +19,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Anger']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2017']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2017']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2017/$(palabra_noaccents)~iri']
     - ['rb:mean', $(ira_m), 'xsd:float']
     - ['rb:standardDeviation', $(ira_sd), 'xsd:float']
@@ -30,7 +30,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Disgust']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2017']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2017']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2017/$(palabra_noaccents)~iri']
     - ['rb:mean', $(asco_m), 'xsd:float']
     - ['rb:standardDeviation', $(asco_sd), 'xsd:float']
@@ -41,7 +41,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Fear']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2017']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2017']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2017/$(palabra_noaccents)~iri']
     - ['rb:mean', $(miedo_m), 'xsd:float']
     - ['rb:standardDeviation', $(miedo_sd), 'xsd:float']
@@ -52,7 +52,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Happiness']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2017']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2017']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2017/$(palabra_noaccents)~iri']
     - ['rb:mean', $(alegria_m), 'xsd:float']
     - ['rb:standardDeviation', $(alegria_sd), 'xsd:float']
@@ -63,7 +63,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:DiscreteEmotionalCategory', 'emolex:Sadness']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2017']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2017']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2017/$(palabra_noaccents)~iri']
     - ['rb:mean', $(tristeza_m), 'xsd:float']
     - ['rb:standardDeviation', $(tristeza_sd), 'xsd:float']

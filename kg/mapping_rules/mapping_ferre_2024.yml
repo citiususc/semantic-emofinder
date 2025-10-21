@@ -1,5 +1,5 @@
 prefixes:
-  emo-resource: 'https://www.usc.gal/pcc/emofinder/resource/'
+  emo-resource: 'https://w3id.org/citius-kg/emofinder/resource/'
   emolex: 'https://w3id.org/def/emolex#'
   rdfs: 'http://www.w3.org/2000/01/rdf-schema#'
   skos: 'http://www.w3.org/2004/02/skos/core#'
@@ -19,7 +19,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Action']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Action_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Action_SD), 'xsd:float']
@@ -30,7 +30,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:BodyExpression']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(BodyExp_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(BodyExp_SD), 'xsd:float']
@@ -41,7 +41,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Evaluation']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Evaluation _Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Evaluation _SD), 'xsd:float']
@@ -52,7 +52,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Feeling']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Feeling_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Feeling_SD), 'xsd:float']
@@ -63,7 +63,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:EmotionalDimension', 'emolex:Interoception']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Interoception_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Interoception_SD), 'xsd:float']
@@ -74,7 +74,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Morality']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Morality_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Morality_SD), 'xsd:float']
@@ -85,7 +85,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:SensoryExperience']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(SenExp_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(SenExp_SD), 'xsd:float']
@@ -96,7 +96,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:SocialInteraction']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(SocInt_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(SocInt_SD), 'xsd:float']
@@ -107,7 +107,7 @@ mappings:
     po:
     - [a, ['emolex:Annotation', 'emolex:SubjectiveDimension', 'emolex:Thought']]
     - ['rdfs:label', $(palabra)]
-    - ['dcterms:source', 'https://www.usc.gal/pcc/emofinder/resource/lexicon/ferre_2024']
+    - ['dcterms:source', 'https://w3id.org/citius-kg/emofinder/resource/lexicon/ferre_2024']
     - ['emolex:affects', 'emo-resource:lexical_entry/ferre_2024/$(palabra_noaccents)~iri']
     - ['rb:mean', $(Thought_Mean), 'xsd:float']
     - ['rb:standardDeviation', $(Thought_SD), 'xsd:float']
