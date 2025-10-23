@@ -643,7 +643,7 @@ function Finder() {
               !v.endsWith("_lexicon")
           );
         return (
-          <div className="results-table-container">
+          <div className="results-section">
             <div className="results-header">
               <h2 className="section-title">Resultados</h2>
               <button
@@ -654,84 +654,86 @@ function Finder() {
                 Descargar CSV
               </button>
             </div>
-            <table className="results-table">
-              <thead>
-                <tr>
-                  {filteredVars.map((v: string) => (
-                    <th key={v}>{v}</th>
-                  ))}
-                </tr>
-              </thead>
-              <tbody>
-                {sparqlResult.results.bindings.map((row: any, idx: number) => {
-                  // Para la columna extra de enlace de annotation
-                  const annotationVal = row["annotation"]?.value;
-                  return (
-                    <tr key={idx}>
-                      {filteredVars.map((v: string) => {
-                        // Palabra: solo valor, sin enlace
-                        if (v === "palabra") {
-                          const palabraVal = row["palabra"]?.value || "";
+            <div className="results-table-container">
+              <table className="results-table">
+                <thead>
+                  <tr>
+                    {filteredVars.map((v: string) => (
+                      <th key={v}>{v}</th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {sparqlResult.results.bindings.map((row: any, idx: number) => {
+                    // Para la columna extra de enlace de annotation
+                    const annotationVal = row["annotation"]?.value;
+                    return (
+                      <tr key={idx}>
+                        {filteredVars.map((v: string) => {
+                          // Palabra: solo valor, sin enlace
+                          if (v === "palabra") {
+                            const palabraVal = row["palabra"]?.value || "";
+                            return (
+                              <td key={v}>
+                                {palabraVal}
+                              </td>
+                            );
+                          }
+                          // Base: enlace a lexicon
+                          if (v === "base") {
+                            const baseVal = row["base"]?.value || "";
+                            const lexiconVal = row["lexicon"]?.value;
+                            return (
+                              <td key={v}>
+                                {lexiconVal ? (
+                                  <a href={lexiconVal} target="_blank" rel="noopener noreferrer">{baseVal}</a>
+                                ) : baseVal}
+                              </td>
+                            );
+                          }
+                          // Otros: valor directo
                           return (
-                            <td key={v}>
-                              {palabraVal}
-                            </td>
+                              <td key={v}>
+                                  {(() => {
+                                      const cell = row[v];
+                                      if (!cell) return '';
+                                      const value = cell.value ?? '';
+
+                                      let link: string | undefined;
+                                      const firstUnderscore = v.indexOf('_');
+                                      if (firstUnderscore > -1) {
+                                          const basePrefix = v.slice(0, firstUnderscore);
+                                          const annoKey = `${basePrefix}_annotation`;
+                                          link = row[annoKey]?.value;
+                                      }
+
+                                      // Intento 2: caso no pivotado -> usar la columna global "annotation" si existe
+                                      if (!link && row["annotation"]?.value) {
+                                          link = row["annotation"].value;
+                                      }
+
+                                      // Si hay valor y enlace -> mostrar el valor como link
+                                      if (value && link) {
+                                          return (
+                                              <a href={link} target="_blank" rel="noopener noreferrer">
+                                                  {value}
+                                              </a>
+                                          );
+                                      }
+
+                                      // Si hay valor pero no hay enlace -> valor plano
+                                      return value;
+                                  })()}
+                              </td>
                           );
-                        }
-                        // Base: enlace a lexicon
-                        if (v === "base") {
-                          const baseVal = row["base"]?.value || "";
-                          const lexiconVal = row["lexicon"]?.value;
-                          return (
-                            <td key={v}>
-                              {lexiconVal ? (
-                                <a href={lexiconVal} target="_blank" rel="noopener noreferrer">{baseVal}</a>
-                              ) : baseVal}
-                            </td>
-                          );
-                        }
-                        // Otros: valor directo
-                        return (
-                            <td key={v}>
-                                {(() => {
-                                    const cell = row[v];
-                                    if (!cell) return '';
-                                    const value = cell.value ?? '';
+                        })}
 
-                                    let link: string | undefined;
-                                    const firstUnderscore = v.indexOf('_');
-                                    if (firstUnderscore > -1) {
-                                        const basePrefix = v.slice(0, firstUnderscore);
-                                        const annoKey = `${basePrefix}_annotation`;
-                                        link = row[annoKey]?.value;
-                                    }
-
-                                    // Intento 2: caso no pivotado -> usar la columna global "annotation" si existe
-                                    if (!link && row["annotation"]?.value) {
-                                        link = row["annotation"].value;
-                                    }
-
-                                    // Si hay valor y enlace -> mostrar el valor como link
-                                    if (value && link) {
-                                        return (
-                                            <a href={link} target="_blank" rel="noopener noreferrer">
-                                                {value}
-                                            </a>
-                                        );
-                                    }
-
-                                    // Si hay valor pero no hay enlace -> valor plano
-                                    return value;
-                                })()}
-                            </td>
-                        );
-                      })}
-
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
+                      </tr>
+                    );
+                  })}
+                </tbody>
+              </table>
+            </div>
           </div>
         );
       })()}

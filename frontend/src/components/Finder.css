@@ -460,29 +460,78 @@
 }
 
 .results-table-container {
-    margin-top: 24px;
-}
-.results-table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 8px;
-}
-.results-table th,
-.results-table td {
-    border: 1px solid #ccc;
-    padding: 8px;
-    text-align: left;
-}
-.results-table th {
-    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; /* centra el contenido */
+    margin-top: 1.5rem;
+    overflow-x: auto; /* mantiene scroll si hay muchas columnas */
 }
 
-/* Contenedor de cabecera de resultados: título y botón alineados */
-.results-header {
+.results-table {
+    width: 80%; /* ocupa un 80% del ancho disponible */
+    max-width: 1200px; /* límite superior */
+    border-collapse: collapse;
+    table-layout: fixed; /* columnas equilibradas */
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.results-table th,
+.results-table td {
+    padding: 10px 14px;
+    word-break: break-word;
+    white-space: normal;
+    text-align: center;
+}
+
+.results-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+}
+
+.results-section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 12px;
+    flex-direction: column;
+    align-items: center; /* centra el bloque completo horizontalmente */
+    margin-top: 2rem;
+}
+
+.results-header {
+    position: relative;
+    width: 80%;           /* igual que la tabla */
+    max-width: 1200px;    /* límite superior */
+    margin-bottom: 1rem;
+}
+
+.results-header .section-title {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+.download-button {
+    position: absolute;
+    right: 0;             /* alineado al borde derecho */
+    top: 50%;             /* centrado verticalmente respecto al título */
+    transform: translateY(-50%); /* corrige centrado vertical */
+    background-color: #2a6ebb;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+}
+
+
+.download-button:hover {
+    background-color: #1f5593;
 }
 
 /* Estilo del botón Descargar CSV */
