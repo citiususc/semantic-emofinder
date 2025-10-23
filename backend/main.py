@@ -210,9 +210,9 @@ def build_sparql_all(search: SearchRequest) -> str:
     where_block = "\n".join(where)
     bases = list(map(lambda x: x.replace("annotation","base"), annotations))
     if search.options.includeUris:
-        projection = f"SELECT DISTINCT ?palabra {" ".join(annotations)} {" ".join(bases)} {" ".join(vars)}"
+        projection = f'SELECT DISTINCT ?palabra {" ".join(annotations)} {" ".join(bases)} {" ".join(vars)}'
     else:
-        projection = f"SELECT DISTINCT ?palabra  {" ".join(vars)}"
+        projection = f'SELECT DISTINCT ?palabra  {" ".join(vars)}'
     query = f"""{PREFIXES}
                 {projection}
                 WHERE {{
@@ -291,9 +291,9 @@ def build_sparql_any(search: SearchRequest) -> str:
     else:
         where_block = "\n".join(where)
     if search.options.includeUris:
-        projection = f"SELECT DISTINCT ?palabra ?base ?annotation ?lexicon {" ".join(vars)}"
+        projection = f'SELECT DISTINCT ?palabra ?base ?annotation ?lexicon {" ".join(vars)}'
     else:
-        projection = f"SELECT DISTINCT ?palabra ?base  {" ".join(vars)}"
+        projection = f'SELECT DISTINCT ?palabra ?base  {" ".join(vars)}'
     query = f"""{PREFIXES}
             {projection}
             WHERE {{
