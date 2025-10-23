@@ -6,3 +6,4 @@ tmp
 backend/.env
 frontend/node_modules
 kg/knowledge-graph.nt
+backend/__pycache__

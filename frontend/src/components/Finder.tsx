@@ -55,6 +55,14 @@ function Finder() {
   const [searchText, setSearchText] = useState('');
   const [sparqlResult, setSparqlResult] = useState<any>(null);
 
+  const [optionsModal, setOptionsModal] = useState(false);
+  const [includeUris, setIncludeUris] = useState(false);
+  const [groupByBase, setGroupByBase] = useState(true);
+  // Nuevo estado para el alcance de los criterios
+  const [criteriaScope, setCriteriaScope] = useState<'all' | 'any'>('any');
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
   // Helper to download SPARQL results as CSV
   const downloadCsv = () => {
     if (!sparqlResult?.head?.vars || !sparqlResult?.results?.bindings) return;
@@ -243,25 +251,43 @@ function Finder() {
       searchText,
       dynamicFilters,
       selectedBases: selectedBaseObjects,
+      options: {
+        criteriaScope,
+        groupByBase,
+        includeUris,
+      },
     };
 
-    try {
-      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/sparql-query`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(payload),
-      });
-      if (!response.ok) {
-        console.error('Error en la petición:', response.statusText);
-        return;
-      }
-      const result = await response.json();
-      setSparqlResult(result);
-      // TODO: manejar resultados en la interfaz
-    } catch (error) {
-      console.error('Error de conexión con el backend:', error);
-    }
-  };
+        try {
+          setIsLoading(true);
+          setError(null)
+          const response = await fetch(`${import.meta.env.VITE_API_URL}/api/sparql-query`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(payload),
+          });
+          if (!response.ok) {
+            console.error('Error en la petición:', response.statusText);
+            setError('Error al ejecutar la consulta. Inténtalo de nuevo más tarde.')
+            return;
+          }
+          const result = await response.json();
+          if (!result.results || result.results.bindings.length === 0) {
+             setError('No se encontraron resultados para los filtros seleccionados.');
+              setSparqlResult(null);
+          }
+          else{
+            setSparqlResult(result);
+          }
+
+        } catch (error) {
+          console.error('Error de conexión con el backend:', error);
+          setError('Error de conexión con el servidor.');
+        }
+        finally {
+            setIsLoading(false);
+        }
+      };
 
   return (
     <div className="app-container">
@@ -348,11 +374,19 @@ function Finder() {
                     className="input characteristic-select"
                   >
                     <option value="">Seleccionar</option>
-                    {availableVariables.map(v => (
-                      <option key={v.variable_class} value={v.variable_class}>
-                        {v.variable_label}
-                      </option>
-                    ))}
+                      {availableVariables.map(v => {
+                          // Tomamos la primera métrica (normalmente "rb:mean") para mostrar su rango
+                          const mainMetric = v.metrics?.[0];
+                          const range =
+                              mainMetric?.min !== undefined && mainMetric?.max !== undefined
+                                  ? ` (${mainMetric.min}–${mainMetric.max})`
+                                  : '';
+                          return (
+                              <option key={v.variable_class} value={v.variable_class}>
+                                  {v.variable_label}{range}
+                              </option>
+                          );
+                      })}
                   </select>
                 </div>
 
@@ -474,9 +508,97 @@ function Finder() {
             +
           </button>
 
-          <button type="submit" className="button-primary">
-            Buscar
-          </button>
+            <div className="button-group">
+                {/* Botón principal de búsqueda */}
+                <button
+                    type="submit"
+                    className="button-primary main-button"
+                    disabled={isLoading}
+                >
+                    {isLoading ? (
+                        <>
+                            <span className="spinner"></span> Buscando...
+                        </>
+                    ) : (
+                        "Buscar"
+                    )}
+                </button>
+
+                {/* Botón de opciones */}
+                <button
+                    type="button"
+                    className="button-secondary options-button"
+                    onClick={() => setOptionsModal(true)}
+                >
+                    Opciones
+                </button>
+
+                {/* Modal de opciones */}
+                {optionsModal && (
+                  <div className="modal-overlay" onClick={() => setOptionsModal(false)}>
+                    <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                      <h3 className="modal-title">Opciones de búsqueda</h3>
+
+                      {/* Primera sección: cumplimiento de criterios */}
+                      <div className="modal-section">
+                        <p><strong>En caso de que una variable esté en varias bases, cumplir su criterio de búsqueda:</strong></p>
+                        <label>
+                          <input
+                            type="radio"
+                            name="criteriaScope"
+                            value="all"
+                            checked={criteriaScope === 'all'}
+                            onChange={() => setCriteriaScope('all')}
+                          />{' '}
+                          en todas las bases
+                        </label>
+                        <br />
+                        <label>
+                          <input
+                            type="radio"
+                            name="criteriaScope"
+                            value="any"
+                            checked={criteriaScope === 'any'}
+                            onChange={() => setCriteriaScope('any')}
+                          />{' '}
+                          en al menos una base
+                        </label>
+                      </div>
+
+                      {/* Segunda sección: opciones de resultados */}
+                      <div className="modal-section" style={{ marginTop: '20px' }}>
+                        <p><strong>En los resultados:</strong></p>
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked={groupByBase}
+                            onChange={() => setGroupByBase((prev) => !prev)}
+                          />{' '}
+                           Agrupar palabras
+                        </label>
+                        <br />
+                        <label>
+                          <input
+                            type="checkbox"
+                            checked={includeUris}
+                            onChange={() => setIncludeUris((prev) => !prev)}
+                          />{' '}
+                          Añadir URIs a los resultados
+                        </label>
+                      </div>
+
+                      <button
+                        type="button"
+                        onClick={() => setOptionsModal(false)}
+                        className="button-primary"
+                        style={{ marginTop: '20px' }}
+                      >
+                        Cerrar
+                      </button>
+                    </div>
+                  </div>
+                )}
+            </div>
         </div>
 
         <div className="base-card-container">
@@ -506,11 +628,20 @@ function Finder() {
           </div>
         </div>
       </form>
-
+    {error && (
+        <div className="error-message">
+            {error}
+        </div>
+    )}
       {sparqlResult?.head && sparqlResult?.results && (() => {
         // Filtrar columnas: quitar "annotation" y "lexicon"
         const allVars: string[] = sparqlResult.head.vars;
-        const filteredVars = allVars.filter(v => v !== "annotation" && v !== "lexicon");
+        const filteredVars = allVars.filter(v =>
+              v !== "annotation" &&
+              v !== "lexicon" &&
+              !v.endsWith("_annotation") &&
+              !v.endsWith("_lexicon")
+          );
         return (
           <div className="results-table-container">
             <div className="results-header">
@@ -532,40 +663,73 @@ function Finder() {
                 </tr>
               </thead>
               <tbody>
-                {sparqlResult.results.bindings.map((row: any, idx: number) => (
-                  <tr key={idx}>
-                    {filteredVars.map((v: string) => {
-                      // Palabra: enlace a annotation
-                      if (v === "palabra") {
-                        const palabraVal = row["palabra"]?.value || "";
-                        const annotationVal = row["annotation"]?.value;
+                {sparqlResult.results.bindings.map((row: any, idx: number) => {
+                  // Para la columna extra de enlace de annotation
+                  const annotationVal = row["annotation"]?.value;
+                  return (
+                    <tr key={idx}>
+                      {filteredVars.map((v: string) => {
+                        // Palabra: solo valor, sin enlace
+                        if (v === "palabra") {
+                          const palabraVal = row["palabra"]?.value || "";
+                          return (
+                            <td key={v}>
+                              {palabraVal}
+                            </td>
+                          );
+                        }
+                        // Base: enlace a lexicon
+                        if (v === "base") {
+                          const baseVal = row["base"]?.value || "";
+                          const lexiconVal = row["lexicon"]?.value;
+                          return (
+                            <td key={v}>
+                              {lexiconVal ? (
+                                <a href={lexiconVal} target="_blank" rel="noopener noreferrer">{baseVal}</a>
+                              ) : baseVal}
+                            </td>
+                          );
+                        }
+                        // Otros: valor directo
                         return (
-                          <td key={v}>
-                            {annotationVal ? (
-                              <a href={annotationVal} target="_blank" rel="noopener noreferrer">{palabraVal}</a>
-                            ) : palabraVal}
-                          </td>
+                            <td key={v}>
+                                {(() => {
+                                    const cell = row[v];
+                                    if (!cell) return '';
+                                    const value = cell.value ?? '';
+
+                                    let link: string | undefined;
+                                    const firstUnderscore = v.indexOf('_');
+                                    if (firstUnderscore > -1) {
+                                        const basePrefix = v.slice(0, firstUnderscore);
+                                        const annoKey = `${basePrefix}_annotation`;
+                                        link = row[annoKey]?.value;
+                                    }
+
+                                    // Intento 2: caso no pivotado -> usar la columna global "annotation" si existe
+                                    if (!link && row["annotation"]?.value) {
+                                        link = row["annotation"].value;
+                                    }
+
+                                    // Si hay valor y enlace -> mostrar el valor como link
+                                    if (value && link) {
+                                        return (
+                                            <a href={link} target="_blank" rel="noopener noreferrer">
+                                                {value}
+                                            </a>
+                                        );
+                                    }
+
+                                    // Si hay valor pero no hay enlace -> valor plano
+                                    return value;
+                                })()}
+                            </td>
                         );
-                      }
-                      // Base: enlace a lexicon
-                      if (v === "base") {
-                        const baseVal = row["base"]?.value || "";
-                        const lexiconVal = row["lexicon"]?.value;
-                        return (
-                          <td key={v}>
-                            {lexiconVal ? (
-                              <a href={lexiconVal} target="_blank" rel="noopener noreferrer">{baseVal}</a>
-                            ) : baseVal}
-                          </td>
-                        );
-                      }
-                      // Otros: valor directo
-                      return (
-                        <td key={v}>{row[v]?.value || ''}</td>
-                      );
-                    })}
-                  </tr>
-                ))}
+                      })}
+
+                    </tr>
+                  );
+                })}
               </tbody>
             </table>
           </div>
@@ -575,22 +739,50 @@ function Finder() {
       {infoModal && (
         <div className="modal-overlay" onClick={() => setInfoModal(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            {/* Retrieve the base object */}
             {(() => {
-              const base = (basesData as { id: string; label: string; ref: string; url: string; words: number }[])
-                .find(b => b.id === infoModal);
+              const base = (basesData as {
+                id: string;
+                label: string;
+                ref: string;
+                url: string;
+                words: number;
+                variables?: {
+                  variable_class: string;
+                  variable_label: string;
+                  metrics?: {
+                    metric: string;
+                    metric_label: string;
+                    min?: number;
+                    max?: number;
+                  }[];
+                }[];
+              }[]).find(b => b.id === infoModal);
+
               if (!base) return null;
+
               return (
                 <>
                   <h3 className="modal-title">{base.label}</h3>
                   <p className="modal-text"><strong>Reference:</strong> {base.ref}</p>
                   <p className="modal-text"><strong>Words:</strong> {base.words}</p>
-                  <p className="modal-text">
+                    {base.variables && base.variables.length > 0 && (
+                        <div className="modal-variables">
+                            <p className="modal-text">
+                                <strong>Variables:</strong>{' '}
+                                {base.variables.map((v) => v.variable_label).join(', ')}
+                            </p>
+                        </div>
+                    )}
+
+                    <p className="modal-text">
                     <strong>URL:</strong>{' '}
                     <a href={base.url} target="_blank" rel="noopener noreferrer">
                       {base.url}
                     </a>
                   </p>
+
+
+
                   <button
                     type="button"
                     onClick={() => setInfoModal(null)}

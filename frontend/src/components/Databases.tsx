@@ -77,7 +77,7 @@ function Finder() {
       console.log('FormData entry:', key, value);
     }
     try {
-      const response = await fetch('http://127.0.0.1:3000/api/create-issue', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/create-issue`, {
         method: 'POST',
         body: form,
       });
