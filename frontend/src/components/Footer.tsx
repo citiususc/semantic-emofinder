@@ -5,8 +5,9 @@ const Footer: React.FC = () => (
   <footer className="bg-white border-t mt-12 py-6">
     <div className="max-w-6xl mx-auto flex items-center justify-between px-4">
       {/* Left logo */}
-      <div>
+      <div className="flex items-center space-x-6">
         <img src="/emofinder/usc.svg" alt="USC" className="h-20" />
+        <img src="/emofinder/urv.png" alt="URV" className="h-20" />
       </div>
 
       {/* Center text */}
