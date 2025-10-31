@@ -13,7 +13,7 @@ const Footer: React.FC = () => (
       <div className="flex-1 text-center text-sm text-gray-500">
         <p>© {new Date().getFullYear()} Universidade de Santiago de Compostela</p>
         <p>CiTIUS · Centro Singular de Investigación en Tecnoloxías Intelixentes</p>
-        <p>The code is <a href="https://github.com/citiususc/semantic-emofinder" className="text-blue-600 hover:text-blue-800 underline">openly available</a> nd feedback
+        <p>The code is <a href="https://github.com/citiususc/semantic-emofinder" className="text-blue-600 hover:text-blue-800 underline">openly available</a> and feedback
             or issues can be submitted <a href="https://github.com/citiususc/semantic-emofinder/issues" className="text-blue-600 hover:text-blue-800 underline">through the repository</a></p>
       </div>
 

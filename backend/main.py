@@ -181,13 +181,18 @@ def build_sparql_all(search: SearchRequest) -> str:
                 'startsWith': 'STRSTARTS',
                 'endsWith': 'STRENDS',
                 'contains': 'CONTAINS',
+                'words': 'WORDS',
                 'exact': None
             }
             func = op_map.get(search.matchType)
-            if func:
+            if func != 'WORDS':
                 where.append(
                     f'  FILTER({func}( LCASE(STR(?palabra)), LCASE("{search.searchText}") ))'
                 )
+            elif func == 'WORDS':
+                words = list(map(str.strip, search.searchText.split(",")))
+                clause = ", ".join(list(map(lambda w: f'LCASE("{w}")', words)))
+                where.append(f'  FILTER(LCASE(STR(?palabra)) in ({clause}))')
             else:
                 where.append(
                     f'  FILTER( LCASE(STR(?palabra)) = LCASE("{search.searchText}") )'
@@ -262,13 +267,18 @@ def build_sparql_any(search: SearchRequest) -> str:
             'startsWith': 'STRSTARTS',
             'endsWith': 'STRENDS',
             'contains': 'CONTAINS',
+            'words': 'WORDS',
             'exact': None
         }
         func = op_map.get(search.matchType)
-        if func:
+        if func != 'WORDS':
             where.append(
                 f'  FILTER({func}( LCASE(STR(?palabra)), LCASE("{search.searchText}") ))'
             )
+        elif func == 'WORDS':
+            words = list(map(str.strip, search.searchText.split(",")))
+            clause = ", ".join(list(map(lambda w: f'LCASE("{w}")', words)))
+            where.append(f'  FILTER(LCASE(STR(?palabra)) in ({clause}))')
         else:
             where.append(
                 f'  FILTER( LCASE(STR(?palabra)) = LCASE("{search.searchText}") )'
@@ -280,11 +290,15 @@ def build_sparql_any(search: SearchRequest) -> str:
         # Ensure annotation is of the correct class
 
         where.append(f"{{ ?annotation rdf:type {df.characteristic} .")
-        for c in df.constraints:
-            var = f"?{re.sub(r'(?<!^)(?=[A-Z])', '_', df.characteristic.replace('emolex:', '')).lower()}_{c.measure.split(':', 1)[-1]}"
-            where.append(f"  ?annotation {c.measure} {var} .")
-            where.append(f"  FILTER({var} {c.operator} {c.value})")
-            vars.append(f"{var}")
+
+        if df.constraints:
+            for c in df.constraints:
+                var = f"?{re.sub(r'(?<!^)(?=[A-Z])', '_', df.characteristic.replace('emolex:', '')).lower()}_{c.measure.split(':', 1)[-1]}"
+                where.append(f"  ?annotation {c.measure} {var} .")
+                if c.operator != "" and c.value != "":
+                    where.append(f"  FILTER({var} {c.operator} {c.value})")
+                vars.append(f"{var}")
+
         where.append(f"}} UNION")
     if search.dynamicFilters:
         where_block = "\n".join(where)[:-6]
@@ -403,6 +417,17 @@ def clean_results_join_words(sparql_json):
         "results": {"bindings": new_bindings}
     }
 
+
+def round_numeric_values(result, decimals=2):
+    for row in result.get("results", {}).get("bindings", []):
+        for key, value in row.items():
+            val = value.get("value")
+            try:
+                num = float(val)
+                value["value"] = f"{num:.{decimals}f}"
+            except (ValueError, TypeError):
+                pass
+    return result
 @app.post("/api/sparql-query")
 async def sparql_query(search: SearchRequest):
     # Build the SPARQL query using helper
@@ -422,7 +447,7 @@ async def sparql_query(search: SearchRequest):
         response = await client.post(sparql_url, content=query_str.encode("utf-8"), headers=headers)
     if response.status_code >= 300:
         raise HTTPException(status_code=response.status_code, detail=response.text)
-    data = response.json()
+    data = round_numeric_values(response.json())
     if search.options.groupByBase and search.options.criteriaScope == "any":
         data = combine_words(data)
     elif search.options.criteriaScope == "all":

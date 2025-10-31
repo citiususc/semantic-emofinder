@@ -51,7 +51,7 @@ const RECOGNITION_TIME_ITEMS = CHARACTERISTIC_GROUPS.find(group => group.categor
 
 function Finder() {
   // Text filters state
-  const [matchType, setMatchType] = useState<'startsWith' | 'endsWith' | 'contains' | 'exact'>('startsWith');
+  const [matchType, setMatchType] = useState<'startsWith' | 'endsWith' | 'contains' | 'exact' | 'words'>('startsWith');
   const [searchText, setSearchText] = useState('');
   const [sparqlResult, setSparqlResult] = useState<any>(null);
 
@@ -63,6 +63,9 @@ function Finder() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
+    const [sortColumn, setSortColumn] = useState<string | null>('palabra');
+  const [sortDirection, setSortDirection] = useState<'asc' | 'desc'>('asc');
+
   // Helper to download SPARQL results as CSV
   const downloadCsv = () => {
     if (!sparqlResult?.head?.vars || !sparqlResult?.results?.bindings) return;
@@ -72,7 +75,7 @@ function Finder() {
     );
     const csvContent =
       [headers, ...rows]
-        .map(r => r.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(','))
+        .map(r => r.map((cell: any) => `"${String(cell).replace(/"/g, '""')}"`).join(','))
         .join('\n');
     const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
     const url = URL.createObjectURL(blob);
@@ -111,7 +114,7 @@ function Finder() {
   };
 
   const handleMatchTypeChange = (e: ChangeEvent<HTMLSelectElement>) => {
-    setMatchType(e.target.value as 'startsWith' | 'endsWith' | 'contains' | 'exact');
+    setMatchType(e.target.value as 'startsWith' | 'endsWith' | 'contains' | 'exact' | 'words');
   };
 
   // Handlers for dynamic filters
@@ -240,55 +243,80 @@ function Finder() {
   }, [selectedBases]);
 
   // Handle form submission
-  const handleSubmit = async (e: FormEvent) => {
-    e.preventDefault();
-    // Build the request payload with all filter data
-    const selectedBaseObjects = (basesData as any[])
-        .filter(b => selectedBases.includes(b.id))
-        .map(b => ({ id: b.id, label: b.label }));
-    const payload = {
-      matchType,
-      searchText,
-      dynamicFilters,
-      selectedBases: selectedBaseObjects,
-      options: {
-        criteriaScope,
-        groupByBase,
-        includeUris,
-      },
-    };
+    const handleSubmit = async (e: FormEvent) => {
+        e.preventDefault();
+
+        // Construir los objetos de las bases seleccionadas
+        const selectedBaseObjects = (basesData as any[])
+            .filter(b => selectedBases.includes(b.id))
+            .map(b => ({ id: b.id, label: b.label }));
+
+        // 🔍 Enriquecer los filtros dinámicos con todas las métricas si no hay filtros definidos
+        const enrichedFilters = dynamicFilters.map(filter => {
+            const characteristic = filter.characteristic;
+            const baseVars = (basesData as any[])
+                .filter(b => selectedBases.includes(b.id))
+                .flatMap(b => b.variables || []);
+            const varInfo = baseVars.find(v => v.variable_class === characteristic);
+
+            // Si no hay restricciones activas → añadir todas las métricas posibles
+            const hasActiveConstraints = filter.constraints.some(
+                c => c.operator && c.value !== ''
+            );
+
+            const constraints = hasActiveConstraints
+                ? filter.constraints
+                : (varInfo?.metrics || []).map((m: any, idx: number) => ({
+                    id: idx + 1,
+                    measure: m.metric,
+                    operator: '',
+                    value: ''
+                }));
+
+            return { ...filter, constraints };
+        });
+
+        const payload = {
+            matchType,
+            searchText,
+            dynamicFilters: enrichedFilters,
+            selectedBases: selectedBaseObjects,
+            options: {
+                criteriaScope,
+                groupByBase,
+                includeUris,
+            },
+        };
 
         try {
-          setIsLoading(true);
-          setError(null)
-          const response = await fetch(`${import.meta.env.VITE_API_URL}/api/sparql-query`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(payload),
-          });
-          if (!response.ok) {
-            console.error('Error en la petición:', response.statusText);
-            setError('Error al ejecutar la consulta. Inténtalo de nuevo más tarde.')
-            return;
-          }
-          const result = await response.json();
-          if (!result.results || result.results.bindings.length === 0) {
-             setError('No se encontraron resultados para los filtros seleccionados.');
-              setSparqlResult(null);
-          }
-          else{
-            setSparqlResult(result);
-          }
+            setIsLoading(true);
+            setError(null);
+            const response = await fetch(`${import.meta.env.VITE_API_URL}/api/sparql-query`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(payload),
+            });
 
+            if (!response.ok) {
+                console.error('Error en la petición:', response.statusText);
+                setError('Error al ejecutar la consulta. Inténtalo de nuevo más tarde.');
+                return;
+            }
+
+            const result = await response.json();
+            if (!result.results || result.results.bindings.length === 0) {
+                setError('No se encontraron resultados para los filtros seleccionados.');
+                setSparqlResult(null);
+            } else {
+                setSparqlResult(result);
+            }
         } catch (error) {
-          console.error('Error de conexión con el backend:', error);
-          setError('Error de conexión con el servidor.');
-        }
-        finally {
+            console.error('Error de conexión con el backend:', error);
+            setError('Error de conexión con el servidor.');
+        } finally {
             setIsLoading(false);
         }
-      };
-
+    };
   return (
     <div className="app-container">
       <form onSubmit={handleSubmit} className="form-container">
@@ -303,6 +331,7 @@ function Finder() {
                   <option value="endsWith">Termina en</option>
                   <option value="contains">Contiene</option>
                   <option value="exact">Palabra exacta</option>
+                  <option value="words">Lista Palabras</option>
                 </select>
               </div>
               <div className="field-group text-group">
@@ -319,6 +348,8 @@ function Finder() {
                       ? 'Ingresa texto final'
                       : matchType === 'contains'
                       ? 'Ingresa texto intermedio'
+                      : matchType === 'words'
+                      ? 'Palabras separadas por coma'
                       : 'Ingresa texto exacto'
                   }
                 />
@@ -655,84 +686,102 @@ function Finder() {
               </button>
             </div>
             <div className="results-table-container">
-              <table className="results-table">
-                <thead>
-                  <tr>
-                    {filteredVars.map((v: string) => (
-                      <th key={v}>{v}</th>
-                    ))}
-                  </tr>
-                </thead>
-                <tbody>
-                  {sparqlResult.results.bindings.map((row: any, idx: number) => {
-                    // Para la columna extra de enlace de annotation
-                    const annotationVal = row["annotation"]?.value;
-                    return (
-                      <tr key={idx}>
-                        {filteredVars.map((v: string) => {
-                          // Palabra: solo valor, sin enlace
-                          if (v === "palabra") {
-                            const palabraVal = row["palabra"]?.value || "";
-                            return (
-                              <td key={v}>
-                                {palabraVal}
-                              </td>
-                            );
-                          }
-                          // Base: enlace a lexicon
-                          if (v === "base") {
-                            const baseVal = row["base"]?.value || "";
-                            const lexiconVal = row["lexicon"]?.value;
-                            return (
-                              <td key={v}>
-                                {lexiconVal ? (
-                                  <a href={lexiconVal} target="_blank" rel="noopener noreferrer">{baseVal}</a>
-                                ) : baseVal}
-                              </td>
-                            );
-                          }
-                          // Otros: valor directo
-                          return (
-                              <td key={v}>
-                                  {(() => {
-                                      const cell = row[v];
-                                      if (!cell) return '';
-                                      const value = cell.value ?? '';
-
-                                      let link: string | undefined;
-                                      const firstUnderscore = v.indexOf('_');
-                                      if (firstUnderscore > -1) {
-                                          const basePrefix = v.slice(0, firstUnderscore);
-                                          const annoKey = `${basePrefix}_annotation`;
-                                          link = row[annoKey]?.value;
-                                      }
-
-                                      // Intento 2: caso no pivotado -> usar la columna global "annotation" si existe
-                                      if (!link && row["annotation"]?.value) {
-                                          link = row["annotation"].value;
-                                      }
-
-                                      // Si hay valor y enlace -> mostrar el valor como link
-                                      if (value && link) {
-                                          return (
-                                              <a href={link} target="_blank" rel="noopener noreferrer">
-                                                  {value}
-                                              </a>
-                                          );
-                                      }
-
-                                      // Si hay valor pero no hay enlace -> valor plano
-                                      return value;
-                                  })()}
-                              </td>
-                          );
-                        })}
-
-                      </tr>
-                    );
-                  })}
-                </tbody>
-              </table>
+                <table className="results-table">
+                    <thead>
+                    <tr>
+                        {filteredVars.map((v: string) => (
+                            <th
+                                key={v}
+                                onClick={() => {
+                                    if (sortColumn === v) {
+                                        setSortDirection(prev => (prev === 'asc' ? 'desc' : 'asc'));
+                                    } else {
+                                        setSortColumn(v);
+                                        setSortDirection('asc');
+                                    }
+                                }}
+                                className={
+                                    sortColumn === v
+                                        ? sortDirection === 'asc'
+                                            ? 'sorted-asc'
+                                            : 'sorted-desc'
+                                        : ''
+                                }
+                            >
+                                {v}
+                            </th>
+                        ))}
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {(sortColumn
+                            ? [...sparqlResult.results.bindings].sort((a: any, b: any) => {
+                                const valA = a[sortColumn]?.value || '';
+                                const valB = b[sortColumn]?.value || '';
+                                const numA = parseFloat(valA);
+                                const numB = parseFloat(valB);
+                                if (!isNaN(numA) && !isNaN(numB)) {
+                                    return sortDirection === 'asc' ? numA - numB : numB - numA;
+                                }
+                                return sortDirection === 'asc'
+                                    ? valA.localeCompare(valB)
+                                    : valB.localeCompare(valA);
+                            })
+                            : sparqlResult.results.bindings
+                    ).map((row: any, idx: number) => {
+                        const annotationVal = row["annotation"]?.value;
+                        return (
+                            <tr key={idx}>
+                                {filteredVars.map((v: string) => {
+                                    if (v === "palabra") {
+                                        const palabraVal = row["palabra"]?.value || "";
+                                        return <td key={v}>{palabraVal}</td>;
+                                    }
+                                    if (v === "base") {
+                                        const baseVal = row["base"]?.value || "";
+                                        const lexiconVal = row["lexicon"]?.value;
+                                        return (
+                                            <td key={v}>
+                                                {lexiconVal ? (
+                                                    <a href={lexiconVal} target="_blank" rel="noopener noreferrer">
+                                                        {baseVal}
+                                                    </a>
+                                                ) : baseVal}
+                                            </td>
+                                        );
+                                    }
+                                    return (
+                                        <td key={v}>
+                                            {(() => {
+                                                const cell = row[v];
+                                                if (!cell) return '';
+                                                const value = cell.value ?? '';
+                                                let link: string | undefined;
+                                                const firstUnderscore = v.indexOf('_');
+                                                if (firstUnderscore > -1) {
+                                                    const basePrefix = v.slice(0, firstUnderscore);
+                                                    const annoKey = `${basePrefix}_annotation`;
+                                                    link = row[annoKey]?.value;
+                                                }
+                                                if (!link && row["annotation"]?.value) {
+                                                    link = row["annotation"].value;
+                                                }
+                                                return link ? (
+                                                    <a href={link} target="_blank" rel="noopener noreferrer">
+                                                        {value}
+                                                    </a>
+                                                ) : (
+                                                    value
+                                                );
+                                            })()}
+                                        </td>
+                                    );
+                                })}
+                            </tr>
+                        );
+                    })}
+                    </tbody>
+                </table>
             </div>
           </div>
         );

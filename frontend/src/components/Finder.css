@@ -636,3 +636,30 @@
     text-align: center;
     font-weight: 500;
 }
+
+.results-table th {
+    padding: 8px 12px;
+    background-color: #f9fafc;
+    border-bottom: 2px solid #d0d7de;
+    text-align: center;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.results-table th:hover {
+    background-color: #eef4ff;
+    color: #1a4fd0;
+}
+
+.results-table th.sorted-asc::after {
+    content: " ▲";
+    color: #1a4fd0;
+    font-size: 0.8em;
+}
+
+.results-table th.sorted-desc::after {
+    content: " ▼";
+    color: #1a4fd0;
+    font-size: 0.8em;
+}
