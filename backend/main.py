@@ -185,7 +185,7 @@ def build_sparql_all(search: SearchRequest) -> str:
                 'exact': None
             }
             func = op_map.get(search.matchType)
-            if func != 'WORDS':
+            if func and func != 'WORDS':
                 where.append(
                     f'  FILTER({func}( LCASE(STR(?palabra)), LCASE("{search.searchText}") ))'
                 )
@@ -271,7 +271,7 @@ def build_sparql_any(search: SearchRequest) -> str:
             'exact': None
         }
         func = op_map.get(search.matchType)
-        if func != 'WORDS':
+        if func and func != 'WORDS':
             where.append(
                 f'  FILTER({func}( LCASE(STR(?palabra)), LCASE("{search.searchText}") ))'
             )
@@ -443,7 +443,7 @@ async def sparql_query(search: SearchRequest):
         "Content-Type": "application/sparql-query",
         "Accept": "application/sparql-results+json"
     }
-    async with httpx.AsyncClient() as client:
+    async with httpx.AsyncClient(timeout=httpx.Timeout(120.0)) as client:
         response = await client.post(sparql_url, content=query_str.encode("utf-8"), headers=headers)
     if response.status_code >= 300:
         raise HTTPException(status_code=response.status_code, detail=response.text)
