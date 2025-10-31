@@ -335,7 +335,7 @@ function Finder() {
                 </select>
               </div>
               <div className="field-group text-group">
-                <label className="label">Texto a buscar:</label>
+                <label className="label">Cadena/Palabra(s):</label>
                 <input
                   type="text"
                   value={searchText}
@@ -343,14 +343,14 @@ function Finder() {
                   className="input"
                   placeholder={
                     matchType === 'startsWith'
-                      ? 'Ingresa texto inicial'
+                      ? 'Letras iniciales'
                       : matchType === 'endsWith'
-                      ? 'Ingresa texto final'
+                      ? 'Letras finales'
                       : matchType === 'contains'
-                      ? 'Ingresa texto intermedio'
+                      ? 'Letras intermedias'
                       : matchType === 'words'
                       ? 'Palabras separadas por coma'
-                      : 'Ingresa texto exacto'
+                      : 'Palabra'
                   }
                 />
               </div>
