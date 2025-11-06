@@ -468,10 +468,10 @@
 }
 
 .results-table {
-    width: 80%; /* ocupa un 80% del ancho disponible */
+    width: 100%; /* ocupa un 80% del ancho disponible */
     max-width: 1200px; /* límite superior */
     border-collapse: collapse;
-    table-layout: fixed; /* columnas equilibradas */
+    table-layout: auto ; /* columnas equilibradas */
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -482,8 +482,9 @@
 .results-table th,
 .results-table td {
     padding: 10px 14px;
-    word-break: break-word;
-    white-space: normal;
+    white-space: nowrap;         /* permite saltos de línea si hay espacios */
+    word-break: normal;          /* no corta palabras */
+    overflow-wrap: anywhere;     /* corta solo si hay texto muy largo sin espacios (URLs, etc.) */
     text-align: center;
 }
 

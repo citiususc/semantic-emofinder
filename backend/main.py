@@ -145,10 +145,6 @@ def build_sparql_all(search: SearchRequest) -> str:
         PREFIX dcterms: <http://purl.org/dc/terms/>
         """
     BASE_TRIPLES = f"""
-        ?lexical_entry1 rdf:type ontolex:LexicalEntry .
-        ?lexical_entry1 ontolex:lexicalForm ?lexical_form1 .
-
-        ?lexical_form1 ontolex:writenRep ?palabra .
 
         ?lexicon1 rdf:type lime:Lexicon .
         ?lexicon1 rdfs:label ?base_label .
@@ -157,6 +153,7 @@ def build_sparql_all(search: SearchRequest) -> str:
         ?annotation1 rdf:type emolex:Annotation .
         ?annotation1 emolex:affects ?lexical_entry1 .
         ?annotation1 dcterms:source ?lexicon1 .
+        ?annotation1 rdfs:label ?palabra .
 
         BIND("BASE_LABEL" AS ?base1) 
         """
@@ -238,10 +235,6 @@ def build_sparql_any(search: SearchRequest) -> str:
     PREFIX dcterms: <http://purl.org/dc/terms/>
     """
     BASE_TRIPLES = """
-    ?lexical_entry rdf:type ontolex:LexicalEntry .
-    ?lexical_entry ontolex:lexicalForm ?lexical_form .
-    
-    ?lexical_form ontolex:writenRep ?palabra .
     
     ?lexicon rdf:type lime:Lexicon .
     ?lexicon rdfs:label ?base .
@@ -250,6 +243,7 @@ def build_sparql_any(search: SearchRequest) -> str:
     ?annotation rdf:type emolex:Annotation .
     ?annotation emolex:affects ?lexical_entry .
     ?annotation dcterms:source ?lexicon .
+    ?annotation rdfs:label ?palabra
     
     
     """
